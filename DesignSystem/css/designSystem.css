@@ -250,4 +250,21 @@ main section > div:nth-child(2) p {
 }
 .font-section .cont-font div:nth-child(2) .panck-size-16px {
   font-size: 16px;
+}
+
+.icons-presentation > div {
+  flex-direction: column;
+}
+.icons-presentation > div > div:nth-child(2) > img:nth-child(2) {
+  background-color: #000000;
+}
+.icons-presentation > div > div:last-child {
+  margin: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  width: 250px;
+  background-color: #b8add2;
+  color: #fff;
 }/*# sourceMappingURL=designSystem.css.map */
