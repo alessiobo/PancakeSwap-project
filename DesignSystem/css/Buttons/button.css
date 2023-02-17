@@ -9,7 +9,6 @@ body {
 }
 
 .btn-thin {
-  color: #fff;
   background-color: #1fc7d4;
   display: inline-flex;
   -webkit-box-align: center;
@@ -28,6 +27,7 @@ body {
   letter-spacing: 0.03em;
   line-height: 1;
   transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
+  color: #fff;
   background-color: transparent;
   border-width: 2px;
   border-style: solid;
@@ -35,9 +35,6 @@ body {
   border-color: #1fc7d4;
   box-shadow: none;
   color: #1fc7d4;
-}
-.btn-thin else {
-  color: "black";
 }
 .btn-thin a {
   color: inherit;
@@ -53,7 +50,6 @@ body {
 }
 
 .btn {
-  color: #fff;
   background-color: #1fc7d4;
   display: inline-flex;
   -webkit-box-align: center;
@@ -72,9 +68,7 @@ body {
   letter-spacing: 0.03em;
   line-height: 1;
   transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
-}
-.btn else {
-  color: "black";
+  color: #fff;
 }
 .btn a {
   color: inherit;
@@ -109,9 +103,6 @@ body {
   line-height: 1;
   transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
 }
-.btn-dark else {
-  color: "black";
-}
 .btn-dark a {
   color: inherit;
   text-decoration: none;
@@ -124,9 +115,11 @@ body {
   transform: translateY(1px);
   box-shadow: none;
 }
+.btn-dark a {
+  color: #191326;
+}
 
 .btn-square {
-  color: #fff;
   background-color: #1fc7d4;
   display: inline-flex;
   -webkit-box-align: center;
@@ -145,10 +138,8 @@ body {
   letter-spacing: 0.03em;
   line-height: 1;
   transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
+  color: #fff;
   width: 48px;
-}
-.btn-square else {
-  color: "black";
 }
 .btn-square a {
   color: inherit;
@@ -187,9 +178,6 @@ body {
   transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
   width: 48px;
 }
-.btn-square-dark else {
-  color: "black";
-}
 .btn-square-dark a {
   color: inherit;
   text-decoration: none;
@@ -201,6 +189,9 @@ body {
   opacity: 0.85;
   transform: translateY(1px);
   box-shadow: none;
+}
+.btn-square-dark a {
+  color: #191326;
 }
 .btn-square-dark i {
   position: absolute;
