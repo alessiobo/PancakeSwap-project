@@ -83,7 +83,7 @@ nav {
 
   img {
     position: absolute;
-    top: 109px;
+    top: 117px;
     left: 85px;
     width: 31px;
 
@@ -93,6 +93,7 @@ nav {
 //|| NAVBAR-----------------------------------------------------------END
 
 main {
+  background-color: #fff;
   padding: 30px 2%;
   margin-left: 200px;
 
@@ -244,6 +245,15 @@ main {
 .buttons-section {
   .buttons-presentation {
     @include flexbox($js-ct: space-around);
+
+    & > div {
+      @include flexbox();
+      flex-direction: column;
+
+      & > button {
+        margin: 80px;
+      }
+    }
   }
 }
 //FONT SECTION---------------------------------------------------------------------

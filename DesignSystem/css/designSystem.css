@@ -64,13 +64,14 @@ nav ul li a:hover {
 }
 nav img {
   position: absolute;
-  top: 109px;
+  top: 117px;
   left: 85px;
   width: 31px;
   z-index: -1;
 }
 
 main {
+  background-color: #fff;
   padding: 30px 2%;
   margin-left: 200px;
 }
@@ -92,6 +93,7 @@ main section img {
   border-radius: 25px;
   padding: 2%;
   margin: 2%;
+  -webkit-box-shadow: inset 4px 4px 15px 0px #000000, inset 0px 0px 0px 7px rgba(0, 0, 0, 0.01);
   box-shadow: inset 4px 4px 15px 0px #000000, inset 0px 0px 0px 7px rgba(0, 0, 0, 0.01);
 }
 main section > div:first-child {
@@ -238,6 +240,15 @@ main section > div:nth-child(2) p {
   align-items: center;
   justify-content: space-around;
 }
+.buttons-section .buttons-presentation > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.buttons-section .buttons-presentation > div > button {
+  margin: 80px;
+}
 
 .font-section .cont-font div:nth-child(2) .panck-size-64px {
   font-size: 64px;
@@ -267,4 +278,6 @@ main section > div:nth-child(2) p {
   width: 250px;
   background-color: #b8add2;
   color: #fff;
-}/*# sourceMappingURL=designSystem.css.map */
+}
+
+/*# sourceMappingURL=designSystem.css.map */
