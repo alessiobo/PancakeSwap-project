@@ -31,7 +31,7 @@ Effective communication is key to the success of the project. The following comm
 # Coding Standards
 ## The following coding standards must be followed:
 
-1. Naming Conventions: Variable and function names should be descriptive and meaningful. Avoid using vague names like x or y. Use snake_case for naming everything.
+1. Naming Conventions: Variable and function names should be descriptive and meaningful. Avoid using vague names like x or y. Use kebab-case for naming everything.
 
 2. Formatting and Indentation: Consistent formatting and indentation makes code more readable and easier to understand. Use a consistent number of spaces or tabs for indentation, and keep code aligned to make it more readable.
 
