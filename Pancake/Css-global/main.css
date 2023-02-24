@@ -235,7 +235,6 @@ body {
   }
 }
 .hero-section {
-  margin-top: 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -389,7 +388,7 @@ body {
   align-items: center;
   justify-content: center;
   z-index: 5;
-  margin-bottom: 133px;
+  margin-bottom: 230px;
 }
 .hero-homepage h2 {
   margin-bottom: 24px;
@@ -409,10 +408,6 @@ body {
   font-size: 19px;
   font-weight: 600;
   line-height: 0.9;
-}
-
-h1 {
-  color: blue;
 }
 
 /*# sourceMappingURL=main.css.map */
