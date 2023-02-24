@@ -234,10 +234,6 @@ body {
     transform: translate(20px, 20px);
   }
 }
-h1 {
-  color: blue;
-}
-
 #card-section {
   display: flex;
   flex-direction: column;
@@ -248,8 +244,9 @@ h1 {
   padding: 100px;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 100px));
 }
-#card-section .bunny-img {
-  margin-bottom: 24px;
+#card-section .bunny-viola {
+  width: 48px;
+  filter: invert(87%) sepia(188%) saturate(3322%) hue-rotate(256deg) brightness(103%) contrast(59%);
 }
 #card-section .card-title-h2 {
   font-size: 40px;
@@ -258,7 +255,7 @@ h1 {
   line-height: 1.1;
   text-align: center;
 }
-#card-section p {
+#card-section .card-mini-p {
   margin-top: 30px;
   color: #7a6eaa;
   font-weight: 400;
@@ -266,12 +263,11 @@ h1 {
   text-align: center;
   font-size: 16px;
 }
-#card-section b {
+#card-section .bold-text {
   color: #7a6eaa;
   font-weight: 600;
   line-height: 1.5;
   margin-bottom: 32px;
-  text-align: center;
   font-size: 16px;
 }
 
@@ -291,9 +287,9 @@ h1 {
   position: relative;
   margin-bottom: 50px;
 }
-.card-container .card-1 h2:nth-child(2),
-.card-container .card-2 h2:nth-child(2),
-.card-container .card-3 h2:nth-child(2) {
+.card-container .card-1 .first-h2,
+.card-container .card-2 .first-h2,
+.card-container .card-3 .first-h2 {
   position: absolute;
   bottom: 80px;
   font-size: 40px;
@@ -327,9 +323,9 @@ h1 {
 .card-container .card-3 #h2-card3 {
   color: #ed4b9e;
 }
-.card-container .card-1 span,
-.card-container .card-2 span,
-.card-container .card-3 span {
+.card-container .card-1 .span-cards,
+.card-container .card-2 .span-cards,
+.card-container .card-3 .span-cards {
   position: absolute;
   bottom: 15px;
   font-size: 16px;
