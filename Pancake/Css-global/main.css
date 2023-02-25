@@ -1,4 +1,6 @@
 @import url("../Components/HeroSection/css/hero-section.css");
+@import url("../card-section/icons-logs/card-section.css");
+
 * {
   margin: 0;
   padding: 0;
