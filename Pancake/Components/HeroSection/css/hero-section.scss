@@ -1,8 +1,7 @@
-// @use "./variables.scss" as var;
-
 //----------------------------------
+
 .hero-section {
-  // margin-top: 100px;
+  // width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -176,28 +175,38 @@
   z-index: 5;
   margin-bottom: 230px;
 
-  h2 {
+  h2,
+  p {
     margin-bottom: 24px;
   }
-
-  img {
-    height: 576px;
-    width: 576px;
-  }
+}
+.astronaut-bunny-img {
+  height: 576px;
+  width: 576px;
 }
 
-.hero-homepage-text {
-  h2:first-child {
-    font-size: 57px;
-    font-weight: 800;
-    color: #7645d9;
-    line-height: 1.1;
+.hero-homepage-text-title {
+  font-size: 57px;
+  font-weight: 800;
+  color: #7645d9;
+  line-height: 1.1;
+}
+.hero-homepage-text-parag {
+  font-size: 19px;
+  font-weight: 600;
+  line-height: 0.9;
+}
+//Ancora in fase iniziale...
+@media screen and (max-width: 578px) {
+  .hero-homepage {
+    flex-direction: column-reverse;
   }
-  h2:nth-child(2) {
-    font-size: 19px;
-    font-weight: 600;
-    line-height: 0.9;
+  .astronaut-bunny-img {
+    height: 192px;
+    width: 192px;
+  }
+
+  .hero-homepage-text-title {
+    font-size: 40px;
   }
 }
-
-// animation:3.5s ease-in-out 0s infinite normal none running kMekGi;

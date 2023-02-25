@@ -38,6 +38,15 @@ function resetDOM() {
 }
 
 function changeBannerBackground(num) {
+  //Gestire errore su caricamento immagine di sfondo del primo banner
+  if (num === 0) {
+    const bgImg = document.querySelector(".hero-slideBar-content-img");
+
+    bgImg.style.background = `url("./Components/HeroSection/images/hero-slidebar-bg1.webp")`;
+    bgImg.style.backgroundRepeat = "no-repeat";
+    bgImg.style.backgroundSize = "contain";
+  }
+
   const bgImg = document.querySelector(".hero-slideBar");
 
   bgImg.style.background = `url("./Components/HeroSection/images/bg-slider-${num}.png")`;
@@ -123,6 +132,9 @@ function startNewCircle() {
   const btnSlider1 = document.getElementById("slider1");
   const btnSlider2 = document.getElementById("slider2");
   const btnSlider3 = document.getElementById("slider3");
+
+  changeBannerBackground(0);
+  changeBannerBackground(1);
 
   btnSlider1.addEventListener("click", () => {
     resetDOM();
