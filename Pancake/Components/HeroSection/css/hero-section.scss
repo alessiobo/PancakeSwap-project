@@ -26,7 +26,12 @@
 .hero-slideBar {
   margin-top: 80px; //da togliere
 
-  background: url("../images/bg-slider-1.png");
+  background: radial-gradient(
+    104.12% 231.19% at -4.12% -5.83%,
+    rgb(0, 87, 174) 0.52%,
+    rgb(102, 124, 198) 67.41%,
+    rgb(25, 229, 245) 100%
+  );
 
   background-repeat: no-repeat;
   background-size: cover;
@@ -198,8 +203,15 @@
 }
 //Ancora in fase iniziale...
 @media screen and (max-width: 578px) {
+  .hero-slideBar {
+    width: 452px;
+  }
+
   .hero-homepage {
     flex-direction: column-reverse;
+    width: 100%;
+    padding: 5%;
+    margin-bottom: 0px;
   }
   .astronaut-bunny-img {
     height: 192px;
@@ -208,5 +220,8 @@
 
   .hero-homepage-text-title {
     font-size: 40px;
+  }
+  .hero-bg-wave {
+    height: 196px;
   }
 }

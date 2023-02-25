@@ -7,7 +7,7 @@ for (var i = 0; i < myElement.childNodes.length; i++) {
 
 startNewCircle();
 
-intervall();
+// intervall();
 
 function intervall() {
   let count = 1;
@@ -49,9 +49,24 @@ function changeBannerBackground(num) {
 
   const bgImg = document.querySelector(".hero-slideBar");
 
-  bgImg.style.background = `url("./Components/HeroSection/images/bg-slider-${num}.png")`;
-  bgImg.style.backgroundRepeat = "no-repeat";
-  bgImg.style.backgroundSize = "cover";
+  if (num === 1) {
+    bgImg.style.background = `radial-gradient(
+    104.12% 231.19% at -4.12% -5.83%,
+    rgb(0, 87, 174) 0.52%,
+    rgb(102, 124, 198) 67.41%,
+    rgb(25, 229, 245) 100%)`;
+    return;
+  }
+  if (num === 2) {
+    bgImg.style.background =
+      "linear-gradient(rgb(0, 191, 165) 0%, rgb(0, 90, 90) 100%)";
+    return;
+  }
+  if (num === 3) {
+    bgImg.style.background =
+      "-webkit-linear-gradient(top, rgb(118, 69, 217) 0%, rgb(69, 42, 122) 100%)";
+    return;
+  }
 }
 
 function changeBanner(num) {
