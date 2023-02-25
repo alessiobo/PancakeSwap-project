@@ -1,13 +1,6 @@
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: "Kanit", sans-serif;
-}
+@import url("../Components/HeroSection/css/hero-section.css");
+@import url("../card-section/icons-logs/card-section.css");
+@import url("/PancakeSwap-project/orange-section/orange-section.css");
 
 * {
   margin: 0;
@@ -208,127 +201,260 @@ body {
   position: absolute;
 }
 
-* {
-  outline: 1px solid red;
-  font-family: Kanit, sans-serif;
+.card-square {
+  height: 280px;
+  width: 280px;
+  background-color: #fff;
+  border-radius: 24px;
+  padding: 24px;
+}
+.card-square .card-square-text {
+  position: relative;
+  margin-top: 115px;
+}
+.card-square .card-square-text h2 {
+  font-size: 32px;
+  line-height: 1.1;
+}
+.card-square .card-square-text p {
+  margin-top: 24px;
+  font-size: 16px;
+}
+.card-square .card-square-text span {
+  position: absolute;
+  top: -114px;
+  left: 195px;
+  background-color: red;
+  height: 36px;
+  width: 36px;
 }
 
-.another_div {
-  padding: 48px;
+.img-anim {
+  animation: animate 2s ease-out infinite alternate;
 }
 
-#orange-section {
-  background: linear-gradient(#1fc7d4, #ffffff);
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  width: 100%;
+@keyframes animate {
+  from {
+    transform: translate(20px, 20px);
+  }
 }
-
-#section-wrapper {
-  background-color: rgba(255, 255, 255, 0.6);
-  backdrop-filter: blur(12px);
-  padding: 40px;
-  box-sizing: border-box;
-  border-radius: 72px;
+#buyCake-section {
+  position: relative;
+  gap: 16px;
+  background: #ffffff;
+  height: 100px;
+}
+#buyCake-section .buyCake-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 5;
+  max-width: 1000px;
+  margin: 0 auto;
 }
-#section-wrapper .top-text h2 {
-  text-align: center;
-  font-size: 40px;
-  color: #280d5f;
-  font-weight: 600;
-  line-height: 1.1;
-  margin-bottom: 24px;
+#buyCake-section .buyCake-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 5;
+  height: 450px;
+  justify-content: space-between;
+  gap: 30px;
 }
-#section-wrapper .top-text h2 span {
-  color: #7645d9;
-}
-#section-wrapper .top-text h3 {
-  text-align: center;
+#buyCake-section .buyCake-color {
   color: #7a6eaa;
+}
+#buyCake-section .buyCake-div1 {
+  display: inline-block;
+  color: #280d5f;
+  font-family: "Kanit", sans-serif;
+}
+#buyCake-section .buyCake-smallTitle {
+  display: flex;
+  flex-wrap: wrap;
+  color: #7645d9;
+  font-family: "Kanit", sans-serif;
+  font-size: 38px;
+  gap: 7px;
+  padding: 0 0 0 12px;
+}
+#buyCake-section .buyCake-mini {
+  color: #280d5f;
+}
+#buyCake-section .buyCake-paragraphTop {
   font-size: 16px;
-  line-height: 1.5;
-  font-weight: 400;
+  font-family: "Kanit", sans-serif;
+  color: #7a6eaa;
+  padding: 0 0 0 12px;
+  position: relative;
+  top: 15px;
+}
+#buyCake-section .buyCake-link {
+  display: flex;
+  gap: 3;
+  align-items: center;
+  padding: 0 0 0 12px;
+  position: relative;
+  top: 20px;
+}
+#buyCake-section .buyCake-paragraph {
+  font-size: 16px;
+  font-family: "Kanit", sans-serif;
+  color: #7a6eaa;
+  padding: 0 0 0 12px;
+}
+#buyCake-section .buyCake-data {
+  display: grid;
+  grid-template-rows: 1fr, 1fr;
+  width: 100%;
+  height: 100px;
+  justify-content: space-between;
+  padding: 0 0 0 12px;
+  position: relative;
+  left: -100px;
+  bottom: 50px;
+}
+#buyCake-section .buyCake-dataCont1 {
+  position: relative;
+  top: 3px;
+  left: 50px;
+  padding: 0 0 0 12px;
+}
+#buyCake-section .buyCake-dataCont2 {
+  position: relative;
+  top: 40px;
+  left: 50px;
+  padding: 0 0 0 12px;
+}
+#buyCake-section .buyCake-dataCont3 {
+  position: relative;
+  left: 370px;
+  bottom: 85px;
+  border-left: 1px solid #7a6eaa;
+  padding: 0 0 0 12px;
+}
+#buyCake-section .buyCake-dataCont4 {
+  position: relative;
+  left: 370px;
+  bottom: 50px;
+  border-left: 1px solid #7a6eaa;
+  padding: 0 0 0 12px;
+}
+#buyCake-section .buyCake-dataCont5 {
+  position: relative;
+  left: 730px;
+  bottom: 174px;
+  border-left: 1px solid #7a6eaa;
+  padding: 0 0 0 12px;
+}
+#buyCake-section .buyCake-dataCont6 {
+  position: relative;
+  left: 730px;
+  bottom: 140px;
+  border-left: 1px solid #7a6eaa;
+  padding: 0 0 0 12px;
+}
+#buyCake-section .buyCake-big-data {
+  font-size: 24px;
+  font-family: "Kanit", sans-serif;
+  color: #280d5f;
+  padding: 0 0 0 12px;
+  font-weight: bold;
 }
 
-#card-wrapper {
+.buyCake-animationBox {
+  height: 700px;
+  width: 700px;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  max-width: 600px;
-  margin-right: 118px;
-  margin-left: 118px;
+  position: relative;
+  top: 120px;
 }
-#card-wrapper #left-card {
-  background: linear-gradient(#e7974d, #ffc700);
-  transform: rotate(-2deg);
-  border-radius: 40px;
-  margin-right: 24px;
-  padding: 24px;
-  max-width: 275px;
-}
-#card-wrapper #left-card #text-card-wrapper {
-  color: #280d5f;
-}
-#card-wrapper #left-card #text-card-wrapper :first-child, #card-wrapper #left-card #text-card-wrapper :nth-child(3) {
-  font-weight: 600;
-  line-height: 1.5;
-  font-size: 16px;
-}
-#card-wrapper #left-card #text-card-wrapper :nth-child(2) {
-  color: #280d5f;
-  font-size: 40px;
-  line-height: 1.5;
-  margin-bottom: 8px;
-  margin-top: 8px;
-  font-weight: 600;
-}
-#card-wrapper #left-card #text-card-wrapper :nth-child(3) {
-  margin-bottom: 24px;
-}
-#card-wrapper #left-card #text-card-wrapper :nth-child(4) {
-  margin-bottom: 40px;
-  font-weight: 600;
-  line-height: 1.5;
-  font-size: 16px;
-}
-#card-wrapper #right-card {
-  background-color: #7645d9;
-  transform: rotate(2deg);
-  border-radius: 40px;
-  padding: 24px;
-  color: #fff;
-  max-width: 275px;
+
+.buyAnimation {
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
   height: 100%;
-}
-#card-wrapper #right-card #text-card-wrapper h1 {
-  color: #ffc700;
-  font-size: 40px;
-  line-height: 1.5;
-}
-#card-wrapper #right-card #text-card-wrapper h2 {
-  color: #fff;
-  font-weight: 400;
-  line-height: 1.5;
-  margin-bottom: 40px;
-  font-size: 16px;
-}
-#card-wrapper #right-card #text-card-wrapper h3 {
-  font-size: 16px;
-}
-#card-wrapper #right-card #text-card-wrapper #h3-last {
-  margin-bottom: 24px;
-}
-#card-wrapper .button-orange-card {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-#card-wrapper .button-orange-card .btn {
   width: 100%;
 }
 
-/*# sourceMappingURL=main.css.map */
+.Buycake-and-pancakes .Buypancake {
+  max-width: 26rem;
+  max-height: 26rem;
+}
+
+.buyCake-link {
+  text-decoration: none;
+  gap: 20px;
+  position: relative;
+  top: 10px;
+}
+
+.buyCake-aColor {
+  color: #1fc7d4;
+}
+
+.buyCake-dataCont {
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+  padding-left: 0;
+  padding-right: 0;
+  border-left: 1px solid #b8add2;
+  padding-left: 0.75rem;
+}
+
+.purple-container {
+  display: flex;
+  width: 100%;
+  height: 400px;
+  background-color: #7645d9;
+  justify-content: center;
+}
+
+.purple-animationBoxTop {
+  top: 0;
+  height: 280px;
+  width: 280px;
+  display: flex;
+  position: relative;
+  left: -300px;
+}
+
+.purple-animationBoxBottom {
+  top: 200px;
+  height: 200px;
+  width: 200px;
+  display: flex;
+  position: relative;
+  left: 180px;
+}
+
+.purple-texBox {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  height: 100%;
+  justify-content: center;
+  text-align: center;
+  gap: 15px;
+}
+
+.purple-h3 {
+  font-size: 40px;
+  font-family: "Kanit", sans-serif;
+  color: #ffffff;
+}
+
+.purple-p {
+  font-size: 16px;
+  font-family: "Kanit", sans-serif;
+  color: #ffffff;
+}
+
+.purple-linkContainer {
+  display: flex;
+  flex-direction: column;
+}
