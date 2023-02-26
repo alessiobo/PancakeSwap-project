@@ -1,0 +1,112 @@
+#card-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(180deg, #fff 22%, #d7caec 100%);
+  position: relative;
+  padding: 100px;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 100px));
+}
+#card-section .bunny-viola {
+  width: 48px;
+  filter: invert(87%) sepia(188%) saturate(3322%) hue-rotate(256deg) brightness(103%) contrast(59%);
+}
+#card-section .card-title-h2 {
+  font-size: 40px;
+  color: #280d5f;
+  font-weight: 600;
+  line-height: 1.1;
+  text-align: center;
+}
+#card-section .card-mini-p {
+  margin-top: 30px;
+  color: #7a6eaa;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: center;
+  font-size: 16px;
+}
+#card-section .bold-text {
+  color: #7a6eaa;
+  font-weight: 600;
+  line-height: 1.5;
+  margin-bottom: 32px;
+  font-size: 16px;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: row;
+}
+.card-container .card-1,
+.card-container .card-2,
+.card-container .card-3 {
+  height: 280px;
+  width: 280px;
+  background-color: #fff;
+  border-radius: 24px;
+  padding: 24px;
+  margin: 15px;
+  position: relative;
+  margin-bottom: 50px;
+}
+.card-container .card-1 .first-h2,
+.card-container .card-2 .first-h2,
+.card-container .card-3 .first-h2 {
+  position: absolute;
+  bottom: 80px;
+  font-size: 40px;
+  color: #280d5f;
+  font-weight: 600;
+  line-height: 1.1;
+}
+.card-container .card-1 #h2-card1,
+.card-container .card-1 #h2-card2,
+.card-container .card-1 #h2-card3,
+.card-container .card-2 #h2-card1,
+.card-container .card-2 #h2-card2,
+.card-container .card-2 #h2-card3,
+.card-container .card-3 #h2-card1,
+.card-container .card-3 #h2-card2,
+.card-container .card-3 #h2-card3 {
+  position: absolute;
+  bottom: 40px;
+  font-size: 40px;
+  color: #7645d9;
+  font-weight: 600;
+  line-height: 1.1;
+}
+.card-container .card-1 #h2-card2,
+.card-container .card-2 #h2-card2,
+.card-container .card-3 #h2-card2 {
+  color: #007aff;
+}
+.card-container .card-1 #h2-card3,
+.card-container .card-2 #h2-card3,
+.card-container .card-3 #h2-card3 {
+  color: #ed4b9e;
+}
+.card-container .card-1 .span-cards,
+.card-container .card-2 .span-cards,
+.card-container .card-3 .span-cards {
+  position: absolute;
+  bottom: 15px;
+  font-size: 16px;
+  color: gray;
+}
+.card-container .card-1 .logo-1,
+.card-container .card-1 .logo-2,
+.card-container .card-1 .logo-3,
+.card-container .card-2 .logo-1,
+.card-container .card-2 .logo-2,
+.card-container .card-2 .logo-3,
+.card-container .card-3 .logo-1,
+.card-container .card-3 .logo-2,
+.card-container .card-3 .logo-3 {
+  position: absolute;
+  right: 15px;
+  width: 35px;
+}
+
+/*# sourceMappingURL=card-section.css.map */
