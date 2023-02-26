@@ -8,12 +8,19 @@ body {
   font-family: "Kanit", sans-serif;
 }
 
-.another_div {
+* {
+  outline: 1px solid red;
+  font-family: Kanit, sans-serif;
+}
+
+.orange-section-container {
   max-width: 900px;
   max-height: 900px;
 }
 
 #orange-section {
+  position: relative;
+  z-index: 0;
   background: linear-gradient(#6fb6f1, #eaf2f6);
   justify-content: center;
   align-items: center;
@@ -26,6 +33,8 @@ body {
 }
 
 #section-wrapper {
+  position: relative;
+  z-index: 1;
   background-color: rgba(255, 255, 255, 0.6);
   backdrop-filter: blur(12px);
   padding: 40px;
@@ -141,6 +150,75 @@ body {
 }
 #card-wrapper .button-orange-card .btn {
   width: 100%;
+}
+
+.bottom-left-wrapper {
+  max-width: 512px;
+  max-height: 512px;
+  position: absolute;
+  height: 512px;
+  width: 512px;
+  top: 175px;
+  left: -100px;
+}
+.bottom-left-wrapper img {
+  max-width: 512px;
+  max-height: 512px;
+  position: absolute;
+  animation: animate 2s ease-in-out infinite alternate;
+}
+@keyframes animate {
+  from {
+    transform: translate(20px, 20px);
+  }
+}
+.bottom-left-wrapper :first-child {
+  animation-delay: 200ms;
+}
+.bottom-left-wrapper :nth-child(2) {
+  animation-delay: 300ms;
+}
+.bottom-left-wrapper :nth-child(3) {
+  animation-delay: 400ms;
+}
+.bottom-left-wrapper :nth-child(4) {
+  animation-delay: 500ms;
+}
+.bottom-left-wrapper :nth-child(5) {
+  animation-delay: 600ms;
+}
+
+.top-right-wrapper {
+  max-width: 512px;
+  max-height: 512px;
+  position: absolute;
+  height: 512px;
+  width: 512px;
+  top: 0px;
+  left: 1000px;
+}
+.top-right-wrapper img {
+  max-width: 512px;
+  max-height: 512px;
+  position: absolute;
+  animation: animate 2s ease-in-out infinite alternate;
+}
+@keyframes animate {
+  from {
+    transform: translate(20px, 20px);
+  }
+}
+.top-right-wrapper :first-child {
+  animation-delay: 200ms;
+}
+.top-right-wrapper :nth-child(2) {
+  animation-delay: 300ms;
+}
+.top-right-wrapper :nth-child(3) {
+  animation-delay: 400ms;
+}
+.top-right-wrapper :nth-child(4) {
+  animation-delay: 500ms;
 }
 
 /*# sourceMappingURL=orange-section.css.map */
