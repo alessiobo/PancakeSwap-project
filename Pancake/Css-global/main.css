@@ -41,13 +41,16 @@ body {
   box-shadow: none;
   color: #1fc7d4;
 }
+
 .btn-thin a {
   color: inherit;
   text-decoration: none;
 }
+
 .btn-thin:hover {
   opacity: 0.65;
 }
+
 .btn-thin:active {
   opacity: 0.85;
   transform: translateY(1px);
@@ -75,13 +78,16 @@ body {
   transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
   color: #fff;
 }
+
 .btn a {
   color: inherit;
   text-decoration: none;
 }
+
 .btn:hover {
   opacity: 0.65;
 }
+
 .btn:active {
   opacity: 0.85;
   transform: translateY(1px);
@@ -108,18 +114,22 @@ body {
   line-height: 1;
   transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
 }
+
 .btn-dark a {
   color: inherit;
   text-decoration: none;
 }
+
 .btn-dark:hover {
   opacity: 0.65;
 }
+
 .btn-dark:active {
   opacity: 0.85;
   transform: translateY(1px);
   box-shadow: none;
 }
+
 .btn-dark a {
   color: #191326;
 }
@@ -146,18 +156,22 @@ body {
   color: #fff;
   width: 48px;
 }
+
 .btn-square a {
   color: inherit;
   text-decoration: none;
 }
+
 .btn-square:hover {
   opacity: 0.65;
 }
+
 .btn-square:active {
   opacity: 0.85;
   transform: translateY(1px);
   box-shadow: none;
 }
+
 .btn-square i {
   position: absolute;
 }
@@ -183,21 +197,26 @@ body {
   transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
   width: 48px;
 }
+
 .btn-square-dark a {
   color: inherit;
   text-decoration: none;
 }
+
 .btn-square-dark:hover {
   opacity: 0.65;
 }
+
 .btn-square-dark:active {
   opacity: 0.85;
   transform: translateY(1px);
   box-shadow: none;
 }
+
 .btn-square-dark a {
   color: #191326;
 }
+
 .btn-square-dark i {
   position: absolute;
 }
@@ -209,18 +228,22 @@ body {
   border-radius: 24px;
   padding: 24px;
 }
+
 .card-square .card-square-text {
   position: relative;
   margin-top: 115px;
 }
+
 .card-square .card-square-text h2 {
   font-size: 32px;
   line-height: 1.1;
 }
+
 .card-square .card-square-text p {
   margin-top: 24px;
   font-size: 16px;
 }
+
 .card-square .card-square-text span {
   position: absolute;
   top: -114px;
@@ -231,7 +254,7 @@ body {
 }
 
 .img-anim {
-  animation: animate 2s ease-out infinite alternate;
+  animation: animate 5s ease-in-out infinite alternate;
 }
 
 @keyframes animate {
@@ -459,3 +482,5 @@ body {
   display: flex;
   flex-direction: column;
 }
+
+/*# sourceMappingURL=main.css.map */

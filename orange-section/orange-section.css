@@ -9,13 +9,12 @@ body {
 }
 
 * {
-  outline: 1px solid red;
   font-family: Kanit, sans-serif;
 }
 
 .orange-section-container {
   max-width: 900px;
-  max-height: 900px;
+  max-height: 700px;
 }
 
 #orange-section {
@@ -25,7 +24,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100%;
-  width: 100%;
+  max-width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -86,6 +85,7 @@ body {
 }
 #card-wrapper #left-card #text-card-wrapper {
   color: #280d5f;
+  text-align: left;
 }
 #card-wrapper #left-card #text-card-wrapper :first-child,
 #card-wrapper #left-card #text-card-wrapper :nth-child(3) {
@@ -111,7 +111,7 @@ body {
   font-size: 16px;
 }
 #card-wrapper #right-card {
-  background-color: #7645d9;
+  background: linear-gradient(rgb(117, 68, 216), #5121b1);
   transform: rotate(1.43deg);
   border-radius: 24px;
   padding: 24px;
@@ -153,72 +153,49 @@ body {
 }
 
 .bottom-left-wrapper {
-  max-width: 512px;
-  max-height: 512px;
-  position: absolute;
-  height: 512px;
-  width: 512px;
-  top: 175px;
-  left: -100px;
-}
-.bottom-left-wrapper img {
-  max-width: 512px;
-  max-height: 512px;
-  position: absolute;
-  animation: animate 2s ease-in-out infinite alternate;
-}
-@keyframes animate {
-  from {
-    transform: translate(20px, 20px);
-  }
-}
-.bottom-left-wrapper :first-child {
-  animation-delay: 200ms;
-}
-.bottom-left-wrapper :nth-child(2) {
-  animation-delay: 300ms;
-}
-.bottom-left-wrapper :nth-child(3) {
-  animation-delay: 400ms;
-}
-.bottom-left-wrapper :nth-child(4) {
-  animation-delay: 500ms;
-}
-.bottom-left-wrapper :nth-child(5) {
-  animation-delay: 600ms;
+  top: 300px;
+  left: -10px;
 }
 
+.top-right-wrapper {
+  top: 0px;
+  right: 15px;
+}
+
+.bottom-left-wrapper,
 .top-right-wrapper {
   max-width: 512px;
   max-height: 512px;
   position: absolute;
   height: 512px;
   width: 512px;
-  top: 0px;
-  left: 1000px;
 }
+.bottom-left-wrapper img,
 .top-right-wrapper img {
   max-width: 512px;
   max-height: 512px;
   position: absolute;
   animation: animate 2s ease-in-out infinite alternate;
 }
-@keyframes animate {
-  from {
-    transform: translate(20px, 20px);
-  }
-}
+.bottom-left-wrapper :first-child,
 .top-right-wrapper :first-child {
   animation-delay: 200ms;
 }
+.bottom-left-wrapper :nth-child(2),
 .top-right-wrapper :nth-child(2) {
   animation-delay: 300ms;
 }
+.bottom-left-wrapper :nth-child(3),
 .top-right-wrapper :nth-child(3) {
   animation-delay: 400ms;
 }
+.bottom-left-wrapper :nth-child(4),
 .top-right-wrapper :nth-child(4) {
   animation-delay: 500ms;
+}
+.bottom-left-wrapper :nth-child(5),
+.top-right-wrapper :nth-child(5) {
+  animation-delay: 600ms;
 }
 
 /*# sourceMappingURL=orange-section.css.map */
