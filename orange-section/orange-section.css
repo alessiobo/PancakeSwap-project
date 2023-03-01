@@ -166,7 +166,7 @@ body {
 }
 
 .top-right-wrapper {
-  top: 0px;
+  top: -10px;
   right: 15px;
 }
 
@@ -184,26 +184,27 @@ body {
   max-height: 512px;
   position: absolute;
   animation: animate 2s ease-in-out infinite alternate;
+  z-index: -1;
 }
 .bottom-left-wrapper :first-child,
 .top-right-wrapper :first-child {
-  animation-delay: 200ms;
+  animation-delay: -2000ms;
 }
 .bottom-left-wrapper :nth-child(2),
 .top-right-wrapper :nth-child(2) {
-  animation-delay: 300ms;
+  animation-delay: -3000ms;
 }
 .bottom-left-wrapper :nth-child(3),
 .top-right-wrapper :nth-child(3) {
-  animation-delay: 400ms;
+  animation-delay: -4000ms;
 }
 .bottom-left-wrapper :nth-child(4),
 .top-right-wrapper :nth-child(4) {
-  animation-delay: 500ms;
+  animation-delay: -5000ms;
 }
 .bottom-left-wrapper :nth-child(5),
 .top-right-wrapper :nth-child(5) {
-  animation-delay: 600ms;
+  animation-delay: -6000ms;
 }
 .bottom-left-wrapper .ball7,
 .top-right-wrapper .ball7 {
