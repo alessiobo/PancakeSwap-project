@@ -196,7 +196,6 @@
     position: absolute;
     height: 512px;
     width: 512px;
-
     img {
         max-width: 512px;
         max-height: 512px;
@@ -224,5 +223,14 @@
 
     :nth-child(5) {
         animation-delay: 600ms;
+    }
+    .ball7 {
+        left: 20px;
+        @keyframes animate2 {
+            from {
+              transform: translate(0px,20px);
+            }
+          }
+          animation: animate2 2s ease-in-out infinite alternate;
     }
 }

@@ -205,5 +205,15 @@ body {
 .top-right-wrapper :nth-child(5) {
   animation-delay: 600ms;
 }
+.bottom-left-wrapper .ball7,
+.top-right-wrapper .ball7 {
+  left: 20px;
+  animation: animate2 2s ease-in-out infinite alternate;
+}
+@keyframes animate2 {
+  from {
+    transform: translate(0px, 20px);
+  }
+}
 
 /*# sourceMappingURL=orange-section.css.map */
