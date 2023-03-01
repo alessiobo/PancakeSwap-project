@@ -7,11 +7,11 @@ for (var i = 0; i < myElement.childNodes.length; i++) {
 
 startNewCircle();
 
-// intervall();
+intervallPlusClick(1);
 
-function intervall() {
-  let count = 1;
-  setInterval(() => {
+function intervallPlusClick(num) {
+  let count = num;
+  const intervallId = setInterval(() => {
     if (count === 1) {
       count++;
       changeSecondBanner();
@@ -22,10 +22,11 @@ function intervall() {
       count = 1;
       resetDOM();
     }
-
-    // console.log(count);
   }, 3000);
+
+  return intervallId;
 }
+
 //Resetta appunto il DOM da tutte le modifiche apportate (ad esempio quando cambiamo scheda nel banner)
 function resetDOM() {
   myElement.innerHTML = "";
@@ -38,15 +39,6 @@ function resetDOM() {
 }
 
 function changeBannerBackground(num) {
-  //Gestire errore su caricamento immagine di sfondo del primo banner
-  // if (num === 0) {
-  //   const bgImg = document.querySelector(".hero-slideBar-content-img");
-
-  //   bgImg.style.background = `url("./Components/HeroSection/images/hero-slidebar-bg1.webp")`;
-  //   bgImg.style.backgroundRepeat = "no-repeat";
-  //   bgImg.style.backgroundSize = "contain";
-  // }
-
   const bgImg = document.querySelector(".hero-slideBar");
 
   if (num === 1) {
@@ -81,7 +73,6 @@ function changeBanner(num) {
   const secondBtn = document.querySelector(".hero-slideBar-buttons")
     .children[1];
   const bunnyImg = document.querySelector(".hero-slideBar-img").children[0];
-  const bgStars = document.querySelector(".hero-slideBar-content-img");
 
   upText.innerHTML = `<img style="width: 233px;" src="./Components/HeroSection/images/AptosXPancakeSwap.webp"/>`;
   if (num === 2) {
@@ -98,8 +89,6 @@ function changeBanner(num) {
 
     bunnyImg.classList.remove("hero-slideBar-img-bunny1");
     bunnyImg.classList.add("hero-slideBar-img-bunny2");
-
-    bgStars.classList.remove("hero-slideBar-content-img");
 
     changeBannerBackground(2);
 
@@ -119,10 +108,8 @@ function changeBanner(num) {
 
     bunnyImg.src = "./Components/HeroSection/images/hero-slidebar-bunny-3.webp";
 
-    bunnyImg.classList.remove("hero-slideBar-img-bunny2");
+    bunnyImg.classList.remove("hero-slideBar-img-bunny1");
     bunnyImg.classList.add("hero-slideBar-img-bunny3");
-
-    bgStars.classList.remove("hero-slideBar-content-img");
 
     changeBannerBackground(3);
 
