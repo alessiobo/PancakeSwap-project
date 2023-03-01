@@ -72,13 +72,17 @@
     margin-left: 118px;
 
     #left-card {
-        background: linear-gradient(#ffb237, #ffe669);
+        background: var.$colors-gradientGold;
         transform: rotate(-1.43deg);
         border-radius: 24px;
         margin-right: 24px;
         padding: 24px;
         max-width: 275px;
         min-height: 350px;
+        &:hover {
+            transition: all 1s ease-out;
+            transform: translateY(-10px) rotate(-5deg);
+        }
 
         img {
             margin-left: 90%;
@@ -127,6 +131,10 @@
         max-width: 275px;
         height: 100%;
         min-height: 350px;
+        &:hover {
+            transition: all 1s ease-out;
+            transform: translateY(-10px) rotate(5deg);
+        }
 
         img {
             margin-left: 90%;

@@ -80,6 +80,10 @@ body {
   max-width: 275px;
   min-height: 350px;
 }
+#card-wrapper #left-card:hover {
+  transition: all 1s ease-out;
+  transform: translateY(-10px) rotate(-5deg);
+}
 #card-wrapper #left-card img {
   margin-left: 90%;
 }
@@ -119,6 +123,10 @@ body {
   max-width: 275px;
   height: 100%;
   min-height: 350px;
+}
+#card-wrapper #right-card:hover {
+  transition: all 1s ease-out;
+  transform: translateY(-10px) rotate(5deg);
 }
 #card-wrapper #right-card img {
   margin-left: 90%;
