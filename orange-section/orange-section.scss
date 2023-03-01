@@ -6,7 +6,6 @@
 }
 
 .orange-section-container {
-    // padding: 48px;
     max-width: 900px;
     max-height: 700px;
 }
@@ -73,7 +72,7 @@
     margin-left: 118px;
 
     #left-card {
-        background: linear-gradient(#ffb237, #ffe669);
+        background: var.$colors-gradientGold;
         transform: rotate(-1.43deg);
         border-radius: 24px;
         margin-right: 24px;
@@ -120,7 +119,7 @@
     }
 
     #right-card {
-        background: linear-gradient(rgb(117, 68, 216), #5121b1);
+        background: linear-gradient(#7544d8, #5121b1);
         transform: rotate(1.43deg);
         border-radius: 24px;
         padding: 24px;
