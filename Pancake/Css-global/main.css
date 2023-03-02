@@ -2,6 +2,7 @@
 @import url("../Components/HeroSection/css/hero-section.css");
 @import url("../card-section/icons-logs/card-section.css");
 @import url("/orange-section/orange-section.css");
+@import url("./scrollbar.css");
 
 * {
   margin: 0;
