@@ -1,3 +1,14 @@
+@keyframes animate-star {
+  0% {
+    opacity: 0.9;
+  }
+  50% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 0.9;
+  }
+}
 .hero-section {
   padding-top: 80px;
   display: flex;
@@ -239,6 +250,7 @@
   gap: 10px;
 }
 .hero-homepage .hero-homepage-images {
+  position: relative;
   max-height: 512px;
   max-width: 512px;
 }
@@ -251,6 +263,21 @@
     max-height: 192px;
     margin-bottom: 50px;
   }
+}
+.hero-homepage .hero-homepage-images .astronaut-bunny-img-star {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  right: 0;
+}
+.hero-homepage .hero-homepage-images .hero-anim-star-2 {
+  animation: 2s ease-in-out 0.33s infinite normal none running animate-star;
+}
+.hero-homepage .hero-homepage-images .hero-anim-star-5 {
+  animation: 5s ease-in-out 0.33s infinite normal none running animate-star;
+}
+.hero-homepage .hero-homepage-images .hero-anim-star-3 {
+  animation: 3s ease-in-out 0.33s infinite normal none running animate-star;
 }
 
 .hero-bg-wave {

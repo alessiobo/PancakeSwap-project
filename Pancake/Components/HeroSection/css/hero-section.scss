@@ -17,6 +17,27 @@
   }
 }
 
+//ANIMATION STARS:
+
+@mixin anim-star($num) {
+  animation: #{$num}s ease-in-out 0.33s infinite normal none running
+    animate-star;
+}
+
+@keyframes animate-star {
+  0% {
+    opacity: 0.9;
+  }
+  50% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 0.9;
+  }
+}
+
+$durations: (2, 5, 3);
+
 //****************//
 //  SLIDE BANNER  //
 //***************//
@@ -280,6 +301,7 @@
     }
   }
   .hero-homepage-images {
+    position: relative;
     max-height: 512px;
     max-width: 512px;
 
@@ -289,6 +311,18 @@
       @include md-768px() {
         max-height: 192px;
         margin-bottom: 50px;
+      }
+    }
+    .astronaut-bunny-img-star {
+      height: 100%;
+      width: 100%;
+
+      position: absolute;
+      right: 0;
+    }
+    @each $dur in $durations {
+      .hero-anim-star-#{$dur} {
+        @include anim-star($num: #{$dur});
       }
     }
   }

@@ -7,7 +7,7 @@ for (var i = 0; i < myElement.childNodes.length; i++) {
 
 startNewCircle();
 
-intervallPlusClick(1);
+// intervallPlusClick(1);
 
 function intervallPlusClick(num) {
   let count = num;
