@@ -1,3 +1,10 @@
+@import url(/twin-section/twin-section.css);
+@import url("../Components/HeroSection/css/hero-section.css");
+@import url("../card-section/icons-logs/card-section.css");
+@import url("/PancakeSwap-project/orange-section/orange-section.css");
+@import url("./header-navbar.css");
+
+
 * {
   margin: 0;
   padding: 0;
@@ -36,13 +43,16 @@ body {
   box-shadow: none;
   color: #1fc7d4;
 }
+
 .btn-thin a {
   color: inherit;
   text-decoration: none;
 }
+
 .btn-thin:hover {
   opacity: 0.65;
 }
+
 .btn-thin:active {
   opacity: 0.85;
   transform: translateY(1px);
@@ -70,13 +80,16 @@ body {
   transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
   color: #fff;
 }
+
 .btn a {
   color: inherit;
   text-decoration: none;
 }
+
 .btn:hover {
   opacity: 0.65;
 }
+
 .btn:active {
   opacity: 0.85;
   transform: translateY(1px);
@@ -103,18 +116,22 @@ body {
   line-height: 1;
   transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
 }
+
 .btn-dark a {
   color: inherit;
   text-decoration: none;
 }
+
 .btn-dark:hover {
   opacity: 0.65;
 }
+
 .btn-dark:active {
   opacity: 0.85;
   transform: translateY(1px);
   box-shadow: none;
 }
+
 .btn-dark a {
   color: #191326;
 }
@@ -141,18 +158,22 @@ body {
   color: #fff;
   width: 48px;
 }
+
 .btn-square a {
   color: inherit;
   text-decoration: none;
 }
+
 .btn-square:hover {
   opacity: 0.65;
 }
+
 .btn-square:active {
   opacity: 0.85;
   transform: translateY(1px);
   box-shadow: none;
 }
+
 .btn-square i {
   position: absolute;
 }
@@ -178,21 +199,26 @@ body {
   transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
   width: 48px;
 }
+
 .btn-square-dark a {
   color: inherit;
   text-decoration: none;
 }
+
 .btn-square-dark:hover {
   opacity: 0.65;
 }
+
 .btn-square-dark:active {
   opacity: 0.85;
   transform: translateY(1px);
   box-shadow: none;
 }
+
 .btn-square-dark a {
   color: #191326;
 }
+
 .btn-square-dark i {
   position: absolute;
 }
@@ -204,18 +230,22 @@ body {
   border-radius: 24px;
   padding: 24px;
 }
+
 .card-square .card-square-text {
   position: relative;
   margin-top: 115px;
 }
+
 .card-square .card-square-text h2 {
   font-size: 32px;
   line-height: 1.1;
 }
+
 .card-square .card-square-text p {
   margin-top: 24px;
   font-size: 16px;
 }
+
 .card-square .card-square-text span {
   position: absolute;
   top: -114px;
@@ -226,7 +256,7 @@ body {
 }
 
 .img-anim {
-  animation: animate 5s ease-out infinite alternate;
+  animation: animate 5s ease-in-out infinite alternate;
 }
 
 @keyframes animate {
@@ -235,288 +265,230 @@ body {
   }
 }
 
-.navbar {
-  height: 56px;
-  background-color: white;
-  padding-left: 15px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  border: 1px solid #e7e3eb;
-  justify-content: space-between;
-}
-
-.container-logo-menu {
-  display: flex;
-  flex-direction: row;
-}
-
-.img-logo {
-  height: 56px;
-  width: 160px;
-}
-
-.logo-home {
-  block-size: fit-content;
-  width: fit-content;
-}
-
-.menus {
-  width: 330px;
-  height: 56px;
-  display: flex;
-  align-items: center;
-  padding: 0px 16px;
-}
-
-.btn-trade {
-  color: #7a6eaa;
-  width: 71.5px;
-  height: 48px;
-  font-size: 16px;
-  border: none;
-  border-radius: 8px;
-  background-color: white;
-}
-
-.dropdown-content a {
-  color: #7a6eaa;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-.dropdown-content a:hover {
-  background-color: #ddd;
-}
-
-.dropdowns:hover .dropdown-content {
-  display: block;
-  border-radius: 8px;
-}
-
-.dropdowns:hover .btn-trade {
-  background-color: rgb(241, 232, 232);
-}
-
-.btn-earn {
-  color: #7a6eaa;
-  width: 64.22px;
-  height: 48px;
-  font-size: 16px;
-  border: none;
-  border-radius: 8px;
-  background-color: white;
-}
-
-.dropdowns {
-  position: relative;
-  display: inline-block;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: white;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-  width: 280px;
-  height: fit-content;
-}
-
-.dropdown-content a {
-  color: #7a6eaa;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-.dropdown-content a:hover {
-  background-color: rgb(241, 232, 232);
-  border-radius: 8px;
-}
-
-.dropdowns:hover .dropdown-content {
-  display: block;
-}
-
-.dropdowns:hover .btn-earn {
-  background-color: rgb(241, 232, 232);
-}
-
-.btn-win {
-  color: #7a6eaa;
-  width: 59px;
-  height: 48px;
-  font-size: 16px;
-  border: none;
-  border-radius: 8px;
-  background-color: white;
-}
-
-.dropdowns:hover .btn-win {
-  background-color: rgb(241, 232, 232);
-}
-
-.btn-NFT {
-  color: #7a6eaa;
-  width: 60.15px;
-  height: 48px;
-  font-size: 16px;
-  border: none;
-  border-radius: 8px;
-  background-color: white;
-}
-
-.dropdowns:hover .btn-NFT {
-  background-color: rgb(241, 232, 232);
-}
-
-.btn-3-points-menu {
-  color: #7a6eaa;
-  width: 58px;
-  height: 48px;
-  font-size: 16px;
-  border: none;
-  border-radius: 8px;
-  background-color: white;
-}
-
-.dropdowns:hover .btn-3-points-menu {
-  background-color: rgb(241, 232, 232);
-}
-
-.three-points-menu {
-  width: 20px;
-  height: 20px;
-}
-
-.img-bunny-logo {
-  height: 24px;
-  text-decoration: none;
-}
-
-.img-bunny-logo:hover {
-  transform: scale(1.2);
-  transition: 200ms;
-}
-
-.icon-bunny-price {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  text-decoration: none;
-}
-
-.price {
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-.container-details-from-navbar {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-end;
-}
-
-.btn-change-language {
-  width: 48px;
-  height: 20px;
-  border: none;
-  background-color: white;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  padding: 0px 8px;
-  justify-content: center;
-}
-
-.img-lng {
-  width: 30px;
-}
-
-.language:hover .btn-change-language {
-  opacity: 0.5;
-  transition: 200ms;
-}
-
-.btn-option {
-  width: 48px;
-  height: 20px;
-  border: none;
-  background-color: white;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  padding: 0px;
-  justify-content: center;
-}
-
-.img-btn-option {
-  width: 25px;
-  rotate: 90deg;
-}
-
-.option:hover .img-btn-option {
-  opacity: 0.5;
-  transition: 200ms;
-}
-
-.container-details-from-navbar {
-  height: 56px;
-  display: flex;
-  align-items: center;
-}
-
-.change-crypto {
-  border: none;
-  background-color: #EFF4F5;
-  display: flex;
-  align-items: center;
-  font-size: 16px;
-  color: #280D5F;
-  border-radius: 10px;
-  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2);
-}
-
-.img-change-crypto {
-  width: 30px;
-  height: 30px;
-}
-
-.img-down-arrow {
-  width: 20px;
-  height: 15px;
-}
-
-.dropdown-crypto:hover .dropdown-content {
-  display: block;
-  border-radius: 8px;
-}
-
-.dropdown-crypto:hover .change-crypto {
-  background-color: rgb(241, 232, 232);
-}
-
-.select-network-text {
-  color: #7a6eaa;
-  padding: 15px;
-  font-size: 16px;
-}
-
-.img {
-  width: 25px;
-  height: 20px;
-  padding-right: 5px;
-}
-
-.btn-connect-wallet {
-  padding: 0px 15px 0px 15px;
-}
 
 h1 {
   color: blue;
+}
+
+#buyCake-section {
+  position: relative;
+  gap: 16px;
+  background: #ffffff;
+  height: 100px;
+}
+#buyCake-section .buyCake-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+#buyCake-section .buyCake-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 5;
+  height: 450px;
+  justify-content: space-between;
+  gap: 30px;
+}
+#buyCake-section .buyCake-color {
+  color: #7a6eaa;
+}
+#buyCake-section .buyCake-div1 {
+  display: inline-block;
+  color: #280d5f;
+  font-family: "Kanit", sans-serif;
+}
+#buyCake-section .buyCake-smallTitle {
+  display: flex;
+  flex-wrap: wrap;
+  color: #7645d9;
+  font-family: "Kanit", sans-serif;
+  font-size: 38px;
+  gap: 7px;
+  padding: 0 0 0 12px;
+}
+#buyCake-section .buyCake-mini {
+  color: #280d5f;
+}
+#buyCake-section .buyCake-paragraphTop {
+  font-size: 16px;
+  font-family: "Kanit", sans-serif;
+  color: #7a6eaa;
+  padding: 0 0 0 12px;
+  position: relative;
+  top: 15px;
+}
+#buyCake-section .buyCake-link {
+  display: flex;
+  gap: 3;
+  align-items: center;
+  padding: 0 0 0 12px;
+  position: relative;
+  top: 20px;
+}
+#buyCake-section .buyCake-paragraph {
+  font-size: 16px;
+  font-family: "Kanit", sans-serif;
+  color: #7a6eaa;
+  padding: 0 0 0 12px;
+}
+#buyCake-section .buyCake-data {
+  display: grid;
+  grid-template-rows: 1fr, 1fr;
+  width: 100%;
+  height: 100px;
+  justify-content: space-between;
+  padding: 0 0 0 12px;
+  position: relative;
+  left: -100px;
+  bottom: 50px;
+}
+#buyCake-section .buyCake-dataCont1 {
+  position: relative;
+  top: 3px;
+  left: 50px;
+  padding: 0 0 0 12px;
+}
+#buyCake-section .buyCake-dataCont2 {
+  position: relative;
+  top: 40px;
+  left: 50px;
+  padding: 0 0 0 12px;
+}
+#buyCake-section .buyCake-dataCont3 {
+  position: relative;
+  left: 370px;
+  bottom: 85px;
+  border-left: 1px solid #7a6eaa;
+  padding: 0 0 0 12px;
+}
+#buyCake-section .buyCake-dataCont4 {
+  position: relative;
+  left: 370px;
+  bottom: 50px;
+  border-left: 1px solid #7a6eaa;
+  padding: 0 0 0 12px;
+}
+#buyCake-section .buyCake-dataCont5 {
+  position: relative;
+  left: 730px;
+  bottom: 174px;
+  border-left: 1px solid #7a6eaa;
+  padding: 0 0 0 12px;
+}
+#buyCake-section .buyCake-dataCont6 {
+  position: relative;
+  left: 730px;
+  bottom: 140px;
+  border-left: 1px solid #7a6eaa;
+  padding: 0 0 0 12px;
+}
+#buyCake-section .buyCake-big-data {
+  font-size: 24px;
+  font-family: "Kanit", sans-serif;
+  color: #280d5f;
+  padding: 0 0 0 12px;
+  font-weight: bold;
+}
+
+.buyCake-animationBox {
+  height: 700px;
+  width: 700px;
+  display: flex;
+  position: relative;
+  top: 120px;
+}
+
+.buyAnimation {
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.Buycake-and-pancakes .Buypancake {
+  max-width: 26rem;
+  max-height: 26rem;
+}
+
+.buyCake-link {
+  text-decoration: none;
+  gap: 20px;
+  position: relative;
+  top: 10px;
+}
+
+.buyCake-aColor {
+  color: #1fc7d4;
+}
+
+.buyCake-dataCont {
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+  padding-left: 0;
+  padding-right: 0;
+  border-left: 1px solid #b8add2;
+  padding-left: 0.75rem;
+}
+
+.purple-container {
+  display: flex;
+  width: 100%;
+  height: 400px;
+  background-color: #7645d9;
+  justify-content: center;
+}
+
+.purple-animationBoxTop {
+  top: 0;
+  height: 280px;
+  width: 280px;
+  display: flex;
+  position: relative;
+  left: -300px;
+}
+
+.purple-animationBoxBottom {
+  top: 200px;
+  height: 200px;
+  width: 200px;
+  display: flex;
+  position: relative;
+  left: 180px;
+}
+
+.purple-texBox {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  height: 100%;
+  justify-content: center;
+  text-align: center;
+  gap: 15px;
+}
+
+.purple-h3 {
+  font-size: 40px;
+  font-family: "Kanit", sans-serif;
+  color: #ffffff;
+}
+
+.purple-p {
+  font-size: 16px;
+  font-family: "Kanit", sans-serif;
+  color: #ffffff;
+}
+
+.purple-linkContainer {
+  display: flex;
+  flex-direction: column;
 }
 
 /*# sourceMappingURL=main.css.map */
