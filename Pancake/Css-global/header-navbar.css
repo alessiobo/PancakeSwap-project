@@ -1,0 +1,279 @@
+.navbar {
+    height: 56px;
+    background-color: white;
+    padding-left: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 1px solid #e7e3eb ;
+    justify-content:space-between;
+}
+
+.container-logo-menu {
+    display: flex;
+    flex-direction: row;
+}
+
+.img-logo {
+    height: 56px;
+    width: 160px;
+}
+
+.logo-home {
+    block-size: fit-content;
+    width: fit-content;
+}
+
+.menus {
+    width: 330px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    padding: 0px 16px;
+}
+
+.btn-trade {
+    color: #7a6eaa ;
+    width: 71.5px;
+    height: 48px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    background-color: white;
+}
+
+.dropdown-content a {
+    color: #7a6eaa;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdowns:hover .dropdown-content {
+    display: block;
+    border-radius: 8px;
+}
+
+.dropdowns:hover .btn-trade {
+    background-color:  rgb(241, 232, 232); 
+}
+
+.btn-earn {
+    color: #7a6eaa ;
+    width: 64.22px;
+    height: 48px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    background-color: white;
+}
+
+.dropdowns {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    width: 280px;
+    height: fit-content;
+}
+
+.dropdown-content a {
+    color: #7a6eaa;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: rgb(241, 232, 232);
+    border-radius: 8px;
+}
+
+.dropdowns:hover .dropdown-content {
+    display: block;
+}
+
+.dropdowns:hover .btn-earn {
+    background-color:  rgb(241, 232, 232); 
+}
+
+.btn-win {
+    color: #7a6eaa ;
+    width: 59px;
+    height: 48px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    background-color: white;
+}
+
+.dropdowns:hover .btn-win {
+    background-color:  rgb(241, 232, 232); 
+}
+
+.btn-NFT {
+    color: #7a6eaa ;
+    width: 60.15px;
+    height: 48px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    background-color: white;
+}
+
+.dropdowns:hover .btn-NFT {
+    background-color:  rgb(241, 232, 232); 
+}
+
+.btn-3-points-menu {
+    color: #7a6eaa ;
+    width: 58px;
+    height: 48px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    background-color: white;
+}
+
+.dropdowns:hover .btn-3-points-menu {
+    background-color:  rgb(241, 232, 232); 
+}
+
+.three-points-menu {
+    width: 20px;
+    height: 20px;
+}
+
+.img-bunny-logo {
+    height: 24px;
+    text-decoration: none;
+}
+
+.img-bunny-logo:hover {
+    transform: scale(1.2);
+    transition: 200ms;
+}
+
+.icon-bunny-price {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.price {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.container-details-from-navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+.btn-change-language {
+    width: 48px;
+    height: 20px;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 0px 8px;
+    justify-content: center;
+}
+
+.img-lng {
+    width: 30px;
+}
+
+.language:hover .btn-change-language {
+    opacity: 0.5;
+    transition: 200ms;
+}
+
+.btn-option {
+    width: 48px;
+    height: 20px;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 0px;
+    justify-content: center;
+}
+
+.img-btn-option {
+    width: 25px;
+    rotate: 90deg;
+}
+
+.option:hover .img-btn-option {
+    opacity: 0.5;
+    transition: 200ms;
+}
+
+.container-details-from-navbar {
+    height: 56px;
+    display: flex;
+    align-items: center;
+}
+
+.change-crypto {
+    border: none;
+    background-color: #EFF4F5;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    color: #280D5F;
+    border-radius: 10px;
+    box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.2);
+}
+
+.img-change-crypto  {
+    width: 30px;
+    height: 30px;
+}
+
+.img-down-arrow {
+    width:20px;
+    height: 15px;
+}
+
+.dropdown-crypto:hover .dropdown-content { 
+    display: block;
+    border-radius: 8px;
+}
+
+.dropdown-crypto:hover .change-crypto { 
+    background-color:  rgb(241, 232, 232); 
+}
+
+.select-network-text {
+    color: #7a6eaa;
+    padding: 15px;
+    font-size: 16px;
+}
+
+.img {
+    width: 25px;
+    height: 20px;
+    padding-right: 5px;
+}
+
+.btn-connect-wallet {
+    padding: 0px 15px 0px 15px;
+}

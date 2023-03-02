@@ -225,6 +225,16 @@ body {
   width: 36px;
 }
 
+.img-anim {
+  animation: animate 5s ease-out infinite alternate;
+}
+
+@keyframes animate {
+  from {
+    transform: translate(20px, 20px);
+  }
+}
+
 .navbar {
   height: 56px;
   background-color: white;
@@ -232,8 +242,8 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
-  border: 1px solid #e7e3eb ;
-  justify-content:space-between;
+  border: 1px solid #e7e3eb;
+  justify-content: space-between;
 }
 
 .container-logo-menu {
@@ -260,7 +270,7 @@ body {
 }
 
 .btn-trade {
-  color: #7a6eaa ;
+  color: #7a6eaa;
   width: 71.5px;
   height: 48px;
   font-size: 16px;
@@ -286,11 +296,11 @@ body {
 }
 
 .dropdowns:hover .btn-trade {
-  background-color:  rgb(241, 232, 232); 
+  background-color: rgb(241, 232, 232);
 }
 
 .btn-earn {
-  color: #7a6eaa ;
+  color: #7a6eaa;
   width: 64.22px;
   height: 48px;
   font-size: 16px;
@@ -308,7 +318,7 @@ body {
   display: none;
   position: absolute;
   background-color: white;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
   width: 280px;
   height: fit-content;
@@ -331,11 +341,11 @@ body {
 }
 
 .dropdowns:hover .btn-earn {
-  background-color:  rgb(241, 232, 232); 
+  background-color: rgb(241, 232, 232);
 }
 
 .btn-win {
-  color: #7a6eaa ;
+  color: #7a6eaa;
   width: 59px;
   height: 48px;
   font-size: 16px;
@@ -345,11 +355,11 @@ body {
 }
 
 .dropdowns:hover .btn-win {
-  background-color:  rgb(241, 232, 232); 
+  background-color: rgb(241, 232, 232);
 }
 
 .btn-NFT {
-  color: #7a6eaa ;
+  color: #7a6eaa;
   width: 60.15px;
   height: 48px;
   font-size: 16px;
@@ -359,11 +369,11 @@ body {
 }
 
 .dropdowns:hover .btn-NFT {
-  background-color:  rgb(241, 232, 232); 
+  background-color: rgb(241, 232, 232);
 }
 
 .btn-3-points-menu {
-  color: #7a6eaa ;
+  color: #7a6eaa;
   width: 58px;
   height: 48px;
   font-size: 16px;
@@ -373,7 +383,7 @@ body {
 }
 
 .dropdowns:hover .btn-3-points-menu {
-  background-color:  rgb(241, 232, 232); 
+  background-color: rgb(241, 232, 232);
 }
 
 .three-points-menu {
@@ -467,26 +477,26 @@ body {
   font-size: 16px;
   color: #280D5F;
   border-radius: 10px;
-  box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2);
 }
 
-.img-change-crypto  {
+.img-change-crypto {
   width: 30px;
   height: 30px;
 }
 
 .img-down-arrow {
-  width:20px;
+  width: 20px;
   height: 15px;
 }
 
-.dropdown-crypto:hover .dropdown-content { 
+.dropdown-crypto:hover .dropdown-content {
   display: block;
   border-radius: 8px;
 }
 
-.dropdown-crypto:hover .change-crypto { 
-  background-color:  rgb(241, 232, 232); 
+.dropdown-crypto:hover .change-crypto {
+  background-color: rgb(241, 232, 232);
 }
 
 .select-network-text {
@@ -503,6 +513,10 @@ body {
 
 .btn-connect-wallet {
   padding: 0px 15px 0px 15px;
+}
+
+h1 {
+  color: blue;
 }
 
 /*# sourceMappingURL=main.css.map */
