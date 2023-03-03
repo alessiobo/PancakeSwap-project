@@ -1,18 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>PancakeSwap</title>
-  <link rel="stylesheet" href="./Css-global/main.css" />
-  <link rel="icon" type="image/x-icon" href="./Css-global/cake-token.png"
-</head>
-
-<body>
-  <header></header>
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PancakeSwap</title>
+    <link rel="stylesheet" href="./Css-global/main.css" />
+    <link rel="icon" type="image/x-icon" href="../Pancake/Css-global/cake-token.png"
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <div class="navbar-container-logo-menu">
+          <div class="navbar-logo-home">
+            <a href="#home"><img class="navbar-img-logo" src="../DesignSystem/images/Logo/color-black.svg" alt="logo"></a>
+          </div> 
+          <div class="navbar-menus">
+            <div class="navbar-dropdowns">
+              <button class="navbar-btn-trade">Trade</button>
+              <div class="navbar-dropdown-content">
+                <a href="swap">Swap</a>
+                <a href="limit">Limit</a>
+                <a href="liquidity">Liquidity</a>
+                <a href="perpetual">Perpetual</a>
+                <a href="bridge">Bridge</a>
+              </div>
+            </div>
+            <div class="navbar-dropdowns">
+              <button class="navbar-btn-earn">Earn</button>
+              <div class="navbar-dropdown-content">
+                <a href="farms">Farms</a>
+                <a href="pools">Pools</a>
+              </div>
+            </div>
+            <div class="navbar-dropdowns">
+              <button class="navbar-btn-win">Win</button>
+              <div class="navbar-dropdown-content">
+                <a href="trading-competition">Trading Competiotion</a>
+                <a href="prediction">Prediction (BETA)</a>
+                <a href="lottery">Lottery</a>
+                <a href="pottery">Pottery (BETA)</a>
+              </div>
+            </div>
+            <div class="navbar-dropdowns">
+              <button class="navbar-btn-NFT">NFT</button>
+              <div class="navbar-dropdown-content">
+                <a href="overview">Overview</a>
+                <a href="collections">Collections</a>
+                <a href="activity">Activity</a>
+              </div>
+            </div>
+            <div class="navbar-dropdowns">
+              <button class="navbar-btn-3-points-menu"><img class="navbar-three-points-menu" src="./header-navbar-images/three-dots-svgrepo-com.svg" alt="..."></button>
+              <div class="navbar-dropdown-content">
+                <a href="info">Info</a>
+                <a href="ifo">IFO</a>
+                <a href="voting">Voting</a>
+                <a href="leaderboard">Leaderboard</a>
+                <a href="blog">Blog</a>
+                <a href="docs">Docs</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="navbar-container-details-from-navbar">
+          <div class="bunny-navbar-price">
+            <a class="navbar-icon-bunny-navbar-price" href="">
+              <img class="navbar-img-bunny-logo" src="../DesignSystem/images/Logo/cake-token.png" alt="logo">
+              <span class="navbar-price">$4.011</span>
+            </a>
+          </div>
+          <div class="navbar-language">
+            <button class="navbar-btn-change-language"><img class="navbar-img-lng" src="../DesignSystem/images/Icons/others-icons/icons8-geografia-48 1.png" alt=""></button>
+          </div>
+          <div class="navbar-option">
+            <button class="navbar-btn-option"><img class="navbar-img-btn-option" src="./header-navbar-images/option-btn.svg" alt=""></button>
+          </div>
+          <div class="navbar-dropdown-crypto">
+            <button class="navbar-change-crypto">
+              <img class="navbar-img-change-crypto" src="../DesignSystem/images/Icons/standard-pankake-icons/one.png" alt="">
+              BNB Smart Chain
+              <img class="navbar-img-down-arrow" src="./header-navbar-images/down-arrow-svgrepo.svg" alt="">
+            </button>
+            <div class="navbar-dropdown-content">
+              <p class="navbar-select-network-text">Select a Network</p>
+                  <a style="color: blue; font-size: 18px;" href="">
+                      <img style="width: 25px; height: 20px; padding-right: 5px;"  class="navbar-img-change-crypto" src="../DesignSystem/images/Icons/standard-pankake-icons/one.png" alt="">
+                      BNB Smart Chain
+                    </a>
+                  <a href="">
+                    <img class="navbar-img" src="./header-navbar-images/ethereum.png" alt="">
+                    Ethereum
+                  </a>
+                  <a href="">
+                    <img class="navbar-img" src="./header-navbar-images/aptos-logo.png" alt="">
+                    Aptos
+                  </a>
+            </div>
+          </div>
+          <div class="navbar-btn-connect-wallet">
+            <button style="height: 32px;" class="btn">Connect Wallet</button>
+          </div>
+        </div>
+      </div>
+    </header>
   <main>
     <section id="hero-section" class="hero-section">
       <div id="hero-slideBar" class="hero-slideBar">
@@ -114,9 +205,6 @@
       </div>
     </section>
 
-
-    <section id="twin-section"></section>
-
       <section id="twin-section">
         <div class="section3">
           <div class="section3-wrapper">
@@ -134,7 +222,9 @@
                 <button class="btn">
                   <a href="https://pancakeswap.finance/swap">Trade Now</a>
                 </button>
-                <a href="#" class="link">Learn</a>
+                <a href="#" class="link">Learn
+                  <svg viewBox="0 0 24 24" width="20px" xmlns="http://www.w3.org/2000/svg" class="arrow"><path d="M18 19H6C5.45 19 5 18.55 5 18V6C5 5.45 5.45 5 6 5H11C11.55 5 12 4.55 12 4C12 3.45 11.55 3 11 3H5C3.89 3 3 3.9 3 5V19C3 20.1 3.9 21 5 21H19C20.1 21 21 20.1 21 19V13C21 12.45 20.55 12 20 12C19.45 12 19 12.45 19 13V18C19 18.55 18.55 19 18 19ZM14 4C14 4.55 14.45 5 15 5H17.59L8.46 14.13C8.07 14.52 8.07 15.15 8.46 15.54C8.85 15.93 9.48 15.93 9.87 15.54L19 6.41V9C19 9.55 19.45 10 20 10C20.55 10 21 9.55 21 9V4C21 3.45 20.55 3 20 3H15C14.45 3 14 3.45 14 4Z"><path d="M18 19H6C5.45 19 5 18.55 5 18V6C5 5.45 5.45 5 6 5H11C11.55 5 12 4.55 12 4C12 3.45 11.55 3 11 3H5C3.89 3 3 3.9 3 5V19C3 20.1 3.9 21 5 21H19C20.1 21 21 20.1 21 19V13C21 12.45 20.55 12 20 12C19.45 12 19 12.45 19 13V18C19 18.55 18.55 19 18 19ZM14 4C14 4.55 14.45 5 15 5H17.59L8.46 14.13C8.07 14.52 8.07 15.15 8.46 15.54C8.85 15.93 9.48 15.93 9.87 15.54L19 6.41V9C19 9.55 19.45 10 20 10C20.55 10 21 9.55 21 9V4C21 3.45 20.55 3 20 3H15C14.45 3 14 3.45 14 4Z"></path></svg>
+                </a>
               </div>
             </div>
             <div class="images-wrapper">
@@ -187,7 +277,8 @@
                 <button class="btn">
                   <a href="https://pancakeswap.finance/swap">Explore</a>
                 </button>
-                <a href="#" class="link">Learn</a>
+                <a href="#" class="link">Learn
+                <svg viewBox="0 0 24 24" width="20px" xmlns="http://www.w3.org/2000/svg" class="arrow"><path d="M18 19H6C5.45 19 5 18.55 5 18V6C5 5.45 5.45 5 6 5H11C11.55 5 12 4.55 12 4C12 3.45 11.55 3 11 3H5C3.89 3 3 3.9 3 5V19C3 20.1 3.9 21 5 21H19C20.1 21 21 20.1 21 19V13C21 12.45 20.55 12 20 12C19.45 12 19 12.45 19 13V18C19 18.55 18.55 19 18 19ZM14 4C14 4.55 14.45 5 15 5H17.59L8.46 14.13C8.07 14.52 8.07 15.15 8.46 15.54C8.85 15.93 9.48 15.93 9.87 15.54L19 6.41V9C19 9.55 19.45 10 20 10C20.55 10 21 9.55 21 9V4C21 3.45 20.55 3 20 3H15C14.45 3 14 3.45 14 4Z"><path d="M18 19H6C5.45 19 5 18.55 5 18V6C5 5.45 5.45 5 6 5H11C11.55 5 12 4.55 12 4C12 3.45 11.55 3 11 3H5C3.89 3 3 3.9 3 5V19C3 20.1 3.9 21 5 21H19C20.1 21 21 20.1 21 19V13C21 12.45 20.55 12 20 12C19.45 12 19 12.45 19 13V18C19 18.55 18.55 19 18 19ZM14 4C14 4.55 14.45 5 15 5H17.59L8.46 14.13C8.07 14.52 8.07 15.15 8.46 15.54C8.85 15.93 9.48 15.93 9.87 15.54L19 6.41V9C19 9.55 19.45 10 20 10C20.55 10 21 9.55 21 9V4C21 3.45 20.55 3 20 3H15C14.45 3 14 3.45 14 4Z"></path></svg></a>
               </div>
             </div>
             <div class="images-wrapper2">
@@ -218,35 +309,35 @@
               </div>
               <div class="data-container">
                 <div class="farms-data">
-                  <div>
+                  <div class="data-item1">
                     <h5 class="small-title">
                       <span class="secondary">WMX-BUSD LP</span>
                     </h5>
                     <p class="data-paragraph">130.320%</p>
                     <p class="data-initials">APR</p>
                   </div>
-                  <div>
+                  <div class="data-item2">
                     <h5 class="small-title">
                       <span class="secondary">KRS-BUSD LP</span>
                     </h5>
                     <p class="data-paragraph">122.320%</p>
                     <p class="data-initials">APR</p>
                   </div>
-                  <div>
+                  <div class="data-item3">
                     <h5 class="small-title">
                       <span class="secondary">MGP-BUSD LP</span>
                     </h5>
                     <p class="data-paragraph">116.840%</p>
                     <p class="data-initials">APR</p>
                   </div>
-                  <div>
+                  <div class="data-item4">
                     <h5 class="small-title">
                       <span class="secondary">ARV-BNB LP</span>
                     </h5>
                     <p class="data-paragraph">102.034%</p>
                     <p class="data-initials">APR</p>
                   </div>
-                  <div>
+                  <div class="data-item5">
                     <h5 class="small-title">
                       <span class="secondary">HOOP-BUSD LP</span>
                     </h5>
@@ -283,7 +374,7 @@
                   <h3>Predition</h3>
                   <h1>$1.1 billion</h1>
                   <h3>in BNB + cake won so far</h3>
-                  <h2>Predict the price trend of BNB or CAKE to win</h2>
+                  <h2>Predict the navbar-price trend of BNB or CAKE to win</h2>
 
                 </div>
                 <div class="button-orange-card">
