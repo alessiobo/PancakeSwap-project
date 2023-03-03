@@ -1,4 +1,4 @@
-@import url("/twin-section/twin-section.css");
+@import url("/PancakeSwap-project/twin-section/twin-section.css");
 @import url("../Components/HeroSection/css/hero-section.css");
 @import url("../card-section/icons-logs/card-section.css");
 @import url("/PancakeSwap-project/orange-section/orange-section.css");
@@ -12,9 +12,7 @@
 html {
   overflow-x: hidden;
 }
-body {
-  font-family: "Kanit", sans-serif;
-}
+
 
 .btn-thin {
   background-color: #1fc7d4;

@@ -8,13 +8,10 @@ body {
   font-family: "Kanit", sans-serif;
 }
 
-* {
-  font-family: Kanit, sans-serif;
-}
-
 .orange-section-container {
   max-width: 900px;
   max-height: 700px;
+  overflow: hidden;
 }
 
 #orange-section {
@@ -29,6 +26,7 @@ body {
   justify-content: center;
   align-items: center;
   padding: 40px;
+  overflow: hidden;
 }
 
 #section-wrapper {
