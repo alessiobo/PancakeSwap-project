@@ -7,26 +7,6 @@ for (var i = 0; i < myElement.childNodes.length; i++) {
 
 startNewCircle();
 
-intervallPlusClick(1);
-
-function intervallPlusClick(num) {
-  let count = num;
-  const intervallId = setInterval(() => {
-    if (count === 1) {
-      count++;
-      changeSecondBanner();
-    } else if (count === 2) {
-      count++;
-      changeThirdBanner();
-    } else if (count === 3) {
-      count = 1;
-      resetDOM();
-    }
-  }, 3000);
-
-  return intervallId;
-}
-
 //Resetta appunto il DOM da tutte le modifiche apportate (ad esempio quando cambiamo scheda nel banner)
 function resetDOM() {
   myElement.innerHTML = "";
@@ -135,16 +115,58 @@ function startNewCircle() {
   const btnSlider2 = document.getElementById("slider2");
   const btnSlider3 = document.getElementById("slider3");
 
-  changeBannerBackground(0);
   changeBannerBackground(1);
 
   btnSlider1.addEventListener("click", () => {
     resetDOM();
+    resetIntervall(1);
   });
   btnSlider2.addEventListener("click", () => {
     changeSecondBanner();
+    resetIntervall(2);
   });
   btnSlider3.addEventListener("click", () => {
     changeThirdBanner();
+    resetIntervall(3);
   });
 }
+
+//LOGICA: Intervallo con Click
+
+//variabile di controllo, se è null non c'è nessun intervallo attivo
+var intervallID = null;
+
+//inizia intervallo da (num) che gli abbiamo passato con il click, il banner1 è 1,...
+
+function startIntervall(num) {
+  if (!intervallID) {
+    let count = num;
+    intervallID = setInterval(() => {
+      if (count === 1) {
+        count++;
+        changeSecondBanner();
+      } else if (count === 2) {
+        count++;
+        changeThirdBanner();
+      } else if (count === 3) {
+        count = 1;
+        resetDOM();
+      }
+    }, 3000);
+  }
+}
+
+function stopIntervall() {
+  if (intervallID) {
+    clearInterval(intervallID);
+    intervallID = null;
+  }
+}
+
+function resetIntervall(num) {
+  stopIntervall();
+  startIntervall(num);
+}
+
+//Inizia l'intervallo appena caricato il DOM con parametro 1(primo banner)
+startIntervall(1);
