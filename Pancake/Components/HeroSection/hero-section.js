@@ -91,6 +91,8 @@ function changeBanner(num) {
     bunnyImg.classList.remove("hero-slideBar-img-bunny1");
     bunnyImg.classList.add("hero-slideBar-img-bunny3");
 
+    //forse qui
+
     changeBannerBackground(3);
 
     btnSlider1.style["background-color"] = "transparent";
@@ -152,7 +154,7 @@ function startIntervall(num) {
         count = 1;
         resetDOM();
       }
-    }, 3000);
+    }, 6000);
   }
 }
 
