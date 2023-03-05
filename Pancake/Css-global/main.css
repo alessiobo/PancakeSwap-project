@@ -1,7 +1,7 @@
-@import url("/PancakeSwap-project/twin-section/twin-section.css");
+@import url("../Components/twin-section/twin-section.css");
 @import url("../Components/HeroSection/css/hero-section.css");
 @import url("../card-section/icons-logs/card-section.css");
-@import url("/PancakeSwap-project/orange-section/orange-section.css");
+@import url("../Components/orange-section/orange-section.css");
 @import url("./header-navbar.css");
 
 * {
@@ -11,6 +11,9 @@
 }
 html {
   overflow-x: hidden;
+}
+body {
+  font-family: "Kanit", sans-serif;
 }
 
 
