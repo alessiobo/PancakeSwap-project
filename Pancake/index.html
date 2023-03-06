@@ -6,124 +6,220 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PancakeSwap</title>
     <link rel="stylesheet" href="./Css-global/main.css" />
+    <link rel="icon" type="image/x-icon" href="../Pancake/Css-global/cake-token.png" />
   </head>
   <body>
-    <header></header>
-
-    <main>
-      <section id="hero-section" class="hero-section">
-        <div id="hero-slideBar" class="hero-slideBar">
-          <div class="hero-slideBar-content">
-            <span>PancakeSwap x Trust Wallet</span>
-            <span>Trade and win $10,000 Prize Pool</span>
-            <div class="hero-slideBar-content-img"></div>
-            <div class="hero-slideBar-buttons">
-              <button class="btn">
-                <div>
-                  <span>Trade now using Trust Wallet</span>
-                  <span>
-                    <img
-                      class="hero-slideBar-buttons-icons"
-                      src="./Components/HeroSection/images/Icons/icon-arr-r.svg"
-                      alt="icon-arrow-right"
-                    />
-                  </span>
-                </div>
-              </button>
-              <button class="btn">
-                <div>
-                  <span>Download Trust Wallet</span>
-                  <span
-                    ><img
-                      src="./Components/HeroSection/images/Icons/icon-arrow-up.svg"
-                      alt="icon-arrow-up"
-                  /></span>
-                </div>
-              </button>
+    <header>
+      <div class="navbar">
+        <div class="navbar-container-logo-menu">
+          <div class="navbar-logo-home">
+            <a href="#home"><img class="navbar-img-logo" src="../DesignSystem/images/Logo/color-black.svg" alt="logo"></a>
+          </div> 
+          <div class="navbar-menus">
+            <div class="navbar-dropdowns">
+              <button class="navbar-btn-trade">Trade</button>
+              <div class="navbar-dropdown-content">
+                <a href="swap">Swap</a>
+                <a href="limit">Limit</a>
+                <a href="liquidity">Liquidity</a>
+                <a href="perpetual">Perpetual</a>
+                <a href="bridge">Bridge</a>
+              </div>
             </div>
-            <div class="hero-slideBar-btnSlider">
-              <span id="slider1"></span>
-              <span id="slider2"></span>
-              <span id="slider3"></span>
+            <div class="navbar-dropdowns">
+              <button class="navbar-btn-earn">Earn</button>
+              <div class="navbar-dropdown-content">
+                <a href="farms">Farms</a>
+                <a href="pools">Pools</a>
+              </div>
             </div>
-            <div class="hero-slideBar-img">
-              <img
-                class="hero-slideBar-img-bunny1"
-                src="./Components/HeroSection/images/hero-slidebar-bunny1.webp"
-                alt="hero-slidebar"
-              />
+            <div class="navbar-dropdowns">
+              <button class="navbar-btn-win">Win</button>
+              <div class="navbar-dropdown-content">
+                <a href="trading-competition">Trading Competiotion</a>
+                <a href="prediction">Prediction (BETA)</a>
+                <a href="lottery">Lottery</a>
+                <a href="pottery">Pottery (BETA)</a>
+              </div>
+            </div>
+            <div class="navbar-dropdowns">
+              <button class="navbar-btn-NFT">NFT</button>
+              <div class="navbar-dropdown-content">
+                <a href="overview">Overview</a>
+                <a href="collections">Collections</a>
+                <a href="activity">Activity</a>
+              </div>
+            </div>
+            <div class="navbar-dropdowns">
+              <button class="navbar-btn-3-points-menu"><img class="navbar-three-points-menu" src="./header-navbar-images/three-dots-svgrepo-com.svg" alt="..."></button>
+              <div class="navbar-dropdown-content">
+                <a href="info">Info</a>
+                <a href="ifo">IFO</a>
+                <a href="voting">Voting</a>
+                <a href="leaderboard">Leaderboard</a>
+                <a href="blog">Blog</a>
+                <a href="docs">Docs</a>
+              </div>
             </div>
           </div>
         </div>
-
-        <div class="hero-homepage">
-          <div class="hero-homepage-text">
-            <h2 class="hero-homepage-text-title">
-              The moon is made of pancakes.
-            </h2>
-            <p class="hero-homepage-text-parag">
-              Trade, earn, and win crypto on the most popular decentralized
-              platform in the galaxy.
-            </p>
-            <div>
-              <button class="btn">Connect Wallet</button>
-              <button class="btn-thin">Trade Now</button>
+        <div class="navbar-container-details-from-navbar">
+          <div class="bunny-navbar-price">
+            <a class="navbar-icon-bunny-navbar-price" href="">
+              <img class="navbar-img-bunny-logo" src="../DesignSystem/images/Logo/cake-token.png" alt="logo">
+              <span class="navbar-price">$4.011</span>
+            </a>
+          </div>
+          <div class="navbar-language">
+            <button class="navbar-btn-change-language"><img class="navbar-img-lng" src="../DesignSystem/images/Icons/others-icons/icons8-geografia-48 1.png" alt=""></button>
+          </div>
+          <div class="navbar-option">
+            <button class="navbar-btn-option"><img class="navbar-img-btn-option" src="./header-navbar-images/option-btn.svg" alt=""></button>
+          </div>
+          <div class="navbar-dropdown-crypto">
+            <button class="navbar-change-crypto">
+              <img class="navbar-img-change-crypto" src="../DesignSystem/images/Icons/standard-pankake-icons/one.png" alt="">
+              BNB Smart Chain
+              <img class="navbar-img-down-arrow" src="./header-navbar-images/down-arrow-svgrepo.svg" alt="">
+            </button>
+            <div class="navbar-dropdown-content">
+              <p class="navbar-select-network-text">Select a Network</p>
+                  <a style="color: blue; font-size: 18px;" href="">
+                      <img style="width: 25px; height: 20px; padding-right: 5px;"  class="navbar-img-change-crypto" src="../DesignSystem/images/Icons/standard-pankake-icons/one.png" alt="">
+                      BNB Smart Chain
+                    </a>
+                  <a href="">
+                    <img class="navbar-img" src="./header-navbar-images/ethereum.png" alt="">
+                    Ethereum
+                  </a>
+                  <a href="">
+                    <img class="navbar-img" src="./header-navbar-images/aptos-logo.png" alt="">
+                    Aptos
+                  </a>
             </div>
           </div>
+          <div class="navbar-btn-connect-wallet">
+            <button style="height: 32px;" class="btn">Connect Wallet</button>
+          </div>
+        </div>
+      </div>
+    </header>
+  <main>
+    <section id="hero-section" class="hero-section">
+      <div id="hero-slideBar" class="hero-slideBar">
+        <div class="hero-slideBar-content">
+          <span>PancakeSwap x Trust Wallet</span>
+          <span>Trade and win $10,000 Prize Pool</span>
+          <div class="hero-slideBar-content-img"></div>
+          <div class="hero-slideBar-buttons">
+            <button class="btn">
+              <div>
+                <span>Trade now using Trust Wallet</span>
+                <span>
+                  <img class="hero-slideBar-buttons-icons" src="./Components/HeroSection/images/Icons/icon-arr-r.svg"
+                    alt="icon-arrow-right" />
+                </span>
+              </div>
+            </button>
+            <button class="btn">
+              <div>
+                <span>Download Trust Wallet</span>
+                <span><img src="./Components/HeroSection/images/Icons/icon-arrow-up.svg" alt="icon-arrow-up" /></span>
+              </div>
+            </button>
+          </div>
+          <div class="hero-slideBar-btnSlider">
+            <span id="slider1"></span>
+            <span id="slider2"></span>
+            <span id="slider3"></span>
+          </div>
+          <div class="hero-slideBar-img">
+            <img class="hero-slideBar-img-bunny1" src="./Components/HeroSection/images/hero-slidebar-bunny1.webp"
+              alt="hero-slidebar" />
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-homepage">
+        <div class="hero-homepage-text">
+          <h2 class="hero-homepage-text-title">
+            The moon is made of pancakes.
+          </h2>
+          <p class="hero-homepage-text-parag">
+            Trade, earn, and win crypto on the most popular decentralized
+            platform in the galaxy.
+          </p>
           <div>
-            <img
-              class="img-anim astronaut-bunny-img"
-              src="./Components/HeroSection/images/astronaut-bunny.webp"
-              alt=""
-            />
+            <button class="btn">Connect Wallet</button>
+            <button class="btn-thin">Trade Now</button>
           </div>
         </div>
-        <div class="hero-bg-wave">
-          <img src="./Components/HeroSection/images/wave-bg.svg" alt="" />
+        <div>
+          <img class="img-anim astronaut-bunny-img" src="./Components/HeroSection/images/astronaut-bunny.webp" alt="" />
         </div>
-        <!--  -->
-      </section>
+      </div>
+      <div class="hero-bg-wave">
+        <img src="./Components/HeroSection/images/wave-bg.svg" alt="" />
+      </div>
+      <!--  -->
+    </section>
 
-      <section id="card-section">
-        <img src="./card-section/icons-logs/bunny-mono.png" alt="" class="bunny-viola" />
-        <h2 class="card-title-h2">
-          Used by millions.
-          <br />
-          Trusted with billions.
-        </h2>
-        <p class="card-mini-p">
-          PancakeSwap has the most users of any decentralized platform, ever.
-          <br />
-          And those users are now entrusting the platform with over $3.3 billion
-          in funds.
-        </p>
+    <section id="card-section" class="card-section">
+      <img
+        src="./card-section/icons-logs/bunny-mono.png"
+        alt=""
+        class="bunny-viola"
+      />
+      <h2 class="card-title-h2">
+        Used by millions.
         <br />
-        <b class="bold-text">Will you join them?</b>
-        <div class="card-container">
-          <div class="card-1">
-            <img src="./card-section/icons-logs/users.png" alt="logo" class="logo-1" />
-            <h2 class="first-h2">1.6 million</h2>
-            <br />
-            <h2 id="h2-card1">users</h2>
-            <br />
-            <span class="span-cards">in the last 30 days</span>
-          </div>
-          <div class="card-2">
-            <img src="./card-section/icons-logs/frecce.png" alt="logo" class="logo-2" />
-            <h2 class="first-h2">22 million</h2>
-            <br />
-            <h2 id="h2-card2">trades</h2>
-            <span class="span-cards">made in the last 30 days</span>
-          </div>
-          <div class="card-3">
-            <img src="./card-section/icons-logs/grafico.png" alt="logo" class="logo-3" />
-            <h2 class="first-h2">$3.3 billion</h2>
-            <br />
-            <h2 id="h2-card3">staked</h2>
-            <span class="span-cards">Total Value Locked</span>
-          </div>
+        Trusted with billions.
+      </h2>
+      <p class="card-mini-p">
+        PancakeSwap has the most users of any decentralized platform, ever.
+        <br />
+        And those users are now entrusting the platform with over $3.3 billion
+        in funds.
+      </p>
+      <br />
+      <b class="bold-text">Will you join them?</b>
+      <div class="card-container">
+        <div class="card-1">
+          <img
+            src="./card-section/icons-logs/users.png"
+            alt="logo"
+            class="logo-1"
+          />
+          <h2 class="first-h2">1.6 million</h2>
+          <br />
+          <h2 class="h2-card1">users</h2>
+          <br />
+          <span class="span-cards">in the last 30 days</span>
         </div>
-      </section>
+        <div class="card-2">
+          <img
+            src="./card-section/icons-logs/frecce.png"
+            alt="logo"
+            class="logo-2"
+          />
+          <h2 class="first-h2">22 million</h2>
+          <br />
+          <h2 class="h2-card2">trades</h2>
+          <span class="span-cards">made in the last 30 days</span>
+        </div>
+        <div class="card-3">
+          <img
+            src="./card-section/icons-logs/grafico.png"
+            alt="logo"
+            class="logo-3"
+          />
+          <h2 class="first-h2">$3.3 billion</h2>
+          <br />
+          <h2 class="h2-card3">staked</h2>
+          <span class="span-cards">Total Value Locked</span>
+        </div>
+      </div>
+    </section>
 
       <section id="twin-section">
         <div class="section3">
@@ -142,26 +238,28 @@
                 <button class="btn">
                   <a href="https://pancakeswap.finance/swap">Trade Now</a>
                 </button>
-                <a href="#" class="link">Learn</a>
+                <a href="#" class="link">Learn
+                  <svg viewBox="0 0 24 24" width="20px" xmlns="http://www.w3.org/2000/svg" class="arrow"><path d="M18 19H6C5.45 19 5 18.55 5 18V6C5 5.45 5.45 5 6 5H11C11.55 5 12 4.55 12 4C12 3.45 11.55 3 11 3H5C3.89 3 3 3.9 3 5V19C3 20.1 3.9 21 5 21H19C20.1 21 21 20.1 21 19V13C21 12.45 20.55 12 20 12C19.45 12 19 12.45 19 13V18C19 18.55 18.55 19 18 19ZM14 4C14 4.55 14.45 5 15 5H17.59L8.46 14.13C8.07 14.52 8.07 15.15 8.46 15.54C8.85 15.93 9.48 15.93 9.87 15.54L19 6.41V9C19 9.55 19.45 10 20 10C20.55 10 21 9.55 21 9V4C21 3.45 20.55 3 20 3H15C14.45 3 14 3.45 14 4Z"><path d="M18 19H6C5.45 19 5 18.55 5 18V6C5 5.45 5.45 5 6 5H11C11.55 5 12 4.55 12 4C12 3.45 11.55 3 11 3H5C3.89 3 3 3.9 3 5V19C3 20.1 3.9 21 5 21H19C20.1 21 21 20.1 21 19V13C21 12.45 20.55 12 20 12C19.45 12 19 12.45 19 13V18C19 18.55 18.55 19 18 19ZM14 4C14 4.55 14.45 5 15 5H17.59L8.46 14.13C8.07 14.52 8.07 15.15 8.46 15.54C8.85 15.93 9.48 15.93 9.87 15.54L19 6.41V9C19 9.55 19.45 10 20 10C20.55 10 21 9.55 21 9V4C21 3.45 20.55 3 20 3H15C14.45 3 14 3.45 14 4Z"></path></svg>
+                </a>
               </div>
             </div>
             <div class="images-wrapper">
               <img
-                src="/twin-section/imgs/BNB@2x.png"
+                src="../Pancake/Components/twin-section/imgs/BNB@2x.png"
                 class="img-anim"
                 style="animation-delay: -11s"
                 alt="bnb"
               />
               <img
-                src="/twin-section/imgs/BTC@2x.png"
+                src="../Pancake/Components/twin-section/imgs/BTC@2x.png"
                 class="img-anim"
                 style="animation-delay: -10s"
                 alt="btc"
               />
               <img
-                src="/twin-section/imgs/CAKE@2x.png"
+                src="../Pancake/Components//twin-section/imgs/CAKE@2x.png"
                 class="img-anim"
-                style="animation-delay: -9"
+                style="animation-delay: -9s"
                 alt="cake"
               />
             </div>
@@ -195,29 +293,31 @@
                 <button class="btn">
                   <a href="https://pancakeswap.finance/swap">Explore</a>
                 </button>
-                <a href="#" class="link">Learn</a>
+                <a href="#" class="link">Learn
+                <svg viewBox="0 0 24 24" width="20px" xmlns="http://www.w3.org/2000/svg" class="arrow"><path d="M18 19H6C5.45 19 5 18.55 5 18V6C5 5.45 5.45 5 6 5H11C11.55 5 12 4.55 12 4C12 3.45 11.55 3 11 3H5C3.89 3 3 3.9 3 5V19C3 20.1 3.9 21 5 21H19C20.1 21 21 20.1 21 19V13C21 12.45 20.55 12 20 12C19.45 12 19 12.45 19 13V18C19 18.55 18.55 19 18 19ZM14 4C14 4.55 14.45 5 15 5H17.59L8.46 14.13C8.07 14.52 8.07 15.15 8.46 15.54C8.85 15.93 9.48 15.93 9.87 15.54L19 6.41V9C19 9.55 19.45 10 20 10C20.55 10 21 9.55 21 9V4C21 3.45 20.55 3 20 3H15C14.45 3 14 3.45 14 4Z"><path d="M18 19H6C5.45 19 5 18.55 5 18V6C5 5.45 5.45 5 6 5H11C11.55 5 12 4.55 12 4C12 3.45 11.55 3 11 3H5C3.89 3 3 3.9 3 5V19C3 20.1 3.9 21 5 21H19C20.1 21 21 20.1 21 19V13C21 12.45 20.55 12 20 12C19.45 12 19 12.45 19 13V18C19 18.55 18.55 19 18 19ZM14 4C14 4.55 14.45 5 15 5H17.59L8.46 14.13C8.07 14.52 8.07 15.15 8.46 15.54C8.85 15.93 9.48 15.93 9.87 15.54L19 6.41V9C19 9.55 19.45 10 20 10C20.55 10 21 9.55 21 9V4C21 3.45 20.55 3 20 3H15C14.45 3 14 3.45 14 4Z"></path></svg></a>
               </div>
             </div>
             <div class="images-wrapper2">
               <img
-                src="/twin-section/imgs/pie@2x.png"
+                src="../Pancake/Components//twin-section/imgs/pie@2x.png"
                 class="img-anim"
                 style="animation-delay: -11s"
                 alt="pie"
               />
               <img
-                src="/twin-section/imgs/stonks@2x.png"
+                src="../Pancake/Components/twin-section/imgs/stonks@2x.png"
                 class="img-anim"
                 style="animation-delay: -10s"
                 alt="stonks"
               />
               <img
-                src="/twin-section/imgs/folder@2x.png"
+                src="../Pancake/Components/twin-section/imgs/folder@2x.png"
                 class="img-anim"
                 style="animation-delay: -9s"
                 alt="fldr"
               />
             </div>
+          </div>
             <div class="tab-container">
               <div class="title-container">
                 <h4 class="tab-title">
@@ -226,35 +326,35 @@
               </div>
               <div class="data-container">
                 <div class="farms-data">
-                  <div>
+                  <div class="data-item1">
                     <h5 class="small-title">
                       <span class="secondary">WMX-BUSD LP</span>
                     </h5>
                     <p class="data-paragraph">130.320%</p>
                     <p class="data-initials">APR</p>
                   </div>
-                  <div>
+                  <div class="data-item2">
                     <h5 class="small-title">
                       <span class="secondary">KRS-BUSD LP</span>
                     </h5>
                     <p class="data-paragraph">122.320%</p>
                     <p class="data-initials">APR</p>
                   </div>
-                  <div>
+                  <div class="data-item3">
                     <h5 class="small-title">
                       <span class="secondary">MGP-BUSD LP</span>
                     </h5>
                     <p class="data-paragraph">116.840%</p>
                     <p class="data-initials">APR</p>
                   </div>
-                  <div>
+                  <div class="data-item4">
                     <h5 class="small-title">
                       <span class="secondary">ARV-BNB LP</span>
                     </h5>
                     <p class="data-paragraph">102.034%</p>
                     <p class="data-initials">APR</p>
                   </div>
-                  <div>
+                  <div class="data-item5">
                     <h5 class="small-title">
                       <span class="secondary">HOOP-BUSD LP</span>
                     </h5>
@@ -264,33 +364,33 @@
                 </div>
               </div>
             </div>
-          </div>
         </div>
       </section>
 
-      <section id="orange-section"></section>
 
-      <section id="buyCake-section">
-        <div class="buyCake-wrapper">
-          <div class="buyCake-top">
-            <div class="buyCake-textBox">
-              <h3 class="buyCake-smallTitle">
-                <span class="buyCake-divColor">CAKE</span>
-                <div class="buyCake-div1">makes our world</div>
-                <div class="buyCake-mini">go round</div>
-              </h3>
-              <p class="buyCake-paragraphTop">
-                CAKE token is at the heart of the PancakeSwap ecosystem. Buy it,
-                win it, farm it, spend it, stake it... heck, you can even vote
-                with it!
-              </p>
-              <div class="buyCake-link">
-                <a href="" class="buyCake-link"
-                  ><button class="btn">Buy CAKE</button>
-                </a>
-                <a href="" class="buyCake-link buyCake-aColor">Learn</a>
+    <section class="orange-section">
+      <div class="orange-section-container">
+        <div class="section-wrapper">
+          <div class="top-text">
+            <h2><span>Win</span> millions in prizes</h2>
+            <div>
+              <h3>Provably fair, on-chain games.</h3>
+
+              <div>
+                <h3 style="margin-bottom: 40px;">win big with PancakeSwap.</h3>
               </div>
             </div>
+            </div>
+            <div class="card-wrapper">
+              <div class="left-card">
+                <div class="icon-wrapper">
+                  <img src="../Pancake/Components/orange-section/icons/svgexport-30.svg" alt="icon" />
+                </div>
+                <div class="text-card-wrapper">
+                  <h4>Predition</h4>
+                  <h2>$1.1 billion</h2>
+                  <h4>in BNB + cake won so far</h4>
+                  <h3>Predict the navbar-price trend of BNB or CAKE to win</h3>
 
             <div class="buyCake-animationBox Buycake-and-pancakes">
               <img
@@ -313,35 +413,99 @@
                 class="img-anim buyAnimation Buypancake"
                 style="animation-delay: -9s"
               />
-            </div>
-          </div>
-          <div class="buyCake-data">
-            <div class="buyCake-dataCont1">
-              <p class="buyCake-paragraph">Circulating Supply</p>
-              <p class="buyCake-big-data">145,764,388</p>
-            </div>
-            <div class="buyCake-dataCont2">
-              <p class="buyCake-paragraph">Market cap</p>
-              <p class="buyCake-big-data">$570 million</p>
-            </div>
-            <div class="buyCake-dataCont3">
-              <p class="buyCake-paragraph">Burned to date</p>
-              <p class="buyCake-big-data">737,187,243</p>
-            </div>
-            <div class="buyCake-dataCont4">
-              <p class="buyCake-paragraph">Burned to date</p>
-              <p class="buyCake-big-data">646,943,269</p>
-            </div>
-            <div class="buyCake-dataCont5">
-              <p class="buyCake-paragraph">Max Supply</p>
-              <p class="buyCake-big-data">750,000,000</p>
-            </div>
-            <div class="buyCake-dataCont6">
-              <p class="buyCake-paragraph">Current emissions</p>
-              <p class="buyCake-big-data">11.16/block</p>
+
+                </div>
+                <div class="button-orange-card">
+                  <button class="btn">Play</button>
+                </div>
+              </div>
+              <div class="right-card">
+                <div class="icon-wrapper">
+                  <img src="../Pancake/Components/orange-section/icons/svgexport-32.svg">
+                </div>
+                <div class="text-card-wrapper">
+                  <h4>Lottery</h4>
+                  <h2>$87,302</h2>
+                  <h4>in CAKE prizes this round</h4>
+                  <h3>Buy tickets with CAKE, win CAKE if your numbers match</h3>
+                </div>
+                <div class="button-orange-card">
+                  <button class="btn">Buy Tickets</button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
+        <div class="bottom-left-wrapper">
+          <img src="../Pancake/Components/orange-section/imgs/bottom-left@2x.webp" />
+
+          <img src="../Pancake/Components/orange-section/imgs/green@2x.webp" />
+
+          <img src="../Pancake/Components/orange-section/imgs/red@2x.webp" />
+
+          <img src="../Pancake/Components/orange-section/imgs/top-right@2x.webp" />
+        </div>
+        <div class="top-right-wrapper">
+          <img src="../Pancake/Components/orange-section/imgs/2.webp" />
+
+          <img src="../Pancake/Components/orange-section/imgs/4.webp" />
+
+          <img src="../Pancake/Components/orange-section/imgs/6@2x.webp" />
+
+          <img class="ball7" src="../Pancake/Components/orange-section/imgs/7@2x.webp" />
+
+          <img src="../Pancake/Components/orange-section/imgs/9@2x.webp" />
+
+
+        </div>
+    </section>
+
+    <section id="buyCake-section">
+      <div class="buyCake-wrapper">
+        <div class="buyCake-top">
+          <div class="buyCake-textBox">
+            <h3 class="buyCake-smallTitle">
+              <span class="buyCake-divColor">CAKE</span>
+              <div class="buyCake-div1">makes our world</div>
+              <div class="buyCake-mini">go round</div>
+            </h3>
+            <p class="buyCake-paragraphTop">
+              CAKE token is at the heart of the PancakeSwap ecosystem. Buy it,
+              win it, farm it, spend it, stake it... heck, you can even vote
+              with it!
+            </p>
+            <div class="buyCake-link">
+              <a href="" class="buyCake-link"><button class="btn">Buy CAKE</button>
+              </a>
+              <a href="" class="buyCake-link buyCake-aColor">Learn</a>
+            </div>
+          </div>
+
+          <div class="buyCake-animationBox Buycake-and-pancakes">
+            <img src="/buyCake-section/img-buyCake/top-right@2x.webp" class="img-anim buyAnimation Buypancake"
+              style="animation-delay: -10.5s" />
+            <img src="/buyCake-section/img-buyCake/bottom-right@2x.webp" class="img-anim buyAnimation Buypancake"
+              style="animation-delay: -11s" />
+            <img src="/buyCake-section/img-buyCake/coin@2x.webp" class="img-anim buyAnimation Buypancake"
+              style="animation-delay: -10s" />
+            <img src="/buyCake-section/img-buyCake/top-left@2x.webp" class="img-anim buyAnimation Buypancake"
+              style="animation-delay: -9s" />
+          </div>
+        </div>
+        <div class="buyCake-data">
+          <div class="buyCake-dataCont1">
+            <p class="buyCake-paragraph">Circulating Supply</p>
+            <p class="buyCake-big-data">145,764,388</p>
+          </div>
+          <div class="buyCake-dataCont2">
+            <p class="buyCake-paragraph">Market cap</p>
+            <p class="buyCake-big-data">$570 million</p>
+          </div>
+          <div class="buyCake-dataCont3">
+            <p class="buyCake-paragraph">Burned to date</p>
+            <p class="buyCake-big-data">737,187,243</p>
+          </div>
+
 
         <div class="buyCake-purpleSection">
           <div class="purple-container">
@@ -377,17 +541,46 @@
                 </a>
                 <button
                   style="
+
+          <div class="buyCake-purpleSection">
+            <div class="purple-container">
+              <div class="purple-animationBoxTop">
+                <img src="/buyCake-section/img-buyCake/top-left-1.webp" class="img-anim buyAnimation Buypancake"
+                  style="animation-delay: -11s" />
+                <img src="/buyCake-section/img-buyCake/top-left-2.webp" class="img-anim buyAnimation Buypancake"
+                  style="animation-delay: -10s" />
+                <img src="/buyCake-section/img-buyCake/top-left-3.webp" class="img-anim buyAnimation Buypancake"
+                  style="animation-delay: -9s" />
+              </div>
+              <div class="purple-texBox">
+                <h3 class="purple-h3">Start in seconds.</h3>
+                <p class="purple-p">
+                  Connect your crypto wallet to start using the app in seconds.
+                </p>
+                <p class="purple-p">No registration needed.</p>
+                <div class="purple-linkContainer">
+                  <a class="buyCake-link buyCake-aColor" style="position: relative; top: 7px; left: 125px"
+                    href="https://www.google.it/">Learn how to start
+                  </a>
+
                     position: relative;
                     top: 40px;
                     left: 99px;
                     width: 200px;
-                  "
-                  class="btn"
-                  type="submit"
-                >
-                  Connect Wallet
-                </button>
+                  " class="btn" type="submit">
+                    Connect Wallet
+                  </button>
+                </div>
               </div>
+              <div class="purple-animationBoxBottom">
+                <img src="/buyCake-section/img-buyCake/bottom-right-1 (1).webp" class="img-anim buyAnimation Buypancake"
+                  style="animation-delay: -11s" />
+                <img src="/buyCake-section/img-buyCake/bottom-right-2.webp" class="img-anim buyAnimation Buypancake"
+                  style="animation-delay: -10s" />
+                <img src="/buyCake-section/img-buyCake/bottom-right-3.webp" class="img-anim buyAnimation Buypancake"
+                  style="animation-delay: -9s" />
+              </div>
+
             </div>
             <div class="purple-animationBoxBottom">
               <img
@@ -407,11 +600,12 @@
               />
             </div>
           </div>
-        </div>
-      </section>
-    </main>
+    </section>
+  </main>
 
-    <footer></footer>
-    <script src="./Components/HeroSection/hero-section.js"></script>
-  </body>
+  <footer></footer>
+  <script src="./Components/HeroSection/hero-section.js"></script>
+</body>
+
 </html>
+
