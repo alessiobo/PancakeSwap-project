@@ -1,8 +1,10 @@
 @import url("../Components/twin-section/twin-section.css");
 @import url("../Components/HeroSection/css/hero-section.css");
 @import url("../card-section/icons-logs/card-section.css");
+@import url("../buyCake-section/buycake.css");
 @import url("../Components/orange-section/orange-section.css");
 @import url("./header-navbar.css");
+
 
 * {
   margin: 0;
