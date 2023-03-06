@@ -1,4 +1,4 @@
-#card-section {
+.card-section {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -8,18 +8,18 @@
   padding: 100px;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 100px));
 }
-#card-section .bunny-viola {
+.card-section .bunny-viola {
   width: 48px;
   filter: invert(87%) sepia(188%) saturate(3322%) hue-rotate(256deg) brightness(103%) contrast(59%);
 }
-#card-section .card-title-h2 {
+.card-section .card-title-h2 {
   font-size: 40px;
   color: #280d5f;
   font-weight: 600;
   line-height: 1.1;
   text-align: center;
 }
-#card-section .card-mini-p {
+.card-section .card-mini-p {
   margin-top: 30px;
   color: #7a6eaa;
   font-weight: 400;
@@ -27,7 +27,7 @@
   text-align: center;
   font-size: 16px;
 }
-#card-section .bold-text {
+.card-section .bold-text {
   color: #7a6eaa;
   font-weight: 600;
   line-height: 1.5;
@@ -55,36 +55,36 @@
 .card-container .card-2 .first-h2,
 .card-container .card-3 .first-h2 {
   position: absolute;
-  bottom: 80px;
+  bottom: 100px;
   font-size: 40px;
   color: #280d5f;
   font-weight: 600;
   line-height: 1.1;
 }
-.card-container .card-1 #h2-card1,
-.card-container .card-1 #h2-card2,
-.card-container .card-1 #h2-card3,
-.card-container .card-2 #h2-card1,
-.card-container .card-2 #h2-card2,
-.card-container .card-2 #h2-card3,
-.card-container .card-3 #h2-card1,
-.card-container .card-3 #h2-card2,
-.card-container .card-3 #h2-card3 {
+.card-container .card-1 .h2-card1,
+.card-container .card-1 .h2-card2,
+.card-container .card-1 .h2-card3,
+.card-container .card-2 .h2-card1,
+.card-container .card-2 .h2-card2,
+.card-container .card-2 .h2-card3,
+.card-container .card-3 .h2-card1,
+.card-container .card-3 .h2-card2,
+.card-container .card-3 .h2-card3 {
   position: absolute;
-  bottom: 40px;
+  bottom: 60px;
   font-size: 40px;
   color: #7645d9;
   font-weight: 600;
   line-height: 1.1;
 }
-.card-container .card-1 #h2-card2,
-.card-container .card-2 #h2-card2,
-.card-container .card-3 #h2-card2 {
+.card-container .card-1 .h2-card2,
+.card-container .card-2 .h2-card2,
+.card-container .card-3 .h2-card2 {
   color: #007aff;
 }
-.card-container .card-1 #h2-card3,
-.card-container .card-2 #h2-card3,
-.card-container .card-3 #h2-card3 {
+.card-container .card-1 .h2-card3,
+.card-container .card-2 .h2-card3,
+.card-container .card-3 .h2-card3 {
   color: #ed4b9e;
 }
 .card-container .card-1 .span-cards,

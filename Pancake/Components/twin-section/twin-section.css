@@ -3,15 +3,15 @@
   justify-content: space-between;
   align-items: center;
   width: 100vw;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .images-wrapper {
   position: relative;
   height: 400px;
   margin: auto;
-  right: 80px;
+  right: 140px;
 }
 
 .images-wrapper img {
@@ -32,13 +32,13 @@
   max-width: 500px;
   text-align: center;
   position: relative;
-  left: 400px;
+  left: 500px;
 }
 
 .twin-section-title {
   font-size: 40px;
   font-weight: bold;
-  color: #1a1a1a;
+  color: #280d5f;
   margin-bottom: 20px;
   text-align: initial;
   position: relative;
@@ -48,7 +48,7 @@
 .twin-section2-title {
   font-size: 40px;
   font-weight: bold;
-  color: #1a1a1a;
+  color: #280d5f;
   margin-bottom: 20px;
   text-align: initial;
   position: relative;
@@ -60,7 +60,7 @@
 
 .paragraph {
   font-size: 18px;
-  color: #6c757d;
+  color: #7a6eaa;
   margin-bottom: 28px;
   text-align: initial;
   position: relative;
@@ -72,7 +72,7 @@
   justify-content: center;
   align-items: center;
   position: relative;
-  right: 140px;
+  right: 130px;
 }
 
 .btn-wrapper2 {
@@ -81,7 +81,7 @@
   justify-content: center;
   align-items: center;
   position: relative;
-  right: 174px;
+  right: 164px;
 }
 
 .link {
@@ -107,7 +107,6 @@
 
 .section4-wrapper {
   display: flex;
-  flex-wrap: wrap;
   padding-top: 10px;
   padding-bottom: 10px;
 }
@@ -142,12 +141,12 @@
   max-width: 500px;
   text-align: center;
   position: relative;
-  left: 750px;
+  left: 950px;
 }
 
 .paragraph2 {
   font-size: 18px;
-  color: #6c757d;
+  color: #7a6eaa;
   margin-bottom: 28px;
   text-align: initial;
   position: relative;
@@ -155,13 +154,12 @@
 
 .tab-container {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
   grid-template-rows: auto auto auto;
   justify-content: center;
   margin: 0 auto;
   grid-gap: 20px;
   margin-top: -10px;
-  margin-bottom: 40px;
+  padding-bottom: 50px;
 }
 .title-container {
   display: flex;
@@ -173,7 +171,6 @@
 .data-container {
   grid-column: 1 / -1;
   grid-row: 2 / -1;
-  grid-gap: 20px;
 }
 
 .farms-data {

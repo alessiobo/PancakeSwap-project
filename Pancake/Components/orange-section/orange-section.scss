@@ -12,6 +12,7 @@
 
 .orange-section-container {
     min-height: 600px;
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -42,6 +43,7 @@
     background-color: rgb(255, 255, 255, 0.6);
     backdrop-filter: blur(12px);
     padding: 40px;
+
     @media (min-width: 900px) {
         border-radius: 72px;
     }
