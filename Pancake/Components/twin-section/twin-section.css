@@ -96,13 +96,12 @@
   text-decoration: underline;
 }
 
-.section4-divider {
-  background-color: #e9eaeb;
-  fill: #fff;
+.svg-divider {
+  fill: white;
 }
 
 .section4 {
-  background-color: #e9eaeb;
+  background: linear-gradient(#f2ecf2,#e8f2f6);
 }
 
 .section4-wrapper {
@@ -159,13 +158,13 @@
   margin: 0 auto;
   grid-gap: 20px;
   margin-top: -10px;
-  padding-bottom: 50px;
+  padding-bottom: 90px;
 }
 .title-container {
   display: flex;
   position: relative;
   left: 20px;
-  margin-bottom: -50px;
+  margin-bottom: -10px;
 }
 
 .data-container {
@@ -189,7 +188,8 @@
 
 .small-title {
   color: #7645d9;
-  margin-bottom: 4px;
+  margin-bottom: 15px;
+  font-size: 12px;
 }
 
 .data-paragraph {
