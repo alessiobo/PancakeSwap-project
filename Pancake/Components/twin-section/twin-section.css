@@ -131,7 +131,7 @@
 .arrow {
   position: relative;
   top: 3px;
-  color: #1fc7d4;
+  filter: invert(75%) sepia(66%) saturate(1100%) hue-rotate(140deg) brightness(86%) contrast(93%) ;
 }
 .text-box2 {
   display: flex;
