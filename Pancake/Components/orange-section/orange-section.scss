@@ -12,10 +12,13 @@
 
 .orange-section-container {
     min-height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     min-width: 100%;
-
     @media (min-width: 900px) {
         max-height: 700px;
+        
     }
 }
 
@@ -39,8 +42,6 @@
     background-color: rgb(255, 255, 255, 0.6);
     backdrop-filter: blur(12px);
     padding: 40px;
-    box-sizing: border-box;
-
     @media (min-width: 900px) {
         border-radius: 72px;
     }
@@ -49,8 +50,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-
     .top-text {
+        max-width: 200px;
+        @media (min-width: 900px) {
+            max-width: fit-content;
+        }
         h2 {
             text-align: center;
             font-size: 40px;
@@ -58,7 +62,6 @@
             font-weight: 600;
             line-height: 1.1;
             margin-bottom: 24px;
-
             span {
                 color: var.$second-color;
             }
