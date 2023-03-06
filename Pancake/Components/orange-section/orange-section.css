@@ -19,6 +19,11 @@ body {
 
 .orange-section-container {
   min-height: 600px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   min-width: 100%;
 }
 @media (min-width: 900px) {
@@ -47,7 +52,8 @@ body {
   background-color: rgba(255, 255, 255, 0.6);
   backdrop-filter: blur(12px);
   padding: 40px;
-  box-sizing: border-box;
+
+
   border-radius: 34px;
   display: flex;
   flex-direction: column;
@@ -58,6 +64,16 @@ body {
     border-radius: 72px;
   }
 }
+
+.section-wrapper .top-text {
+  max-width: 200px;
+}
+@media (min-width: 900px) {
+  .section-wrapper .top-text {
+    max-width: fit-content;
+  }
+}
+
 .section-wrapper .top-text h2 {
   text-align: center;
   font-size: 40px;
