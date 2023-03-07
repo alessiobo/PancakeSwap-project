@@ -1,3 +1,4 @@
+@use "../../../Css-global/variables.scss" as var;
 //----------------------------------
 
 @mixin sm-370px {
@@ -42,7 +43,7 @@ $durations: (2, 5, 3);
 //  SLIDE BANNER  //
 //***************//
 .hero-section {
-  padding-top: 80px; //da togliere
+  padding-top: 80px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -87,7 +88,7 @@ $durations: (2, 5, 3);
 
         & > span,
         h2 {
-          color: #fff;
+          color: var.$white;
           z-index: 2;
         }
 
@@ -112,10 +113,6 @@ $durations: (2, 5, 3);
         }
         //
         .hero-slideBar-content-img {
-          // background-image: url("../images/hero-slidebar-bg1.webp");
-          // background-repeat: no-repeat;
-          // background-size: contain;
-
           position: absolute;
           height: 100%;
           width: 100%;
@@ -151,8 +148,8 @@ $durations: (2, 5, 3);
             }
           }
           button:last-child {
-            background-color: #fff;
-            color: #1fc7d4;
+            background-color: var.$white;
+            color: var.$prim-color;
 
             & > div {
               display: flex;
@@ -188,7 +185,7 @@ $durations: (2, 5, 3);
           }
 
           span:nth-child(1) {
-            background-color: #fff;
+            background-color: var.$white;
             border-radius: 4px 0 0 4px;
           }
         }
@@ -282,7 +279,7 @@ $durations: (2, 5, 3);
     .hero-homepage-text-title {
       font-size: 52px;
       font-weight: 800;
-      color: #7645d9;
+      color: var.$second-color;
       line-height: 1.1;
 
       @include md-768px() {
