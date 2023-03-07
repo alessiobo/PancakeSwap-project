@@ -1,27 +1,41 @@
 .section3-wrapper {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100vw;
   padding-top: 40px;
   padding-bottom: 40px;
+  justify-content: center;
+  padding-right: 400px;
+}
+
+.section4-wrapper {
+  display: flex;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  justify-content: center;
 }
 
 .images-wrapper {
-  position: relative;
   height: 400px;
-  margin: auto;
-  right: 140px;
+}
+
+.images-wrapper2 {
+  position: sticky;
+  height: 400px;
+  order: -1;
 }
 
 .images-wrapper img {
   width: 400px;
-  height: 400px;
-  height: auto;
-  margin-bottom: 20px;
+  position: absolute;
+}
+
+.images-wrapper2 img {
+  width: 400px;
   position: absolute;
   top: 0;
   left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
 }
 
 .text-box {
@@ -29,11 +43,16 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-width: 500px;
-  text-align: center;
-  position: relative;
-  left: 500px;
 }
+
+.text-box2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 430px;
+}
+
 
 .twin-section-title {
   font-size: 40px;
@@ -105,44 +124,13 @@
   background: linear-gradient(#f2ecf2, #e8f2f6);
 }
 
-.section4-wrapper {
-  display: flex;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
 
-.images-wrapper2 {
-  position: relative;
-  width: 400px;
-  height: 400px;
-  margin: auto;
-  right: 525px;
-}
-.images-wrapper2 img {
-  width: 400px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto;
-}
 
 .arrow {
   position: relative;
   top: 3px;
   filter: invert(75%) sepia(66%) saturate(1100%) hue-rotate(140deg)
     brightness(86%) contrast(93%);
-}
-.text-box2 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  max-width: 500px;
-  text-align: center;
-  position: relative;
-  left: 950px;
 }
 
 .paragraph2 {
@@ -151,6 +139,7 @@
   margin-bottom: 28px;
   text-align: initial;
   position: relative;
+  padding-right: 45px;
 }
 
 .tab-container {
