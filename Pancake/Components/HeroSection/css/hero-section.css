@@ -1,3 +1,13 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Kanit", sans-serif;
+}
+
 @keyframes animate-star {
   0% {
     opacity: 0.9;
@@ -47,7 +57,7 @@
 }
 .hero-section .hero-section-content .hero-slideBar .hero-slideBar-content > span,
 .hero-section .hero-section-content .hero-slideBar .hero-slideBar-content h2 {
-  color: #fff;
+  color: #ffffff;
   z-index: 2;
 }
 .hero-section .hero-section-content .hero-slideBar .hero-slideBar-content > span:first-of-type {
@@ -108,7 +118,7 @@
   width: 20px;
 }
 .hero-section .hero-section-content .hero-slideBar .hero-slideBar-content .hero-slideBar-buttons button:last-child {
-  background-color: #fff;
+  background-color: #ffffff;
   color: #1fc7d4;
 }
 .hero-section .hero-section-content .hero-slideBar .hero-slideBar-content .hero-slideBar-buttons button:last-child > div {
@@ -139,7 +149,7 @@
   width: 33%;
 }
 .hero-section .hero-section-content .hero-slideBar .hero-slideBar-content .hero-slideBar-btnSlider span:nth-child(1) {
-  background-color: #fff;
+  background-color: #ffffff;
   border-radius: 4px 0 0 4px;
 }
 .hero-section .hero-section-content .hero-slideBar .hero-slideBar-content .hero-slideBar-img {
