@@ -235,6 +235,24 @@ main section > div:nth-child(2) p {
   color: #fff;
 }
 
+.buttons-section .btn-cont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 50px 0;
+}
+.buttons-section .htu-code-cont > h4 {
+  margin: 20px 0;
+  color: #ff1919;
+}
+.buttons-section .htu-code {
+  background-color: #f5f3fd;
+  border: 2px solid #3300ff;
+  padding: 20px 30px;
+  border-radius: 25px;
+  color: #0062ff;
+}
 .buttons-section .buttons-presentation {
   display: flex;
   align-items: center;
