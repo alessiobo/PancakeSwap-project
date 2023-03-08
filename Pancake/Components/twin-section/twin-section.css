@@ -219,6 +219,13 @@
   padding: 20px;
 }
 
+.data-item2,
+.data-item3,
+.data-item4,
+.data-item5 {
+  border-left: 1px solid #d7caec;
+}
+
 .small-title {
   color: #7645d9;
   margin-bottom: 15px;
