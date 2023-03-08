@@ -199,7 +199,7 @@
 .farms-data {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  grid-gap: 60px;
+  grid-gap: minmax(60px, calc(5vw - 20px));
 }
 
 .syrup-data {
@@ -262,6 +262,13 @@
 
 .click-btn {
   fill: #7645d9;
+}
+
+
+@media (min-width: 850px) {
+  .farms-data {
+    grid-gap: 60px
+  }
 }
 
 @media (max-width: 850px) {
@@ -360,6 +367,8 @@
     flex-direction: column;
   }
 }
+
+
 
 @media screen and (max-width: 570px) {
   .tab-container {
