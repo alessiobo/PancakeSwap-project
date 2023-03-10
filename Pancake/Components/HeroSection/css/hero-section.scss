@@ -74,7 +74,7 @@ $durations: (2, 5, 3);
       background-repeat: no-repeat;
       background-size: cover;
 
-      height: 192px;
+      height: 194px;
       border-radius: 32px;
       position: relative;
       @include md-768px() {
@@ -125,6 +125,7 @@ $durations: (2, 5, 3);
           button {
             padding: 4px 8px;
             height: 48px;
+            color: #fff;
 
             & > div > span:first-child {
               font-size: 12px;
@@ -217,6 +218,17 @@ $durations: (2, 5, 3);
     }
   }
 }
+//DARK MODE
+.hero-section-dark {
+  background: radial-gradient(103.12%50%at 50%50%, #21193a 0%, #191326 100%);
+}
+.hero-icon-dark {
+  filter: invert(0%) sepia(100%) saturate(0%) hue-rotate(172deg) brightness(94%)
+    contrast(104%) !important;
+}
+.hero-homepage-text-parag-dark {
+  color: #fff;
+}
 
 .hero-slideBar-img-bunny2 {
   position: relative;
@@ -289,7 +301,7 @@ $durations: (2, 5, 3);
     .hero-homepage-text-parag {
       font-size: 19px;
       font-weight: 600;
-      line-height: 0.9;
+      line-height: 1.3;
     }
 
     .hero-homepage-buttons {
