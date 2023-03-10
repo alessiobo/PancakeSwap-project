@@ -15,6 +15,8 @@
 
   <body>
     <header>
+      <!-- <button id="switch-btn" class="btn">Dark</button> -->
+      <input type="checkbox" id="switch-btn" />
       <div class="navbar">
         <div class="navbar-container-logo-menu">
           <div class="navbar-logo-home">
@@ -171,7 +173,7 @@
                     <span>Trade now</span>
                     <span>
                       <img
-                        class="hero-slideBar-buttons-icons"
+                        class="hero-slideBar-buttons-icons hero-icon"
                         src="./Components/HeroSection/images/Icons/icon-arr-r.svg"
                         alt="icon-arrow-right"
                       />
@@ -183,6 +185,7 @@
                     <span>Download</span>
                     <span
                       ><img
+                        class="hero-icon"
                         src="./Components/HeroSection/images/Icons/icon-arrow-up.svg"
                         alt="icon-arrow-up"
                     /></span>
@@ -243,7 +246,11 @@
           </div>
         </div>
         <div class="hero-bg-wave">
-          <img src="./Components/HeroSection/images/wave-bg.svg" alt="" />
+          <img
+            id="hero-wave"
+            src="./Components/HeroSection/images/wave-bg.svg"
+            alt=""
+          />
         </div>
       </section>
       <section id="card-section" class="card-section">
@@ -728,6 +735,7 @@
     </main>
 
     <footer></footer>
+    <script src="./globalJS.js"></script>
     <script src="./Components/HeroSection/hero-section.js"></script>
     <script src="./Components/twin-section/twin-section.js"></script>
   </body>
