@@ -31,9 +31,26 @@ body {
 }
 
 .orange-section {
+  background: linear-gradient(#6fb6f1, #eaf2f6);
+}
+
+.orange-section-dark {
+  background: linear-gradient(#0b4576, #091115);
+}
+.orange-section-dark .section-wrapper {
+  background: rgba(8, 6, 11, 0.6);
+  border: 1px solid rgba(184, 173, 210, 0.337254902);
+}
+.orange-section-dark .section-wrapper .top-text h2 {
+  color: white;
+}
+.orange-section-dark .section-wrapper .top-text h3 {
+  color: #b8add2;
+}
+
+.orange-section, .orange-section-dark {
   position: relative;
   z-index: 1;
-  background: linear-gradient(#6fb6f1, #eaf2f6);
   justify-content: center;
   align-items: center;
   max-width: 100vw;
@@ -45,9 +62,12 @@ body {
 }
 
 .section-wrapper {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.section-wrapper {
   position: relative;
   z-index: 2;
-  background-color: rgba(255, 255, 255, 0.6);
   backdrop-filter: blur(12px);
   padding: 40px;
   border-radius: 34px;
@@ -97,7 +117,7 @@ body {
   margin-left: 118px;
 }
 .card-wrapper .left-card {
-  background: linear-gradient(180deg, #ffd800, #fdab32);
+  background: linear-gradient(180deg, #fdab32, #ffd800);
   margin-right: 24px;
   border-radius: 24px;
   margin-left: 24px;
@@ -122,6 +142,10 @@ body {
   .card-wrapper .left-card:hover {
     transition: all 1s ease-out;
     transform: translateY(-10px) rotate(-5deg);
+  }
+  .card-wrapper .left-card:not(:hover) {
+    transition: all 1s ease-out;
+    transform: translateY(0px) rotate(0deg);
   }
 }
 .card-wrapper .left-card img {
@@ -178,6 +202,10 @@ body {
     transition: all 1s ease-out;
     transform: translateY(-10px) rotate(5deg);
   }
+  .card-wrapper .right-card:not(:hover) {
+    transition: all 1s ease-out;
+    transform: translateY(0px) rotate(0deg);
+  }
 }
 .card-wrapper .right-card img {
   margin-left: 90%;
@@ -208,7 +236,7 @@ body {
   justify-content: center;
   align-items: center;
 }
-.card-wrapper .button-orange-card .btn {
+.card-wrapper .button-orange-card .btn, .card-wrapper .button-orange-card .btn-dark {
   width: 100%;
 }
 
@@ -279,4 +307,5 @@ body {
   left: 20px;
   animation: animate2 2s ease-in-out infinite alternate;
 }
+
 /*# sourceMappingURL=orange-section.css.map */
