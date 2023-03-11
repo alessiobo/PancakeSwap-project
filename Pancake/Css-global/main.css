@@ -3,6 +3,7 @@
 @import url("../card-section/icons-logs/card-section.css");
 @import url("/PancakeSwap-project/orange-section/orange-section.css");
 @import url("./header-navbar.css");
+@import url("../footer/footer.css");
 
 * {
   margin: 0;
