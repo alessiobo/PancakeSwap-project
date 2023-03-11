@@ -100,3 +100,40 @@
     }
   }
 }
+
+@media screen and (max-width: 900px) {
+  .card-section {
+    padding: 50px;
+    clip-path: none;
+  }
+
+  .card-container {
+    flex-direction: column;
+  }
+
+  .card-1,
+  .card-2,
+  .card-3 {
+    height: auto;
+    width: 100%;
+    margin: 15px 0;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  .first-h2,
+  .h2-card1,
+  .h2-card2,
+  .h2-card3,
+  .span-cards {
+    position: static;
+  }
+
+  .logo-1,
+  .logo-2,
+  .logo-3 {
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+}
