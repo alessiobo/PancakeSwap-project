@@ -141,5 +141,26 @@
     margin-top: 20px;
   }
 }
+.card-section-dark {
+  background-color: linear-gradient(139.73deg, #313d5c, #3d2a54);
+}
+
+.title-h2-dark {
+  color: #b8add2;
+}
+
+.mini-p-darl,
+.bold-text-dark,
+.span-cards-dark {
+  color: #b8add2;
+}
+
+.card-bg-dark {
+  background-color: #27262c;
+}
+
+.first-h2-dark {
+  color: #f4eeff;
+}
 
 /*# sourceMappingURL=card-section.css.map */
