@@ -39,9 +39,7 @@
   display: flex;
   flex-direction: row;
 }
-.card-container .card-1,
-.card-container .card-2,
-.card-container .card-3 {
+.card-container .card-all {
   height: 280px;
   width: 280px;
   background-color: #fff;
@@ -51,9 +49,7 @@
   position: relative;
   margin-bottom: 50px;
 }
-.card-container .card-1 .first-h2,
-.card-container .card-2 .first-h2,
-.card-container .card-3 .first-h2 {
+.card-container .card-all .first-h2 {
   position: absolute;
   bottom: 100px;
   font-size: 40px;
@@ -61,15 +57,9 @@
   font-weight: 600;
   line-height: 1.1;
 }
-.card-container .card-1 .h2-card1,
-.card-container .card-1 .h2-card2,
-.card-container .card-1 .h2-card3,
-.card-container .card-2 .h2-card1,
-.card-container .card-2 .h2-card2,
-.card-container .card-2 .h2-card3,
-.card-container .card-3 .h2-card1,
-.card-container .card-3 .h2-card2,
-.card-container .card-3 .h2-card3 {
+.card-container .card-all .h2-card1,
+.card-container .card-all .h2-card2,
+.card-container .card-all .h2-card3 {
   position: absolute;
   bottom: 60px;
   font-size: 40px;
@@ -77,33 +67,21 @@
   font-weight: 600;
   line-height: 1.1;
 }
-.card-container .card-1 .h2-card2,
-.card-container .card-2 .h2-card2,
-.card-container .card-3 .h2-card2 {
+.card-container .card-all .h2-card2 {
   color: #007aff;
 }
-.card-container .card-1 .h2-card3,
-.card-container .card-2 .h2-card3,
-.card-container .card-3 .h2-card3 {
+.card-container .card-all .h2-card3 {
   color: #ed4b9e;
 }
-.card-container .card-1 .span-cards,
-.card-container .card-2 .span-cards,
-.card-container .card-3 .span-cards {
+.card-container .card-all .span-cards {
   position: absolute;
   bottom: 15px;
   font-size: 16px;
   color: gray;
 }
-.card-container .card-1 .logo-1,
-.card-container .card-1 .logo-2,
-.card-container .card-1 .logo-3,
-.card-container .card-2 .logo-1,
-.card-container .card-2 .logo-2,
-.card-container .card-2 .logo-3,
-.card-container .card-3 .logo-1,
-.card-container .card-3 .logo-2,
-.card-container .card-3 .logo-3 {
+.card-container .card-all .logo-1,
+.card-container .card-all .logo-2,
+.card-container .card-all .logo-3 {
   position: absolute;
   right: 15px;
   width: 35px;
@@ -117,9 +95,7 @@
   .card-container {
     flex-direction: column;
   }
-  .card-1,
-  .card-2,
-  .card-3 {
+  .card-all {
     height: auto;
     width: 100%;
     margin: 15px 0;
@@ -144,22 +120,19 @@
 .card-section-dark {
   background-color: linear-gradient(139.73deg, #313d5c, #3d2a54);
 }
-
-.title-h2-dark {
+.card-section-dark .title-h2-dark {
+  color: #b8add2;
+}
+.card-section-dark .mini-p-darl,
+.card-section-dark .bold-text-dark,
+.card-section-dark .span-cards-dark {
   color: #b8add2;
 }
 
-.mini-p-darl,
-.bold-text-dark,
-.span-cards-dark {
-  color: #b8add2;
-}
-
-.card-bg-dark {
+.card-container-dark .card-bg-dark {
   background-color: #27262c;
 }
-
-.first-h2-dark {
+.card-container-dark .card-bg-dark .first-h2-dark {
   color: #f4eeff;
 }
 
