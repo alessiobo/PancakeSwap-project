@@ -145,7 +145,7 @@ body {
   }
   .card-wrapper .left-card:not(:hover) {
     transition: all 1s ease-out;
-    transform: translateY(0px) rotate(0deg);
+    transform: translateY(0px) rotate(-1.4deg);
   }
 }
 .card-wrapper .left-card img {
@@ -204,7 +204,7 @@ body {
   }
   .card-wrapper .right-card:not(:hover) {
     transition: all 1s ease-out;
-    transform: translateY(0px) rotate(0deg);
+    transform: translateY(0px) rotate(1.4deg);
   }
 }
 .card-wrapper .right-card img {

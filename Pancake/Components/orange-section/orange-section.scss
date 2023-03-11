@@ -124,7 +124,7 @@
             }
             &:not(:hover) {
                 transition: all 1s ease-out;
-                transform: translateY(0px) rotate(0deg);
+                transform: translateY(0px) rotate(-1.4deg);
             }
         }
 
@@ -195,7 +195,7 @@
             }
             &:not(:hover) {
                 transition: all 1s ease-out;
-                transform: translateY(0px) rotate(0deg);
+                transform: translateY(0px) rotate(1.4deg);
             }
         }
 
