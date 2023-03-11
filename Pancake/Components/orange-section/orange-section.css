@@ -48,7 +48,8 @@ body {
   color: #b8add2;
 }
 
-.orange-section, .orange-section-dark {
+.orange-section,
+.orange-section-dark {
   position: relative;
   z-index: 1;
   justify-content: center;
@@ -236,7 +237,12 @@ body {
   justify-content: center;
   align-items: center;
 }
-.card-wrapper .button-orange-card .btn, .card-wrapper .button-orange-card .btn-dark {
+.card-wrapper .button-orange-card a {
+  width: 100%;
+  text-decoration: none;
+}
+.card-wrapper .button-orange-card a .btn,
+.card-wrapper .button-orange-card a .btn-dark {
   width: 100%;
 }
 
