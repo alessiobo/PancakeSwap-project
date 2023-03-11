@@ -6,6 +6,10 @@
   justify-content: center;
 }
 
+.section3-wrapper-dark{
+  background: black !important;;
+}
+
 .images-wrapper {
   width: 400px;
   height: 400px;
@@ -45,6 +49,10 @@
   text-align: initial;
   position: relative;
   right: 8px;
+}
+
+.twin-section-title-dark {
+  color: white !important;
 }
 
 .secondary {
@@ -136,6 +144,10 @@
   right: 50px;
 }
 
+.twin-section2-title-dark {
+  color: white !important;
+}
+
 .btn-wrapper2 {
   display: flex;
   flex-direction: row;
@@ -149,8 +161,16 @@
   fill: white;
 }
 
+.svg-divider-dark {
+  fill: black !important;
+}
+
 .section4 {
   background: linear-gradient(#f2ecf2, #e8f2f6);
+}
+
+.section4-dark {
+  background: linear-gradient(166.77deg,#3b4155,#3a3045);
 }
 
 .arrow {
@@ -167,6 +187,10 @@
   text-align: initial;
   position: relative;
   padding-right: 45px;
+}
+
+.tab-title-dark {
+  color: white !important;
 }
 
 .tab-container {
@@ -239,6 +263,10 @@
   margin-bottom: 4px;
 }
 
+.data-paragraph-dark {
+  color: white;
+}
+
 .data-initials {
   font-size: 16px;
   font-weight: 400;
@@ -250,6 +278,7 @@
   position: relative;
   bottom: 3px;
   left: 10px;
+  background: bottom;
 }
 
 .click-data:hover {
@@ -262,6 +291,10 @@
 
 .click-btn {
   fill: #7645d9;
+}
+
+.click-btn-dark {
+  fill: #7a6eaa
 }
 
 
