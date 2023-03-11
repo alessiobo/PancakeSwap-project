@@ -7,25 +7,6 @@ for (var i = 0; i < myElement.childNodes.length; i++) {
 
 startNewCircle();
 
-intervall();
-
-function intervall() {
-  let count = 1;
-  setInterval(() => {
-    if (count === 1) {
-      count++;
-      changeSecondBanner();
-    } else if (count === 2) {
-      count++;
-      changeThirdBanner();
-    } else if (count === 3) {
-      count = 1;
-      resetDOM();
-    }
-
-    // console.log(count);
-  }, 3000);
-}
 //Resetta appunto il DOM da tutte le modifiche apportate (ad esempio quando cambiamo scheda nel banner)
 function resetDOM() {
   myElement.innerHTML = "";
@@ -38,20 +19,26 @@ function resetDOM() {
 }
 
 function changeBannerBackground(num) {
-  //Gestire errore su caricamento immagine di sfondo del primo banner
-  if (num === 0) {
-    const bgImg = document.querySelector(".hero-slideBar-content-img");
-
-    bgImg.style.background = `url("./Components/HeroSection/images/hero-slidebar-bg1.webp")`;
-    bgImg.style.backgroundRepeat = "no-repeat";
-    bgImg.style.backgroundSize = "contain";
-  }
-
   const bgImg = document.querySelector(".hero-slideBar");
 
-  bgImg.style.background = `url("./Components/HeroSection/images/bg-slider-${num}.png")`;
-  bgImg.style.backgroundRepeat = "no-repeat";
-  bgImg.style.backgroundSize = "cover";
+  if (num === 1) {
+    bgImg.style.background = `radial-gradient(
+    104.12% 231.19% at -4.12% -5.83%,
+    rgb(0, 87, 174) 0.52%,
+    rgb(102, 124, 198) 67.41%,
+    rgb(25, 229, 245) 100%)`;
+    return;
+  }
+  if (num === 2) {
+    bgImg.style.background =
+      "linear-gradient(rgb(0, 191, 165) 0%, rgb(0, 90, 90) 100%)";
+    return;
+  }
+  if (num === 3) {
+    bgImg.style.background =
+      "-webkit-linear-gradient(top, rgb(118, 69, 217) 0%, rgb(69, 42, 122) 100%)";
+    return;
+  }
 }
 
 function changeBanner(num) {
@@ -66,7 +53,6 @@ function changeBanner(num) {
   const secondBtn = document.querySelector(".hero-slideBar-buttons")
     .children[1];
   const bunnyImg = document.querySelector(".hero-slideBar-img").children[0];
-  const bgStars = document.querySelector(".hero-slideBar-content-img");
 
   upText.innerHTML = `<img style="width: 233px;" src="./Components/HeroSection/images/AptosXPancakeSwap.webp"/>`;
   if (num === 2) {
@@ -83,8 +69,6 @@ function changeBanner(num) {
 
     bunnyImg.classList.remove("hero-slideBar-img-bunny1");
     bunnyImg.classList.add("hero-slideBar-img-bunny2");
-
-    bgStars.classList.remove("hero-slideBar-content-img");
 
     changeBannerBackground(2);
 
@@ -104,10 +88,10 @@ function changeBanner(num) {
 
     bunnyImg.src = "./Components/HeroSection/images/hero-slidebar-bunny-3.webp";
 
-    bunnyImg.classList.remove("hero-slideBar-img-bunny2");
+    bunnyImg.classList.remove("hero-slideBar-img-bunny1");
     bunnyImg.classList.add("hero-slideBar-img-bunny3");
 
-    bgStars.classList.remove("hero-slideBar-content-img");
+    //forse qui
 
     changeBannerBackground(3);
 
@@ -133,16 +117,58 @@ function startNewCircle() {
   const btnSlider2 = document.getElementById("slider2");
   const btnSlider3 = document.getElementById("slider3");
 
-  changeBannerBackground(0);
   changeBannerBackground(1);
 
   btnSlider1.addEventListener("click", () => {
     resetDOM();
+    resetIntervall(1);
   });
   btnSlider2.addEventListener("click", () => {
     changeSecondBanner();
+    resetIntervall(2);
   });
   btnSlider3.addEventListener("click", () => {
     changeThirdBanner();
+    resetIntervall(3);
   });
 }
+
+//LOGICA: Intervallo con Click
+
+//variabile di controllo, se è null non c'è nessun intervallo attivo
+var intervallID = null;
+
+//inizia intervallo da (num) che gli abbiamo passato con il click, il banner1 è 1,...
+
+function startIntervall(num) {
+  if (!intervallID) {
+    let count = num;
+    intervallID = setInterval(() => {
+      if (count === 1) {
+        count++;
+        changeSecondBanner();
+      } else if (count === 2) {
+        count++;
+        changeThirdBanner();
+      } else if (count === 3) {
+        count = 1;
+        resetDOM();
+      }
+    }, 6000);
+  }
+}
+
+function stopIntervall() {
+  if (intervallID) {
+    clearInterval(intervallID);
+    intervallID = null;
+  }
+}
+
+function resetIntervall(num) {
+  stopIntervall();
+  startIntervall(num);
+}
+
+//Inizia l'intervallo appena caricato il DOM con parametro 1(primo banner)
+startIntervall(1);
