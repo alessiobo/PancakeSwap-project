@@ -10,7 +10,8 @@
 }
 .card-section .bunny-viola {
   width: 48px;
-  filter: invert(87%) sepia(188%) saturate(3322%) hue-rotate(256deg) brightness(103%) contrast(59%);
+  filter: invert(87%) sepia(188%) saturate(3322%) hue-rotate(256deg)
+    brightness(103%) contrast(59%);
 }
 .card-section .card-title-h2 {
   font-size: 40px;
@@ -122,6 +123,33 @@
     position: static;
   }
   .card-logo {
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .card-section {
+    padding: 50px;
+    clip-path: none;
+  }
+  .card-container {
+    flex-direction: column;
+  }
+  .card-section-card {
+    height: auto;
+    width: 100%;
+    margin: 15px 0;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  .first-h2,
+  .card-section-h2,
+  .span-cards {
+    position: static;
+  }
+  .card-section-logo {
     display: block;
     margin: 0 auto;
     margin-top: 20px;
