@@ -79,9 +79,7 @@
       color: #f4eeff;
     }
 
-    .h2-card1,
-    .h2-card2,
-    .h2-card3 {
+    .card-section-h2 {
       position: absolute;
       bottom: 60px;
       font-size: 40px;
@@ -105,7 +103,7 @@
       color: gray;
     }
 
-    .logo-all {
+    .card-logo {
       position: absolute;
       right: 15px;
       width: 35px;
@@ -135,16 +133,12 @@
   }
 
   .first-h2,
-  .h2-card1,
-  .h2-card2,
-  .h2-card3,
+  .card-section-h2,
   .span-cards {
     position: static;
   }
 
-  .logo-1,
-  .logo-2,
-  .logo-3 {
+  .card-logo {
     display: block;
     margin: 0 auto;
     margin-top: 20px;

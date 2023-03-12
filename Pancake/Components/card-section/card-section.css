@@ -72,9 +72,7 @@
 .card-container .card-all .first-h2-dark {
   color: #f4eeff;
 }
-.card-container .card-all .h2-card1,
-.card-container .card-all .h2-card2,
-.card-container .card-all .h2-card3 {
+.card-container .card-all .card-section-h2 {
   position: absolute;
   bottom: 60px;
   font-size: 40px;
@@ -94,7 +92,7 @@
   font-size: 16px;
   color: gray;
 }
-.card-container .card-all .logo-all {
+.card-container .card-all .card-logo {
   position: absolute;
   right: 15px;
   width: 35px;
@@ -119,15 +117,11 @@
     text-align: center;
   }
   .first-h2,
-  .h2-card1,
-  .h2-card2,
-  .h2-card3,
+  .card-section-h2,
   .span-cards {
     position: static;
   }
-  .logo-1,
-  .logo-2,
-  .logo-3 {
+  .card-logo {
     display: block;
     margin: 0 auto;
     margin-top: 20px;
