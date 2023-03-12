@@ -12,8 +12,8 @@ inputChangeMode.addEventListener("change", () => {
   const herop = document.querySelector(".hero-homepage-text-parag");
   const heroWave = document.getElementById("hero-wave");
   //ORANGE_SECTION_DARK
-  const OrangeSection = document.querySelector(".orange-section")
-  const OrangeSectionDark = document.querySelector(".orange-section-dark")
+  const OrangeSection = document.querySelector(".orange-section");
+  const OrangeSectionDark = document.querySelector(".orange-section-dark");
 
   //CARD_SECTION_DARK-----------------------------------
 
@@ -30,6 +30,15 @@ inputChangeMode.addEventListener("change", () => {
   const twinclick = document.querySelector(".click-btn");
   const twindatap = document.querySelectorAll(".data-paragraph");
 
+  //CARD_SECTION_DARK-----------------------------------
+  const cardbg = document.querySelector(".card-section");
+  const titleh2 = document.querySelector(".card-title-h2");
+  const cardp = document.querySelector(".card-mini-p");
+  const boldtext = document.querySelector(".bold-text");
+  const trecardbg = document.querySelectorAll(".card-all");
+  const firsth2 = document.querySelectorAll(".first-h2");
+  const cardspan = document.querySelector(".span-cards");
+
   //DARK
   if (mode === true) {
     //GLOBAL DARK:
@@ -45,16 +54,22 @@ inputChangeMode.addEventListener("change", () => {
     herop.classList.add("hero-homepage-text-parag-dark");
     heroWave.src = "./Components/HeroSection/images/wave-bg-d.svg";
 
-
-
     //ORANGE_SECTION_DARK
     OrangeSection.classList.add("orange-section-dark");
     OrangeSection.classList.remove("orange-section");
 
-
     //CARDS_SECTION_DARK
-    cardSection.classList.add("card-section-dark");
-    cardTitleH2.classList.add("card-title-h2-dark");
+    cardbg.classList.add("card-section-dark");
+    titleh2.classList.add("title-h2-dark");
+    cardp.classList.add("mini-p-dark");
+    boldtext.classList.add("bold-text-dark");
+    trecardbg.forEach((card) => {
+      card.classList.add("card-bg-dark");
+    });
+    firsth2.forEach((title) => {
+      title.classList.add("first-h2-dark");
+    });
+    cardspan.classList.add("span-cards-dark");
 
     //TWIN_SECTION_DARK
 
@@ -67,7 +82,6 @@ inputChangeMode.addEventListener("change", () => {
     // const twintabtitle = document.querySelector(".tab-title");
     // const twinclick = document.querySelector(".click-btn");
     // const twindatap = document.querySelectorAll(".data-paragraph");
-
 
     twinbg.classList.add("section3-wrapper-dark");
     twin3title.classList.add("twin-section-title-dark");
@@ -94,14 +108,22 @@ inputChangeMode.addEventListener("change", () => {
     heroWave.src = "./Components/HeroSection/images/wave-bg.svg";
 
     //CARD_SECTION_LIGHT
-    cardSection.classList.remove("card-section-dark");
-    cardTitleH2.classList.remove("card-title-h2-dark");
-
+    cardbg.classList.remove("card-section-dark");
+    titleh2.classList.remove("title-h2-dark");
+    cardp.classList.remove("mini-p-dark");
+    boldtext.classList.remove("bold-text-dark");
+    trecardbg.forEach((card) => {
+      card.classList.remove("card-bg-dark");
+    });
+    firsth2.forEach((title) => {
+      title.classList.remove("first-h2-dark");
+    });
+    cardspan.classList.remove("span-cards-dark");
 
     //ORANGE_SECTION_LIGHT
     OrangeSectionDark.classList.remove("orange-section-dark");
     OrangeSectionDark.classList.add("orange-section");
-    
+
     //TWIN_SECTION_LIGHT
     twinbg.classList.remove("section3-wrapper-dark");
     twin3title.classList.remove("twin-section-title-dark");
@@ -113,6 +135,5 @@ inputChangeMode.addEventListener("change", () => {
     for (let i = 0; i < twindatap.length; i++) {
       twindatap[i].classList.remove("data-paragraph-dark");
     }
-
   }
 });

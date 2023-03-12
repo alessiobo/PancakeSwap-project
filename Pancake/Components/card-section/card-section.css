@@ -10,7 +10,8 @@
 }
 .card-section .bunny-viola {
   width: 48px;
-  filter: invert(87%) sepia(188%) saturate(3322%) hue-rotate(256deg) brightness(103%) contrast(59%);
+  filter: invert(87%) sepia(188%) saturate(3322%) hue-rotate(256deg)
+    brightness(103%) contrast(59%);
 }
 .card-section .card-title-h2 {
   font-size: 40px;
@@ -19,8 +20,13 @@
   line-height: 1.1;
   text-align: center;
 }
-.card-section .card-title-h2-dark {
-  color: #fff;
+.card-section .title-h2-dark {
+  color: #b8add2;
+}
+.card-section .mini-p-darl,
+.card-section .bold-text-dark,
+.card-section .span-cards-dark {
+  color: #b8add2;
 }
 .card-section .card-mini-p {
   margin-top: 30px;
@@ -46,7 +52,7 @@
   display: flex;
   flex-direction: row;
 }
-.card-container .card-section-card {
+.card-container .card-all {
   height: 280px;
   width: 280px;
   background-color: #fff;
@@ -56,7 +62,7 @@
   position: relative;
   margin-bottom: 50px;
 }
-.card-container .card-section-card .first-h2 {
+.card-container .card-all .first-h2 {
   position: absolute;
   bottom: 100px;
   font-size: 40px;
@@ -64,7 +70,10 @@
   font-weight: 600;
   line-height: 1.1;
 }
-.card-container .card-section-card .card-section-h2 {
+.card-container .card-all .first-h2-dark {
+  color: #f4eeff;
+}
+.card-container .card-all .card-section-h2 {
   position: absolute;
   bottom: 60px;
   font-size: 40px;
@@ -72,22 +81,52 @@
   font-weight: 600;
   line-height: 1.1;
 }
-.card-container .card-section-card .h2-card2 {
+.card-container .card-all .h2-card2 {
   color: #007aff;
 }
-.card-container .card-section-card .h2-card3 {
+.card-container .card-all .h2-card3 {
   color: #ed4b9e;
 }
-.card-container .card-section-card .span-cards {
+.card-container .card-all .span-cards {
   position: absolute;
   bottom: 15px;
   font-size: 16px;
   color: gray;
 }
-.card-container .card-section-card .card-section-logo {
+.card-container .card-all .card-logo {
   position: absolute;
   right: 15px;
   width: 35px;
+}
+.card-container .card-bg-dark {
+  background-color: #27262c;
+}
+
+@media screen and (max-width: 900px) {
+  .card-section {
+    padding: 50px;
+    clip-path: none;
+  }
+  .card-container {
+    flex-direction: column;
+  }
+  .card-all {
+    height: auto;
+    width: 100%;
+    margin: 15px 0;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  .first-h2,
+  .card-section-h2,
+  .span-cards {
+    position: static;
+  }
+  .card-logo {
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
 }
 
 @media screen and (max-width: 900px) {
