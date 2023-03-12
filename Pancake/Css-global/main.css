@@ -6,6 +6,7 @@
 @import url("./header-navbar.css");
 @import url("../Components/footer/footer.css");
 @import url("./scrollbar.css");
+@import url("../Components/NavbarSettings/navbarSettings.css");
 
 * {
   margin: 0;
