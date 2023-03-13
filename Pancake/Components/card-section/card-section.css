@@ -6,12 +6,10 @@
   background: linear-gradient(180deg, #fff 22%, #d7caec 100%);
   position: relative;
   padding: 100px;
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 100px));
 }
 .card-section .bunny-viola {
   width: 48px;
-  filter: invert(87%) sepia(188%) saturate(3322%) hue-rotate(256deg)
-    brightness(103%) contrast(59%);
+  filter: invert(87%) sepia(188%) saturate(3322%) hue-rotate(256deg) brightness(103%) contrast(59%);
 }
 .card-section .card-title-h2 {
   font-size: 40px;
@@ -42,6 +40,10 @@
   line-height: 1.5;
   margin-bottom: 32px;
   font-size: 16px;
+}
+
+.card-section-dark {
+  background: linear-gradient(180deg, #09070c 22%, #201335 100%);
 }
 
 .card-section-dark {
@@ -102,6 +104,10 @@
   background-color: #27262c;
 }
 
+.svg-card {
+  fill: #d7caec;
+}
+
 @media screen and (max-width: 900px) {
   .card-section {
     padding: 50px;
@@ -128,7 +134,6 @@
     margin-top: 20px;
   }
 }
-
 @media screen and (max-width: 900px) {
   .card-section {
     padding: 50px;
