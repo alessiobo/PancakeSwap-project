@@ -46,10 +46,6 @@
   background: linear-gradient(180deg, #09070c 22%, #201335 100%);
 }
 
-.card-section-dark {
-  background: linear-gradient(180deg, #09070c 22%, #201335 100%);
-}
-
 .card-container {
   display: flex;
   flex-direction: row;
@@ -111,7 +107,6 @@
 @media screen and (max-width: 900px) {
   .card-section {
     padding: 50px;
-    clip-path: none;
   }
   .card-container {
     flex-direction: column;
