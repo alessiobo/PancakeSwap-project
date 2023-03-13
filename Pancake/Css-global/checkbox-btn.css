@@ -103,3 +103,12 @@
   opacity: 1;
   transform: translateX(-12px);
 }
+#switch-button1:checked ~ label > .checkbox-btn-icon-sun {
+  opacity: 0;
+  transform: translateX(0px);
+}
+
+#switch-button1:checked ~ label > .checkbox-btn-icon-moon {
+  opacity: 1;
+  transform: translateX(-12px);
+}
