@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+//||Font:
+body {
+  font-family: "Kanit", sans-serif;
+}
+
+//||Colors:
+$white: #ffffff;
+$black: #000000;
+
+$prim-color: #1fc7d4;
+$prim-color-dark: #0098a1;
+$prim-color-light: #53dee9;
+
+$second-color: #7645d9;
+$second-color-dark: #452a7a;
+$second-color-light: #9a6aff;
+$second-color-subtitle: #7a6eaa;
+$second-color-title: #280d5f;
+
+
+$terti-color: #ffb237;
+$terti-color-dark: #e7974d;
+$terti-color-light: #ffc700;
+$colors-gradientGold: linear-gradient(180deg,#fdab32, #ffd800);
