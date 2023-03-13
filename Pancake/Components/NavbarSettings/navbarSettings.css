@@ -1,0 +1,52 @@
+.nav-settings-section {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  z-index: 50;
+  background-color: rgba(40, 13, 95, 0.6);
+}
+.nav-settings-section-cont {
+  border-radius: 25px;
+  width: 500px;
+  height: 500px;
+  background: #fff;
+}
+.nav-settings-section-cont .nav-settings-title {
+  height: 75px;
+  background: linear-gradient(111.68deg, #f2ecf2, #e8f2f6);
+  border-radius: 25px 25px 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 24px;
+}
+.nav-settings-section-cont .nav-settings-title .nav-settings-icon-x > img {
+  height: 20px;
+  cursor: pointer;
+}
+.nav-settings-section-cont .nav-settings-list {
+  padding: 24px;
+}
+.nav-settings-section-cont .nav-settings-list .nav-settings-list-title {
+  color: #7645d9;
+  font-weight: 600;
+  line-height: 1.5;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+  font-size: 18px;
+}
+.nav-settings-section-cont .nav-settings-list .nav-settings-list-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 25px 0;
+}
+
+.hidden {
+  display: none;
+}
+
+/*# sourceMappingURL=navbarSettings.css.map */
