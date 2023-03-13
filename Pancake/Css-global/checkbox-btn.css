@@ -87,15 +87,15 @@
 }
 
 .checkbox-btn-icon-sun {
-  width: 32px;
-  height: 32px;
+  width: 26px;
+  height: 26px;
   transform: translateX(12px);
   transition: 0.3s;
 }
 
 .checkbox-btn-icon-moon {
-  width: 32px;
-  height: 32px;
+  width: 26px;
+  height: 26px;
   transform: translateX(0px);
   transition: 0.3s;
   opacity: 0;
