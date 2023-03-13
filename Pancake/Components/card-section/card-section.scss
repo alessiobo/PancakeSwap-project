@@ -51,6 +51,10 @@
   background: linear-gradient(180deg, #09070c 22%, #201335 100%);
 }
 
+.card-section-dark {
+  background: linear-gradient(180deg, #09070c 22%, #201335 100%);
+}
+
 .card-container {
   display: flex;
   flex-direction: row;
@@ -138,6 +142,37 @@
   }
 
   .card-logo {
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .card-section {
+    padding: 50px;
+    clip-path: none;
+  }
+
+  .card-container {
+    flex-direction: column;
+  }
+
+  .card-section-card {
+    height: auto;
+    width: 100%;
+    margin: 15px 0;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  .first-h2,
+  .card-section-h2,
+  .span-cards {
+    position: static;
+  }
+
+  .card-section-logo {
     display: block;
     margin: 0 auto;
     margin-top: 20px;
