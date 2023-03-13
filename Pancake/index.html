@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="html">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -13,8 +13,84 @@
     />
   </head>
 
-  <body>
+  <body id="body">
     <header>
+
+      <section class="nav-settings-section hidden">
+        <div class="nav-settings-section-cont">
+          <div class="nav-settings-title">
+            <h3>Settings</h3>
+            <div class="nav-settings-icon-x">
+              <img
+                src="./Components/NavbarSettings/images/icon-x.svg"
+                alt="x"
+              />
+            </div>
+          </div>
+          <div class="nav-settings-list">
+            <div class="nav-settings-list-title">GLOBAL</div>
+            <div class="nav-settings-list-item">
+              <p class="nav-settings-list-item-title">Dark mode</p>
+              <div>
+                <div class="checkbox-btn-container">
+                  <input
+                    class="checkbox-btn-input"
+                    type="checkbox"
+                    id="switch-button"
+                  />
+                  <label class="checkbox-btn-label" for="switch-button">
+                    <img
+                      class="checkbox-btn-icon checkbox-btn-icon-sun"
+                      src="./Css-global/images/sun.svg"
+                    />
+
+                    <img
+                      class="checkbox-btn-icon checkbox-btn-icon-moon"
+                      src="./Css-global/images/moon.svg"
+                    />
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="nav-settings-list-item">
+              <p class="nav-settings-list-item-title">
+                Subgraph Health Indicator
+              </p>
+              <div>
+                <div class="checkbox-btn">
+                  <label class="checkbox-btn-point">
+                    <input type="checkbox" class="checkbox-btn-input"
+                  /></label>
+                </div>
+              </div>
+            </div>
+            <div class="nav-settings-list-item">
+              <p class="nav-settings-list-item-title">Show username</p>
+              <div>
+                <div class="checkbox-btn">
+                  <label class="checkbox-btn-point">
+                    <input type="checkbox" class="checkbox-btn-input"
+                  /></label>
+                </div>
+              </div>
+            </div>
+            <div class="nav-settings-list-item">
+              <p class="nav-settings-list-item-title">Token Risk Scanning</p>
+              <div class="checkbox-btn">
+                <label class="checkbox-btn-point">
+                  <input type="checkbox" class="checkbox-btn-input"
+                /></label>
+              </div>
+            </div>
+            <div class="nav-settings-list-item">
+              <p class="nav-settings-list-item-title">
+                Default Transaction Speed (GWEI)
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <div class="navbar">
         <div class="navbar-container-logo-menu">
           <div class="navbar-logo-home">
@@ -936,9 +1012,12 @@
         </div>
       </footer>
     </main>
-    <script src="./Components/HeroSection/hero-section.js"></script>
+
+
     <script src="./globalJS.js"></script>
     <script src="./Components/HeroSection/hero-section.js"></script>
     <script src="./Components/twin-section/twin-section.js"></script>
+    <script src="./Components/NavbarSettings/navbar-settings.js"></script>
+
   </body>
 </html>
