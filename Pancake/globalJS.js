@@ -109,16 +109,6 @@ function darkMode(input) {
 
     //TWIN_SECTION_DARK
 
-    //DI troppo perché c'è già su dichiarate//
-    // const twinbg = document.querySelector(".section3-wrapper");
-    // const twin3title = document.querySelector(".twin-section-title");
-    // const twindivider = document.querySelector(".svg-divider");
-    // const twinbg4 = document.querySelector(".section4");
-    // const twin4title = document.querySelector(".twin-section2-title");
-    // const twintabtitle = document.querySelector(".tab-title");
-    // const twinclick = document.querySelector(".click-btn");
-    // const twindatap = document.querySelectorAll(".data-paragraph");
-
     twinbg.classList.add("section3-wrapper-dark");
     twin3title.classList.add("twin-section-title-dark");
     twindivider.classList.add("svg-divider-dark");
