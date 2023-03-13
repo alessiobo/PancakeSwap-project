@@ -7,7 +7,7 @@
 }
 
 .section3-wrapper-dark{
-  background: black !important;;
+  background: linear-gradient(#161616, #232424);
 }
 
 .images-wrapper {
@@ -162,7 +162,7 @@
 }
 
 .svg-divider-dark {
-  fill: black !important;
+  fill: #232424 !important;
 }
 
 .section4 {
