@@ -425,3 +425,10 @@
     padding: 10px;
   }
 }
+
+
+@media screen and (max-width: 450px) {
+  .svg-divider {
+    fill: #f2ecf2;
+  }
+}
