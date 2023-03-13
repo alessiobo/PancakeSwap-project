@@ -122,7 +122,6 @@ inputChangeMode.addEventListener("change", () => {
     heroWave.src = "./Components/HeroSection/images/wave-bg.svg";
 
     //CARD_SECTION_LIGHT
-
     cardbg.classList.remove("card-section-dark");
     titleh2.classList.remove("title-h2-dark");
     cardp.classList.remove("mini-p-dark");
@@ -142,6 +141,7 @@ inputChangeMode.addEventListener("change", () => {
     for (let i = 0; i < bigData.length; i++) {
       bigData[i].classList.remove("buyCake-big-data-dark");
     }
+
 
 
     //ORANGE_SECTION_LIGHT
