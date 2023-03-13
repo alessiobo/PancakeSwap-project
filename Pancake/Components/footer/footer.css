@@ -1,7 +1,7 @@
 .footer {
   background-color: #27262c;
-  height: 443px;
-  padding: 32px;
+
+  padding: 51px 32px;
 
   display: flex;
   align-items: center;
@@ -9,7 +9,6 @@
 }
 
 .footer-container {
-  /* // */
   max-width: 1200px;
   width: 100%;
 }
@@ -183,45 +182,91 @@ hr {
   border: 1px solid grey;
 }
 
-.footer-input-mode[type="checkbox"] {
-  display: none;
-  width: 100px;
+/* switch */
+
+.footer-label-color {
+  background-color: #666666 !important;
 }
 
-.footer-label {
+/* .footer-input-mode[type="checkbox"] {
+  display: none;
+  width: 100px;
+} */
+
+/* .footer-label {
   top: 10px;
   border: 2px solid gray;
   border-radius: 30px;
   padding: 10px;
   cursor: pointer;
-}
+} */
 
-.footer-sun {
+/* .footer-sun {
   width: 20px;
   height: 20px;
   transform: translateX(25px);
   transition: 0.3s;
-}
+} */
 
-.footer-moon {
+/* .footer-moon {
   width: 20px;
   height: 20px;
   transform: translateX(0px);
   transition: 0.3s;
   opacity: 0;
-}
+} */
 
-.footer-btn-mode {
+/* .footer-btn-mode {
   display: flex;
   align-items: center;
-}
+} */
 
-#switch-button:checked ~ label > .footer-sun {
+/* #switch-button1:checked ~ label > .footer-sun {
   opacity: 0;
   transform: translateX(0px);
 }
 
-#switch-button:checked ~ label > .footer-moon {
+#switch-button1:checked ~ label > .footer-moon {
   opacity: 1;
   transform: translateX(-25px);
+} */
+
+@media only screen and (max-width: 670px) {
+  .footer-container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .footer-container-lists {
+    flex-direction: column;
+  }
+  .footer-list {
+    margin: 10px 0;
+  }
+  .footer-li {
+    margin: 2px 0;
+  }
+  .footer-change-mode-buy-cake {
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+  }
+
+  .footer-btn-mode-btn-lng {
+    margin: 35px 0;
+  }
+
+  .footer-price-buy-cake {
+    justify-content: space-between;
+  }
+
+  .footer-links-container {
+    flex-direction: column-reverse;
+  }
+
+  .footer-container-lists-social {
+    margin-top: 30px;
+  }
+  .footer-logo {
+    margin: 24px 0;
+  }
 }

@@ -44,6 +44,10 @@
   transition: right 200ms ease-in 0s;
 }
 
+.checkbox-btn-point-dark {
+  background-color: #27262c;
+}
+
 /* modifiche */
 
 .checkbox-btn-container {
@@ -78,17 +82,20 @@
 
   position: absolute;
 }
+.checkbox-btn-icon-dark {
+  background-color: #27262c;
+}
 
 .checkbox-btn-icon-sun {
-  width: 32px;
-  height: 32px;
+  width: 26px;
+  height: 26px;
   transform: translateX(12px);
   transition: 0.3s;
 }
 
 .checkbox-btn-icon-moon {
-  width: 32px;
-  height: 32px;
+  width: 26px;
+  height: 26px;
   transform: translateX(0px);
   transition: 0.3s;
   opacity: 0;
@@ -100,6 +107,15 @@
 }
 
 #switch-button:checked ~ label > .checkbox-btn-icon-moon {
+  opacity: 1;
+  transform: translateX(-12px);
+}
+#switch-button1:checked ~ label > .checkbox-btn-icon-sun {
+  opacity: 0;
+  transform: translateX(0px);
+}
+
+#switch-button1:checked ~ label > .checkbox-btn-icon-moon {
   opacity: 1;
   transform: translateX(-12px);
 }

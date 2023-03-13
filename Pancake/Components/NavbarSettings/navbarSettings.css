@@ -11,8 +11,15 @@
 .nav-settings-section-cont {
   border-radius: 25px;
   width: 500px;
-  height: 500px;
   background: #fff;
+}
+@media (max-width: 850px) {
+  .nav-settings-section-cont {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    border-radius: 25px 25px 0 0;
+  }
 }
 .nav-settings-section-cont .nav-settings-title {
   height: 75px;
@@ -26,6 +33,13 @@
 .nav-settings-section-cont .nav-settings-title .nav-settings-icon-x > img {
   height: 20px;
   cursor: pointer;
+}
+.nav-settings-section-cont .nav-settings-title-dark {
+  color: #fff;
+}
+.nav-settings-section-cont .nav-settings-title-dark {
+  background: transparent;
+  border-bottom: 1px solid grey;
 }
 .nav-settings-section-cont .nav-settings-list {
   padding: 24px;
@@ -43,6 +57,12 @@
   align-items: center;
   justify-content: space-between;
   margin: 25px 0;
+}
+.nav-settings-section-cont .nav-settings-list .nav-settings-list-item-dark {
+  color: #fff;
+}
+.nav-settings-section-cont-dark {
+  background: #27262c;
 }
 
 .hidden {
