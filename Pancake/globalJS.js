@@ -6,6 +6,14 @@ function darkMode(input) {
 
   //GLOBAL DARK:
   const btns = document.querySelectorAll("button");
+  const checkBtnPoint = document.querySelectorAll(".checkbox-btn-point");
+  const checkBtn = document.querySelectorAll(".checkbox-btn-icon");
+
+  //NAVBAR_SETTINGS_SECTION_DARK
+  const settingsbg = document.querySelector(".nav-settings-title");
+  const settingsbgcont = document.querySelector(".nav-settings-section-cont");
+  const settingtitle = document.querySelector(".nav-settings-title");
+  const settingitem = document.querySelectorAll(".nav-settings-list-item");
 
   //HERO_SECTION_DARK-----------------------------------
   const herobg = document.querySelector(".hero-section");
@@ -23,8 +31,8 @@ function darkMode(input) {
 
   //CARD_SECTION_DARK-----------------------------------
 
-  const cardSection = document.querySelector(".card-section");
-  const cardTitleH2 = document.querySelector(".card-title-h2");
+  // const cardSection = document.querySelector(".card-section");
+  // const cardTitleH2 = document.querySelector(".card-title-h2");
 
   //TWIN_SECTION_DARK-----------------------------------
   const twinbg = document.querySelector(".section3-wrapper");
@@ -52,6 +60,20 @@ function darkMode(input) {
     btns.forEach((btn) => {
       btn.classList.replace("btn", "btn-dark");
       btn.classList.replace("btn-square", "btn-square-dark");
+    });
+    checkBtn.forEach((btn) => {
+      btn.classList.add("checkbox-btn-icon-dark");
+    });
+    checkBtnPoint.forEach((btn) => {
+      btn.classList.add("checkbox-btn-point-dark");
+    });
+
+    //NAVBAR_SETTINGS_SECTION_DARK
+    settingsbg.classList.add("nav-settings-title-dark");
+    settingsbgcont.classList.add("nav-settings-section-cont-dark");
+    settingtitle.classList.add("nav-settings-title-dark");
+    settingitem.forEach((item) => {
+      item.classList.add("nav-settings-list-item-dark");
     });
 
     //HERO_SECTION_DARK
@@ -114,6 +136,20 @@ function darkMode(input) {
     btns.forEach((btn) => {
       btn.classList.replace("btn-dark", "btn");
       btn.classList.replace("btn-square-dark", "btn-square");
+    });
+    checkBtn.forEach((btn) => {
+      btn.classList.remove("checkbox-btn-icon-dark");
+    });
+    checkBtnPoint.forEach((btn) => {
+      btn.classList.remove("checkbox-btn-point-dark");
+    });
+
+    //NAVBAR_SETTINGS_SECTION_DARK
+    settingsbg.classList.remove("nav-settings-title-dark");
+    settingsbgcont.classList.remove("nav-settings-section-cont-dark");
+    settingtitle.classList.remove("nav-settings-title-dark");
+    settingitem.forEach((item) => {
+      item.classList.remove("nav-settings-list-item-dark");
     });
 
     //HERO_SECTION_LIGHT
