@@ -15,7 +15,6 @@
 
   <body id="body">
     <header>
-
       <section class="nav-settings-section hidden">
         <div class="nav-settings-section-cont">
           <div class="nav-settings-title">
@@ -383,16 +382,7 @@
           </div>
         </div>
       </section>
-      <svg 
-            xmlns="http://www.w3.org/2000/svg"
-            width="100vw"
-            class="svg-divider svg-card"
-            color="text"
-            preserveAspectRatio="none"
-            viewBox="0 0 1660 48"
-          >
-            <path d="M1660 48C1139.02 46.189 336.256 15.245 0 0h1660v48Z" />
-          </svg>
+      
       <section id="twin-section">
         <div class="section3-wrapper">
           <div class="text-box">
@@ -703,7 +693,7 @@
         </div>
       </section>
 
-      <section id="buyCake-section">
+      <section class="buyCake-section">
         <div class="buyCake-wrapper">
           <div class="buyCake-top">
             <div class="buyCake-textBox">
@@ -713,9 +703,9 @@
                 <div class="buyCake-mini">go round</div>
               </h3>
               <p class="buyCake-paragraphTop">
-                CAKE token is at the heart of the PancakeSwap ecosystem. Buy it,
-                win it, farm it, spend it, stake it... heck, you can even vote
-                with it!
+                CAKE token is at the heart of the PancakeSwap ecosyst.<br />
+                Buy it, win it, farm it, spend it, stake it... heck, you can
+                even vote with it!
               </p>
               <div class="buyCake-link">
                 <a href="" class="buyCake-link"
@@ -732,7 +722,7 @@
                 style="animation-delay: -10.5s"
               />
               <img
-                src="./Components/buyCake-section/img-buyCake/bottom-right@2x.webp"
+                src="./Components/buyCake-section/img-buyCake/top-right@2x.webp"
                 class="img-anim buyAnimation Buypancake"
                 style="animation-delay: -11s"
               />
@@ -980,7 +970,7 @@
             </div>
             <div class="footer-change-mode-buy-cake">
               <div class="footer-btn-mode-btn-lng">
-                <div class="footer-btn-mode">
+                <!-- <div class="footer-btn-mode">
                   <input
                     class="footer-input-mode"
                     type="checkbox"
@@ -995,6 +985,27 @@
                       class="footer-moon"
                       src="./Components/footer/moon-solid.svg"
                       alt=""
+                    />
+                  </label>
+                </div> -->
+                <div class="checkbox-btn-container">
+                  <input
+                    class="checkbox-btn-input"
+                    type="checkbox"
+                    id="switch-button1"
+                  />
+                  <label
+                    class="checkbox-btn-label footer-label-color"
+                    for="switch-button1"
+                  >
+                    <img
+                      class="checkbox-btn-icon checkbox-btn-icon-sun"
+                      src="./Css-global/images/sun.svg"
+                    />
+
+                    <img
+                      class="checkbox-btn-icon checkbox-btn-icon-moon"
+                      src="./Css-global/images/moon.svg"
                     />
                   </label>
                 </div>
@@ -1037,11 +1048,9 @@
       </footer>
     </main>
 
-
     <script src="./globalJS.js"></script>
     <script src="./Components/HeroSection/hero-section.js"></script>
     <script src="./Components/twin-section/twin-section.js"></script>
     <script src="./Components/NavbarSettings/navbar-settings.js"></script>
-
   </body>
 </html>

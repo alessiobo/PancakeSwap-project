@@ -1,12 +1,20 @@
 const inputChangeMode = document.getElementById("switch-button");
+const inputChangeMode1 = document.getElementById("switch-button1");
 
-inputChangeMode.addEventListener("change", () => {
-  const mode = inputChangeMode.checked;
+function darkMode(input) {
+  const mode = input.checked;
 
   //GLOBAL DARK:
   const btns = document.querySelectorAll("button");
+  const checkBtnPoint = document.querySelectorAll(".checkbox-btn-point");
+  const checkBtn = document.querySelectorAll(".checkbox-btn-icon");
 
-  //
+  //NAVBAR_SETTINGS_SECTION_DARK
+  const settingsbg = document.querySelector(".nav-settings-title");
+  const settingsbgcont = document.querySelector(".nav-settings-section-cont");
+  const settingtitle = document.querySelector(".nav-settings-title");
+  const settingitem = document.querySelectorAll(".nav-settings-list-item");
+
   //HERO_SECTION_DARK-----------------------------------
   const herobg = document.querySelector(".hero-section");
   const herop = document.querySelector(".hero-homepage-text-parag");
@@ -15,10 +23,16 @@ inputChangeMode.addEventListener("change", () => {
   const OrangeSection = document.querySelector(".orange-section");
   const OrangeSectionDark = document.querySelector(".orange-section-dark");
 
+  //BUYCAKE_SECTION_DARK
+  const buyCake = document.querySelector(".buyCake-section");
+  const buyCakeDiv1 = document.querySelector(".buyCake-div1");
+  const buyCakeMini = document.querySelector(".buyCake-mini");
+  const bigData = document.querySelectorAll(".buyCake-big-data");
+
   //CARD_SECTION_DARK-----------------------------------
 
-  const cardSection = document.querySelector(".card-section");
-  const cardTitleH2 = document.querySelector(".card-title-h2");
+  // const cardSection = document.querySelector(".card-section");
+  // const cardTitleH2 = document.querySelector(".card-title-h2");
 
   //TWIN_SECTION_DARK-----------------------------------
   const twinbg = document.querySelector(".section3-wrapper");
@@ -65,6 +79,20 @@ inputChangeMode.addEventListener("change", () => {
       btn.classList.replace("btn", "btn-dark");
       btn.classList.replace("btn-square", "btn-square-dark");
     });
+    checkBtn.forEach((btn) => {
+      btn.classList.add("checkbox-btn-icon-dark");
+    });
+    checkBtnPoint.forEach((btn) => {
+      btn.classList.add("checkbox-btn-point-dark");
+    });
+
+    //NAVBAR_SETTINGS_SECTION_DARK
+    settingsbg.classList.add("nav-settings-title-dark");
+    settingsbgcont.classList.add("nav-settings-section-cont-dark");
+    settingtitle.classList.add("nav-settings-title-dark");
+    settingitem.forEach((item) => {
+      item.classList.add("nav-settings-list-item-dark");
+    });
 
     //HERO_SECTION_DARK
 
@@ -75,6 +103,14 @@ inputChangeMode.addEventListener("change", () => {
     //ORANGE_SECTION_DARK
     OrangeSection.classList.add("orange-section-dark");
     OrangeSection.classList.remove("orange-section");
+
+    //BUYCAKE_SECTION_DARK
+    buyCake.classList.add("buyCake-section-dark");
+    buyCakeDiv1.classList.add("buyCake-div1-dark");
+    buyCakeMini.classList.add("buyCake-mini-dark");
+    for (let i = 0; i < bigData.length; i++) {
+      bigData[i].classList.add("buyCake-big-data-dark");
+    }
 
     //CARDS_SECTION_DARK
     cardbg.classList.add("card-section-dark");
@@ -141,6 +177,20 @@ inputChangeMode.addEventListener("change", () => {
       btn.classList.replace("btn-dark", "btn");
       btn.classList.replace("btn-square-dark", "btn-square");
     });
+    checkBtn.forEach((btn) => {
+      btn.classList.remove("checkbox-btn-icon-dark");
+    });
+    checkBtnPoint.forEach((btn) => {
+      btn.classList.remove("checkbox-btn-point-dark");
+    });
+
+    //NAVBAR_SETTINGS_SECTION_DARK
+    settingsbg.classList.remove("nav-settings-title-dark");
+    settingsbgcont.classList.remove("nav-settings-section-cont-dark");
+    settingtitle.classList.remove("nav-settings-title-dark");
+    settingitem.forEach((item) => {
+      item.classList.remove("nav-settings-list-item-dark");
+    });
 
     //HERO_SECTION_LIGHT
     herobg.classList.remove("hero-section-dark");
@@ -159,6 +209,14 @@ inputChangeMode.addEventListener("change", () => {
       title.classList.remove("first-h2-dark");
     });
     cardspan.classList.remove("span-cards-dark");
+
+    //BUYCAKE_SECTION_LIGHT
+    buyCake.classList.remove("buyCake-section-dark");
+    buyCakeDiv1.classList.remove("buyCake-div1-dark");
+    buyCakeMini.classList.remove("buyCake-mini-dark");
+    for (let i = 0; i < bigData.length; i++) {
+      bigData[i].classList.remove("buyCake-big-data-dark");
+    }
 
     //ORANGE_SECTION_LIGHT
     OrangeSectionDark.classList.remove("orange-section-dark");
@@ -198,4 +256,12 @@ inputChangeMode.addEventListener("change", () => {
     logoHome.src = "../DesignSystem/images/Logo/color-black.svg";
     priceSpan.classList.remove("navbar-price-dark");
   }
+}
+
+inputChangeMode1.addEventListener("change", () => {
+  darkMode(inputChangeMode1);
+});
+
+inputChangeMode.addEventListener("change", () => {
+  darkMode(inputChangeMode);
 });
