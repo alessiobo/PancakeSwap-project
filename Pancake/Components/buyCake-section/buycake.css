@@ -12,20 +12,18 @@
 .buyCake-wrapper {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 5;
-  max-width: 1000px;
-  margin: 0 auto;
-}
-.buyCake-top {
-  display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 5;
-  height: 670px;
-  justify-content: space-between;
-  gap: 30px;
+  padding: 50px;
+  height: 750px;
+}
+
+.buyCake-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 50px;
 }
 .buyCake-div1 {
   display: inline-block;
@@ -38,8 +36,6 @@
 }
 
 .buyCake-smallTitle {
-  display: flex;
-  flex-wrap: wrap;
   color: #7645d9;
   font-family: "Kanit", sans-serif;
   font-weight: bold;
@@ -53,22 +49,18 @@
 .buyCake-mini-dark{
   color:#ffffff
 }
+
+
 .buyCake-paragraphTop {
   font-size: 16px;
   font-family: "Kanit", sans-serif;
   color: #7a6eaa;
   padding: 0 0 0 12px;
-  position: relative;
-  top: 15px;
+  font-weight: bold;
   
 }
 .buyCake-link {
-  display: flex;
-  gap: 3;
-  align-items: center;
   padding: 0 0 0 12px;
-  position: relative;
-
 }
 .buyCake-paragraph {
   font-size: 16px;
@@ -76,112 +68,83 @@
   color: #7a6eaa;
   font-weight: bold;
   padding: 0 0 0 12px;
+  
+  
 }
 .buyCake-data {
   display: grid;
-  grid-template-rows: 1fr, 1fr;
-  width: 100%;
-  height: 100px;
-  justify-content: space-between;
-  padding: 0 0 0 12px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 12px;
+  width: 50%;
   position: relative;
   left: -100px;
-  bottom: 130px;
-}
-.buyCake-dataCont1 {
-  position: relative;
-  top: 3px;
-  left: 50px;
-  padding: 0 0 0 12px;
-}
- .buyCake-dataCont2 {
-  position: relative;
-  top: 40px;
-  left: 50px;
-  padding: 0 0 0 12px;
-}
- .buyCake-dataCont3 {
-  position: relative;
-  left: 370px;
-  bottom: 85px;
-  border-left: 1px solid #7a6eaa;
-  padding: 0 0 0 12px;
-}
-.buyCake-dataCont4 {
-  position: relative;
-  left: 370px;
-  bottom: 50px;
-  border-left: 1px solid #7a6eaa;
-  padding: 0 0 0 12px;
-}
-.buyCake-dataCont5 {
-  position: relative;
-  left: 730px;
-  bottom: 174px;
-  border-left: 1px solid #7a6eaa;
-  padding: 0 0 0 12px;
-}
-.buyCake-dataCont6 {
-  position: relative;
-  left: 730px;
-  bottom: 140px;
-  border-left: 1px solid #7a6eaa;
-  padding: 0 0 0 12px;
+  top: -100px;
+  
 }
 .buyCake-big-data {
-  font-size: 24px;
+  font-size: 20px;
   font-family: "Kanit", sans-serif;
   color: #280d5f;
-  padding: 0 0 0 12px;
   font-weight: bold;
+  position: relative;
+
 }
 .buyCake-big-data-dark{
   color:#ffffff !important
 }
 
-.buyCake-animationBox {
-  height: 700px;
-  width: 700px;
+
+.buyCake-textBox {
   display: flex;
-  position: relative;
-  top: 120px;
+  flex-direction: column;
+  gap: 50px;
+  justify-content: space-between;
+  
+
 }
 
-.buyAnimation {
+.buyCake-animationBox {
+  position: relative;
+
+  width: 400px;
+  overflow: hidden;
+  padding-top: 33.333%;
+}
+
+.buyCake-animationBox img {
   position: absolute;
   top: 0;
-  left: 0;
-  object-fit: cover;
-  height: 100%;
+  left: -20px;
   width: 100%;
+  height: 100%;
 }
 
-.Buycake-and-pancakes .Buypancake {
-  max-width: 26rem;
-  max-height: 26rem;
-}
+
+
 
 .buyCake-link {
   text-decoration: none;
   gap: 20px;
-  position: relative;
-  top: 25px;
 }
-
 .buyCake-aColor {
   color: #1fc7d4;
 }
 
-.buyCake-dataCont {
-  width: 100%;
-  justify-content: space-between;
-  margin-bottom: 0.5rem;
-  padding-left: 0;
-  padding-right: 0;
-  border-left: 1px solid #b8add2;
-  padding-left: 0.75rem;
+.buyCake-dataCont1,
+.buyCake-dataCont4{
+  text-align: center;
+  height: 30px;
 }
-
+.buyCake-dataCont2,
+.buyCake-dataCont3,
+.buyCake-dataCont5,
+.buyCake-dataCont6 {
+  text-align: center;
+  border-left: 1px solid #b8add2;
+  height: 30px;
+  
+ 
+}
 .purple-container {
   display: flex;
   width: 100%;
@@ -192,7 +155,6 @@
   background-size: cover;
   justify-content: center;
 }
-
 .purple-animationBoxTop {
   top: 0;
   height: 280px;
@@ -201,7 +163,6 @@
   position: relative;
   left: -300px;
 }
-
 .purple-animationBoxBottom {
   top: 200px;
   height: 200px;
@@ -210,7 +171,6 @@
   position: relative;
   left: 180px;
 }
-
 .purple-texBox {
   display: flex;
   flex-direction: column;
@@ -236,7 +196,72 @@
 .purple-linkContainer {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.buyAnimation {
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+.Buycake-and-pancakes .Buypancake {
+  max-width: 26rem;
+  max-height: 26rem;
+}
+@media screen and (max-width: 570px) {
+  .buyCake-wrapper{
+   display: flex;
+   flex-direction: column;
+    margin-top: 0;
+    padding-bottom: 50px;
+  }
+  
+ .buyCake-data {
+   grid-template-columns: repeat(2, 1fr);
+    grid-gap: 70px;
+  }
+  .buyCake-paragraph,
+  .buyCake-big-data {
+    font-size: 14px;
+}
+.buyCake-smallTitle{
+  font-size: 25px;
+  
+}
+.buyCake-paragraphTop{
+  font-size: 15px;
+  padding-top: 20px;
+}
+.buyCake-top{
+  display: flex;
+  flex-direction: column-reverse;
+}
+.buyCake-animationBox{
+  max-width: 150px;
+  max-height: 170px;
+  position: relative;
+  left: 150px;
+  bottom: 60px;
+  overflow: visible;
+}
+.buyCake-textBox{
+  position: relative;
+  bottom: 0px;
+  gap: 5px;
+  left: -40px;
+}
+.buyCake-data{
+  position: relative;
+  left: -40px;
+  top: 5px;
+}
+.buyCake-link{
+  position: relative;
+  top: 10px;
+  right: 10px;
+}
 }
 
-
-/*# sourceMappingURL=buycake.css.map */
