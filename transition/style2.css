@@ -1,0 +1,101 @@
+:root {
+    --black : #000;
+    --white : #fff;
+}
+* {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    box-sizing: border-box;
+}
+body {
+    background-color: black;
+    height: 100%;
+    width: 100%;
+}
+.red, .blue {
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    top: 50vh;
+    left: 50vw;
+}
+.red {
+    background-color: red;
+}
+.blue {
+    background-color: blue;
+    top: 60vh;
+    opacity: 0;
+}
+#animation:checked  ~ h1 {
+    transition: 10s;
+    background-color: #fff;
+}
+#animation:checked  ~ h2 {
+    transition: 9s;
+    background-color: red;
+}
+#animation:checked  ~ h3 {
+    transition: 8s;
+    background-color: blue;
+}
+#animation:checked  ~ h4 {
+    transition: 7s;
+    background-color: green;
+}
+#animation:checked  ~ h5 {
+    transition: 6s;
+    background-color: yellow;
+}
+#animation:checked  ~ h6 {
+    transition: 5s;
+    background-color: brown;
+}
+
+#animation:not(:checked) ~ .red {
+    transition: 1s;
+    transform: translateY(-50px) rotateZ(1turn);
+    opacity: 1;
+    display: inline;
+    border-radius: 24px;
+    
+}
+#animation:not(:checked) ~ .blue {
+    transition: 1s;
+    transform: translateY(50px) rotateZ(1turn);
+    opacity: 0;
+    
+}
+
+#animation:checked ~ .red{
+    transition: 1s;
+    transform: translateY(50px) rotateZ(-1turn) scale(5) ;
+    opacity: 0;
+    background:linear-gradient(red, black, );
+    
+}
+
+#animation:checked ~ .blue {
+    transition: 1s;
+    transform: translateY(-50px) rotateZ(-1turn);
+    opacity: 1;
+    display: inline;
+    border-radius: 24px;
+}
+#animation:checked ~ h1 {
+    background-color: #fff;
+}
+#dark_mode {
+    height: 200px;
+    width: 200px;
+    margin-left: 400px;
+}
+#dark_mode:checked {
+    transition: 1s;
+    transform: rotate(0.2turn);
+}
+
+ #dark_mode:checked + .container {
+    background-color: #fff;
+}

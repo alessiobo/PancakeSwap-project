@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="html">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -13,10 +13,83 @@
     />
   </head>
 
-  <body>
+  <body id="body">
     <header>
-      <!-- <button id="switch-btn" class="btn">Dark</button> -->
-      <input type="checkbox" id="switch-btn" />
+      <section class="nav-settings-section hidden">
+        <div class="nav-settings-section-cont">
+          <div class="nav-settings-title">
+            <h3>Settings</h3>
+            <div class="nav-settings-icon-x">
+              <img
+                src="./Components/NavbarSettings/images/icon-x.svg"
+                alt="x"
+              />
+            </div>
+          </div>
+          <div class="nav-settings-list">
+            <div class="nav-settings-list-title">GLOBAL</div>
+            <div class="nav-settings-list-item">
+              <p class="nav-settings-list-item-title">Dark mode</p>
+              <div>
+                <div class="checkbox-btn-container">
+                  <input
+                    class="checkbox-btn-input"
+                    type="checkbox"
+                    id="switch-button"
+                  />
+                  <label class="checkbox-btn-label" for="switch-button">
+                    <img
+                      class="checkbox-btn-icon checkbox-btn-icon-sun"
+                      src="./Css-global/images/sun.svg"
+                    />
+
+                    <img
+                      class="checkbox-btn-icon checkbox-btn-icon-moon"
+                      src="./Css-global/images/moon.svg"
+                    />
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="nav-settings-list-item">
+              <p class="nav-settings-list-item-title">
+                Subgraph Health Indicator
+              </p>
+              <div>
+                <div class="checkbox-btn">
+                  <label class="checkbox-btn-point">
+                    <input type="checkbox" class="checkbox-btn-input"
+                  /></label>
+                </div>
+              </div>
+            </div>
+            <div class="nav-settings-list-item">
+              <p class="nav-settings-list-item-title">Show username</p>
+              <div>
+                <div class="checkbox-btn">
+                  <label class="checkbox-btn-point">
+                    <input type="checkbox" class="checkbox-btn-input"
+                  /></label>
+                </div>
+              </div>
+            </div>
+            <div class="nav-settings-list-item">
+              <p class="nav-settings-list-item-title">Token Risk Scanning</p>
+              <div class="checkbox-btn">
+                <label class="checkbox-btn-point">
+                  <input type="checkbox" class="checkbox-btn-input"
+                /></label>
+              </div>
+            </div>
+            <div class="nav-settings-list-item">
+              <p class="nav-settings-list-item-title">
+                Default Transaction Speed (GWEI)
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <div class="navbar">
         <div class="navbar-container-logo-menu">
           <div class="navbar-logo-home">
@@ -66,7 +139,7 @@
               <button class="navbar-btn-3-points-menu">
                 <img
                   class="navbar-three-points-menu"
-                  src="./header-navbar-images/three-dots-svgrepo-com.svg"
+                  src="./Components/header-navbar-images/three-dots-svgrepo-com.svg"
                   alt="..."
                 />
               </button>
@@ -105,7 +178,7 @@
             <button class="navbar-btn-option">
               <img
                 class="navbar-img-btn-option"
-                src="./header-navbar-images/option-btn.svg"
+                src="./Components/header-navbar-images/option-btn.svg"
                 alt=""
               />
             </button>
@@ -120,7 +193,7 @@
               BNB Smart Chain
               <img
                 class="navbar-img-down-arrow"
-                src="./header-navbar-images/down-arrow-svgrepo.svg"
+                src="./Components/header-navbar-images/down-arrow-svgrepo.svg"
                 alt=""
               />
             </button>
@@ -138,7 +211,7 @@
               <a href="">
                 <img
                   class="navbar-img"
-                  src="./header-navbar-images/ethereum.png"
+                  src="./Components/header-navbar-images/ethereum.png"
                   alt=""
                 />
                 Ethereum
@@ -146,7 +219,7 @@
               <a href="">
                 <img
                   class="navbar-img"
-                  src="./header-navbar-images/aptos-logo.png"
+                  src="./Components/header-navbar-images/aptos-logo.png"
                   alt=""
                 />
                 Aptos
@@ -273,42 +346,52 @@
         <br />
         <b class="bold-text">Will you join them?</b>
         <div class="card-container">
-          <div class="card-1">
+          <div class="card-all">
             <img
               src="./Components/card-section/icons/users.png"
               alt="logo"
-              class="logo-1"
+              class="card-logo"
             />
             <h2 class="first-h2">1.6 million</h2>
             <br />
-            <h2 class="h2-card1">users</h2>
+            <h2 class="card-section-h2">users</h2>
             <br />
             <span class="span-cards">in the last 30 days</span>
           </div>
-          <div class="card-2">
+          <div class="card-all">
             <img
               src="./Components/card-section/icons/frecce.png"
               alt="logo"
-              class="logo-2"
+              class="card-logo"
             />
             <h2 class="first-h2">22 million</h2>
             <br />
-            <h2 class="h2-card2">trades</h2>
+            <h2 class="card-section-h2 h2-card2">trades</h2>
             <span class="span-cards">made in the last 30 days</span>
           </div>
-          <div class="card-3">
+          <div class="card-all">
             <img
               src="./Components/card-section/icons/grafico.png"
               alt="logo"
-              class="logo-3"
+              class="card-logo"
             />
             <h2 class="first-h2">$3.3 billion</h2>
             <br />
-            <h2 class="h2-card3">staked</h2>
+            <h2 class="card-section-h2 h2-card3">staked</h2>
             <span class="span-cards">Total Value Locked</span>
           </div>
         </div>
       </section>
+      <svg 
+            xmlns="http://www.w3.org/2000/svg"
+            width="100vw"
+            class="svg-divider svg-card"
+            color="text"
+            preserveAspectRatio="none"
+            viewBox="0 0 1660 48"
+          >
+            <path d="M1660 48C1139.02 46.189 336.256 15.245 0 0h1660v48Z" />
+          </svg>
       <section id="twin-section">
         <div class="section3-wrapper">
           <div class="text-box">
@@ -543,7 +626,12 @@
                   <h3>Predict the navbar-price trend of BNB or CAKE to win</h3>
                 </div>
                 <div class="button-orange-card">
-                  <button class="btn">Play</button>
+                  <a
+                    href="https://www.youtube.com/watch?v=bUcG7vd_7aQ"
+                    target="_blank"
+                    class="link_button"
+                    ><button class="btn">Play</button></a
+                  >
                 </div>
               </div>
               <div class="right-card">
@@ -559,7 +647,13 @@
                   <h3>Buy tickets with CAKE, win CAKE if your numbers match</h3>
                 </div>
                 <div class="button-orange-card">
-                  <button class="btn">Buy Tickets</button>
+                  <a
+                    href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+                    target="_blank"
+                    class="link_button"
+                  >
+                    <button class="btn">Buy Tickets</button>
+                  </a>
                 </div>
               </div>
             </div>
@@ -594,7 +688,7 @@
         </div>
       </section>
 
-      <section id="buyCake-section">
+      <section class="buyCake-section">
         <div class="buyCake-wrapper">
           <div class="buyCake-top">
             <div class="buyCake-textBox">
@@ -604,7 +698,7 @@
                 <div class="buyCake-mini">go round</div>
               </h3>
               <p class="buyCake-paragraphTop">
-                CAKE token is at the heart of the PancakeSwap ecosystem. Buy it,
+                CAKE token is at the heart of the PancakeSwap ecosyst.<br> Buy it,
                 win it, farm it, spend it, stake it... heck, you can even vote
                 with it!
               </p>
@@ -623,7 +717,7 @@
                 style="animation-delay: -10.5s"
               />
               <img
-                src="./Components/buyCake-section/img-buyCake/bottom-right@2x.webp"
+                src="./Components/buyCake-section/img-buyCake/top-right@2x.webp"
                 class="img-anim buyAnimation Buypancake"
                 style="animation-delay: -11s"
               />
@@ -732,11 +826,226 @@
           </div>
         </div>
       </section>
+      <footer>
+        <div class="footer">
+          <div class="footer-container">
+            <div class="footer-links-container">
+              <div class="footer-container-lists-social">
+                <div class="footer-container-lists">
+                  <div class="footer-list">
+                    <ul class="footer-ul">
+                      <h4 class="footer-h4">ABOUT</h4>
+                      <a class="footer-contact-a" href="">
+                        <li class="footer-li" style="color: #ffb237">
+                          Contact
+                        </li>
+                      </a>
+                      <a class="footer-a" href="">
+                        <li class="footer-li">Brand</li>
+                      </a>
+                      <a class="footer-a" href="">
+                        <li class="footer-li">Blog</li>
+                      </a>
+                      <a class="footer-a" href="">
+                        <li class="footer-li">Community</li>
+                      </a>
+                      <a class="footer-a" href="">
+                        <li class="footer-li">Litepaper</li>
+                      </a>
+                    </ul>
+                  </div>
+                  <div class="footer-list">
+                    <ul class="footer-ul">
+                      <h4 class="footer-h4">HELP</h4>
+                      <a class="footer-a" href="">
+                        <li class="footer-li">Customer Support</li>
+                      </a>
+                      <a class="footer-a" href="">
+                        <li class="footer-li">Troubleshooting</li>
+                      </a>
+                      <a class="footer-a" href="">
+                        <li class="footer-li">Guides</li>
+                      </a>
+                    </ul>
+                  </div>
+                  <div style="width: 184px" class="footer-list">
+                    <ul class="footer-ul">
+                      <h4 class="footer-h4">DEVELOPERS</h4>
+                      <a class="footer-a" href="">
+                        <li class="footer-li">Github</li>
+                      </a>
+                      <a class="footer-a" href="">
+                        <li class="footer-li">Documentation</li>
+                      </a>
+                      <a class="footer-a" href="">
+                        <li class="footer-li">Blue Bounty</li>
+                      </a>
+                      <a class="footer-a" href="">
+                        <li class="footer-li">Audits</li>
+                      </a>
+                      <a class="footer-a" href="">
+                        <li class="footer-li">Careers</li>
+                      </a>
+                    </ul>
+                  </div>
+                  <div class="footer-logo">
+                    <img
+                      class="footer-img-logo"
+                      src="../DesignSystem/images/Logo/color-white.svg"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div class="footer-container-social">
+                  <div class="footer-social">
+                    <a class="footer-social-a" href="twitter">
+                      <img
+                        class="footer-img-social"
+                        src="../DesignSystem/images/Icons/social-icons/icons8-twitter-48 1.png"
+                        alt=""
+                      />
+                    </a>
+                    <a class="footer-social-a" href="telegram">
+                      <img
+                        class="footer-img-social"
+                        src="../DesignSystem/images/Icons/social-icons/icons8-telegram-48 1.png"
+                        alt=""
+                      />
+                    </a>
+                    <a class="footer-social-a" href="reddit">
+                      <img
+                        class="footer-img-social"
+                        src="../DesignSystem/images/Icons/social-icons/icons8-reddit-48 1.png"
+                        alt=""
+                      />
+                    </a>
+                    <a class="footer-social-a" href="instagram">
+                      <img
+                        class="footer-img-social footer-instagram-fix"
+                        src="../DesignSystem/images/Icons/social-icons/icons8-instagram-50 1.svg"
+                        alt=""
+                      />
+                    </a>
+                    <a class="footer-social-a" href="github">
+                      <img
+                        class="footer-img-social"
+                        src="../DesignSystem/images/Icons/social-icons/icons8-github-48 (2) 1.png"
+                        alt=""
+                      />
+                    </a>
+                    <a class="footer-social-a" href="discord">
+                      <img
+                        class="footer-img-social"
+                        src="../DesignSystem/images/Icons/social-icons/icons8-discordia-48 1.png"
+                        alt=""
+                      />
+                    </a>
+                    <a class="footer-social-a" href="medio">
+                      <img
+                        class="footer-img-social"
+                        src="../DesignSystem/images/Icons/others-icons/icons8-logo-medio-48 1.png"
+                        alt=""
+                      />
+                    </a>
+                    <a class="footer-social-a" href="youtube">
+                      <img
+                        class="footer-img-social"
+                        src="../DesignSystem/images/Icons/social-icons/icons8-riproduci-youtube-48 1.png"
+                        alt=""
+                      />
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="footer-container-hr">
+                <div class="footer-hr">
+                  <hr />
+                </div>
+              </div>
+            </div>
+            <div class="footer-change-mode-buy-cake">
+              <div class="footer-btn-mode-btn-lng">
+                <!-- <div class="footer-btn-mode">
+                  <input
+                    class="footer-input-mode"
+                    type="checkbox"
+                    id="switch-button"
+                  />
+                  <label class="footer-label" for="switch-button">
+                    <img
+                      class="footer-sun"
+                      src="./Components/footer/sun-solid.svg"
+                    />
+                    <img
+                      class="footer-moon"
+                      src="./Components/footer/moon-solid.svg"
+                      alt=""
+                    />
+                  </label>
+                </div> -->
+                <div class="checkbox-btn-container">
+                  <input
+                    class="checkbox-btn-input"
+                    type="checkbox"
+                    id="switch-button1"
+                  />
+                  <label
+                    class="checkbox-btn-label footer-label-color"
+                    for="switch-button1"
+                  >
+                    <img
+                      class="checkbox-btn-icon checkbox-btn-icon-sun footer-icon-sm"
+                      src="./Css-global/images/sun.svg"
+                    />
+
+                    <img
+                      class="checkbox-btn-icon checkbox-btn-icon-moon footer-icon-sm"
+                      src="./Css-global/images/moon.svg"
+                    />
+                  </label>
+                </div>
+                <div class="footer-btn-lng">
+                  <button style="color: white" class="footer-btn-language">
+                    <img
+                      class="footer-img-lng"
+                      src="../DesignSystem/images/Icons/others-icons/icons8-geografia-48 1.png"
+                      alt=""
+                    />
+                    EN
+                  </button>
+                </div>
+              </div>
+              <div class="footer-price-buy-cake">
+                <div class="footer-icon-bunny-price">
+                  <a class="footer-icon-price" href="">
+                    <img
+                      class="footer-img-bunny-logo"
+                      src="../DesignSystem/images/Logo/cake-token.png"
+                      alt="logo"
+                    />
+                    <span class="footer-price"><b>$4.011</b></span>
+                  </a>
+                </div>
+                <div class="footer-buycake">
+                  <button style="height: 32px; gap: 5px" class="btn">
+                    Buy CAKE
+                    <img
+                      class="footer-right-arrow"
+                      src="./Components/footer/right-arrow.svg"
+                      alt=""
+                    />
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
     </main>
 
-    <footer></footer>
     <script src="./globalJS.js"></script>
     <script src="./Components/HeroSection/hero-section.js"></script>
     <script src="./Components/twin-section/twin-section.js"></script>
+    <script src="./Components/NavbarSettings/navbar-settings.js"></script>
   </body>
 </html>
