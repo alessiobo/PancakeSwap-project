@@ -1,7 +1,8 @@
 const inputChangeMode = document.getElementById("switch-button");
+const inputChangeMode1 = document.getElementById("switch-button1");
 
-inputChangeMode.addEventListener("change", () => {
-  const mode = inputChangeMode.checked;
+function darkMode(input) {
+  const mode = input.checked;
 
   //GLOBAL DARK:
   const btns = document.querySelectorAll("button");
@@ -121,7 +122,6 @@ inputChangeMode.addEventListener("change", () => {
     });
     cardspan.classList.remove("span-cards-dark");
 
-
     //ORANGE_SECTION_LIGHT
     OrangeSectionDark.classList.remove("orange-section-dark");
     OrangeSectionDark.classList.add("orange-section");
@@ -138,4 +138,12 @@ inputChangeMode.addEventListener("change", () => {
       twindatap[i].classList.remove("data-paragraph-dark");
     }
   }
+}
+
+inputChangeMode1.addEventListener("change", () => {
+  darkMode(inputChangeMode1);
+});
+
+inputChangeMode.addEventListener("change", () => {
+  darkMode(inputChangeMode);
 });
