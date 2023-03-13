@@ -4,7 +4,10 @@
 @import url("../Components/card-section/card-section.css");
 @import url("../Components/orange-section/orange-section.css");
 @import url("./header-navbar.css");
+@import url("../Components/footer/footer.css");
 @import url("./scrollbar.css");
+@import url("../Components/NavbarSettings/navbarSettings.css");
+@import url("./checkbox-btn.css");
 
 * {
   margin: 0;

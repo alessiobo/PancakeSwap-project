@@ -22,6 +22,15 @@
     text-align: center;
   }
 
+  .title-h2-dark {
+    color: #b8add2;
+  }
+  .mini-p-darl,
+  .bold-text-dark,
+  .span-cards-dark {
+    color: #b8add2;
+  }
+
   .card-mini-p {
     margin-top: 30px;
     color: #7a6eaa;
@@ -39,14 +48,19 @@
     font-size: 16px;
   }
 }
+.card-section-dark {
+  background: linear-gradient(180deg, #09070c 22%, #201335 100%);
+}
+
+.card-section-dark {
+  background: linear-gradient(180deg, #09070c 22%, #201335 100%);
+}
 
 .card-container {
   display: flex;
   flex-direction: row;
 
-  .card-1,
-  .card-2,
-  .card-3 {
+  .card-all {
     height: 280px;
     width: 280px;
     background-color: #fff;
@@ -65,9 +79,11 @@
       line-height: 1.1;
     }
 
-    .h2-card1,
-    .h2-card2,
-    .h2-card3 {
+    .first-h2-dark {
+      color: #f4eeff;
+    }
+
+    .card-section-h2 {
       position: absolute;
       bottom: 60px;
       font-size: 40px;
@@ -91,13 +107,14 @@
       color: gray;
     }
 
-    .logo-1,
-    .logo-2,
-    .logo-3 {
+    .card-logo {
       position: absolute;
       right: 15px;
       width: 35px;
     }
+  }
+  .card-bg-dark {
+    background-color: #27262c;
   }
 }
 
@@ -111,9 +128,7 @@
     flex-direction: column;
   }
 
-  .card-1,
-  .card-2,
-  .card-3 {
+  .card-all {
     height: auto;
     width: 100%;
     margin: 15px 0;
@@ -122,16 +137,43 @@
   }
 
   .first-h2,
-  .h2-card1,
-  .h2-card2,
-  .h2-card3,
+  .card-section-h2,
   .span-cards {
     position: static;
   }
 
-  .logo-1,
-  .logo-2,
-  .logo-3 {
+  .card-logo {
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .card-section {
+    padding: 50px;
+    clip-path: none;
+  }
+
+  .card-container {
+    flex-direction: column;
+  }
+
+  .card-section-card {
+    height: auto;
+    width: 100%;
+    margin: 15px 0;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  .first-h2,
+  .card-section-h2,
+  .span-cards {
+    position: static;
+  }
+
+  .card-section-logo {
     display: block;
     margin: 0 auto;
     margin-top: 20px;
