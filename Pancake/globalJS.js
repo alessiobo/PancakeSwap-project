@@ -108,7 +108,6 @@ inputChangeMode.addEventListener("change", () => {
     heroWave.src = "./Components/HeroSection/images/wave-bg.svg";
 
     //CARD_SECTION_LIGHT
-
     cardbg.classList.remove("card-section-dark");
     titleh2.classList.remove("title-h2-dark");
     cardp.classList.remove("mini-p-dark");
@@ -120,7 +119,6 @@ inputChangeMode.addEventListener("change", () => {
       title.classList.remove("first-h2-dark");
     });
     cardspan.classList.remove("span-cards-dark");
-
 
     //ORANGE_SECTION_LIGHT
     OrangeSectionDark.classList.remove("orange-section-dark");
