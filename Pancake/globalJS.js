@@ -1,4 +1,4 @@
-const inputChangeMode = document.getElementById("switch-btn");
+const inputChangeMode = document.getElementById("switch-button");
 
 inputChangeMode.addEventListener("change", () => {
   const mode = inputChangeMode.checked;
