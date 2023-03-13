@@ -6,7 +6,6 @@ inputChangeMode.addEventListener("change", () => {
   //GLOBAL DARK:
   const btns = document.querySelectorAll("button");
 
-  //
   //HERO_SECTION_DARK-----------------------------------
   const herobg = document.querySelector(".hero-section");
   const herop = document.querySelector(".hero-homepage-text-parag");
@@ -14,6 +13,13 @@ inputChangeMode.addEventListener("change", () => {
   //ORANGE_SECTION_DARK
   const OrangeSection = document.querySelector(".orange-section");
   const OrangeSectionDark = document.querySelector(".orange-section-dark");
+
+   //BUYCAKE_SECTION_DARK
+   const buyCake = document.querySelector(".buyCake-section");
+   const buyCakeDiv1= document.querySelector(".buyCake-div1");
+   const buyCakeMini= document.querySelector(".buyCake-mini");
+   const bigData= document.querySelectorAll(".buyCake-big-data");
+
 
   //CARD_SECTION_DARK-----------------------------------
 
@@ -57,6 +63,14 @@ inputChangeMode.addEventListener("change", () => {
     //ORANGE_SECTION_DARK
     OrangeSection.classList.add("orange-section-dark");
     OrangeSection.classList.remove("orange-section");
+
+    //BUYCAKE_SECTION_DARK
+    buyCake.classList.add("buyCake-section-dark");
+    buyCakeDiv1.classList.add("buyCake-div1-dark");
+    buyCakeMini.classList.add("buyCake-mini-dark");
+    for (let i = 0; i < bigData.length; i++) {
+      bigData[i].classList.add("buyCake-big-data-dark");
+    }
 
     //CARDS_SECTION_DARK
     cardbg.classList.add("card-section-dark");
@@ -119,6 +133,16 @@ inputChangeMode.addEventListener("change", () => {
       title.classList.remove("first-h2-dark");
     });
     cardspan.classList.remove("span-cards-dark");
+
+    //BUYCAKE_SECTION_LIGHT
+    buyCake.classList.remove("buyCake-section-dark");
+    buyCakeDiv1.classList.remove("buyCake-div1-dark");
+    buyCakeMini.classList.remove("buyCake-mini-dark");
+    for (let i = 0; i < bigData.length; i++) {
+      bigData[i].classList.remove("buyCake-big-data-dark");
+    }
+
+
 
     //ORANGE_SECTION_LIGHT
     OrangeSectionDark.classList.remove("orange-section-dark");

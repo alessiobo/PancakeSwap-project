@@ -1,9 +1,15 @@
-#buyCake-section {
+.buyCake-section {
   position: relative;
   gap: 16px;
   background: #ffffff;
 }
-#buyCake-section .buyCake-wrapper {
+.buyCake-section-dark{
+  background-color: black;
+}
+
+
+
+.buyCake-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -11,59 +17,67 @@
   max-width: 1000px;
   margin: 0 auto;
 }
-#buyCake-section .buyCake-top {
+.buyCake-top {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   gap: 5;
-  height: 450px;
+  height: 670px;
   justify-content: space-between;
   gap: 30px;
 }
-#buyCake-section .buyCake-color {
-  color: #7a6eaa;
-}
-#buyCake-section .buyCake-div1 {
+.buyCake-div1 {
   display: inline-block;
   color: #280d5f;
   font-family: "Kanit", sans-serif;
+  font-weight: bold;
 }
-#buyCake-section .buyCake-smallTitle {
+.buyCake-div1-dark{
+  color:#ffffff
+}
+
+.buyCake-smallTitle {
   display: flex;
   flex-wrap: wrap;
   color: #7645d9;
   font-family: "Kanit", sans-serif;
+  font-weight: bold;
   font-size: 38px;
   gap: 7px;
   padding: 0 0 0 12px;
 }
-#buyCake-section .buyCake-mini {
+.buyCake-mini {
   color: #280d5f;
 }
-#buyCake-section .buyCake-paragraphTop {
+.buyCake-mini-dark{
+  color:#ffffff
+}
+.buyCake-paragraphTop {
   font-size: 16px;
   font-family: "Kanit", sans-serif;
   color: #7a6eaa;
   padding: 0 0 0 12px;
   position: relative;
   top: 15px;
+  
 }
-#buyCake-section .buyCake-link {
+.buyCake-link {
   display: flex;
   gap: 3;
   align-items: center;
   padding: 0 0 0 12px;
   position: relative;
-  top: 20px;
+
 }
-#buyCake-section .buyCake-paragraph {
+.buyCake-paragraph {
   font-size: 16px;
   font-family: "Kanit", sans-serif;
   color: #7a6eaa;
+  font-weight: bold;
   padding: 0 0 0 12px;
 }
-#buyCake-section .buyCake-data {
+.buyCake-data {
   display: grid;
   grid-template-rows: 1fr, 1fr;
   width: 100%;
@@ -72,54 +86,57 @@
   padding: 0 0 0 12px;
   position: relative;
   left: -100px;
-  bottom: 50px;
+  bottom: 130px;
 }
-#buyCake-section .buyCake-dataCont1 {
+.buyCake-dataCont1 {
   position: relative;
   top: 3px;
   left: 50px;
   padding: 0 0 0 12px;
 }
-#buyCake-section .buyCake-dataCont2 {
+ .buyCake-dataCont2 {
   position: relative;
   top: 40px;
   left: 50px;
   padding: 0 0 0 12px;
 }
-#buyCake-section .buyCake-dataCont3 {
+ .buyCake-dataCont3 {
   position: relative;
   left: 370px;
   bottom: 85px;
   border-left: 1px solid #7a6eaa;
   padding: 0 0 0 12px;
 }
-#buyCake-section .buyCake-dataCont4 {
+.buyCake-dataCont4 {
   position: relative;
   left: 370px;
   bottom: 50px;
   border-left: 1px solid #7a6eaa;
   padding: 0 0 0 12px;
 }
-#buyCake-section .buyCake-dataCont5 {
+.buyCake-dataCont5 {
   position: relative;
   left: 730px;
   bottom: 174px;
   border-left: 1px solid #7a6eaa;
   padding: 0 0 0 12px;
 }
-#buyCake-section .buyCake-dataCont6 {
+.buyCake-dataCont6 {
   position: relative;
   left: 730px;
   bottom: 140px;
   border-left: 1px solid #7a6eaa;
   padding: 0 0 0 12px;
 }
-#buyCake-section .buyCake-big-data {
+.buyCake-big-data {
   font-size: 24px;
   font-family: "Kanit", sans-serif;
   color: #280d5f;
   padding: 0 0 0 12px;
   font-weight: bold;
+}
+.buyCake-big-data-dark{
+  color:#ffffff !important
 }
 
 .buyCake-animationBox {
@@ -148,7 +165,7 @@
   text-decoration: none;
   gap: 20px;
   position: relative;
-  top: 10px;
+  top: 25px;
 }
 
 .buyCake-aColor {
@@ -217,5 +234,6 @@
   display: flex;
   flex-direction: column;
 }
+
 
 /*# sourceMappingURL=buycake.css.map */
