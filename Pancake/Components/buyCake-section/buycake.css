@@ -211,7 +211,7 @@
   max-width: 26rem;
   max-height: 26rem;
 }
-@media screen and (max-width: 570px) {
+@media screen and (max-width: 900px) {
   .buyCake-wrapper{
    display: flex;
    flex-direction: column;
@@ -263,5 +263,10 @@
   top: 10px;
   right: 10px;
 }
+.buyCake-btn{
+  position: relative;
+  top: 25px;
 }
+}
+
 
