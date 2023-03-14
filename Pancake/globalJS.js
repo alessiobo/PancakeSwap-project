@@ -56,6 +56,24 @@ function darkMode(input) {
   const firsth2 = document.querySelectorAll(".first-h2");
   const cardspan = document.querySelector(".span-cards");
 
+  //HEADER_DARK
+  const navbar = document.querySelector(".navbar");
+  const btnTrade = document.querySelector(".navbar-btn-trade");
+  const drpDwnCnt = document.querySelectorAll(".navbar-dropdown-content");
+  const drpDwns = document.querySelectorAll(".navbar-dropdowns");
+  const btnEarn = document.querySelector(".navbar-btn-earn");
+  const btnWin = document.querySelector(".navbar-btn-win");
+  const btnNFT = document.querySelector(".navbar-btn-NFT");
+  const btn3Dots = document.querySelector(".navbar-btn-3-points-menu");
+  const btnLng = document.querySelector(".navbar-btn-change-language");
+  const lng = document.querySelector(".navbar-language");
+  const btnOpt = document.querySelector(".navbar-btn-option");
+  const opt = document.querySelector(".navbar-option");
+  const drpCrypto = document.querySelector(".navbar-change-crypto");
+  const crypto = document.querySelector(".navbar-dropdown-crypto");
+  const logoHome = document.querySelector(".navbar-img-logo");
+  const priceSpan = document.querySelector(".navbar-price");
+
   //DARK
   if (mode === true) {
     //GLOBAL DARK:
@@ -109,6 +127,28 @@ function darkMode(input) {
       title.classList.add("first-h2-dark");
     });
     cardspan.classList.add("span-cards-dark");
+
+    //HEADER_DARK
+    navbar.classList.add("navbar-dark");
+    btnTrade.classList.add("navbar-btn-trade-dark");
+    btnEarn.classList.add("navbar-btn-earn-dark");
+    btnWin.classList.add("navbar-btn-win-dark");
+    btnNFT.classList.add("navbar-btn-NFT-dark");
+    btn3Dots.classList.add("navbar-btn-3-points-menu-dark");
+    drpDwnCnt.forEach((drpcnt) => {
+      drpcnt.classList.add("navbar-dropdown-content-dark")
+    })
+    drpDwns.forEach((drpdwns) => {
+      drpdwns.classList.add("navbar-dropdowns-dark")
+    })
+    btnLng.classList.add("navbar-btn-change-language-dark");
+    lng.classList.add("navbar-language-dark");
+    btnOpt.classList.add("navbar-btn-option-dark");
+    opt.classList.add("navbar-option-dark");
+    drpCrypto.classList.add("navbar-change-crypto-dark");
+    crypto.classList.add("navbar-dropdown-crypto-dark");
+    logoHome.src = "../DesignSystem/images/Logo/color-white.svg";
+    priceSpan.classList.add("navbar-price-dark");
 
     //TWIN_SECTION_DARK
 
@@ -197,6 +237,28 @@ function darkMode(input) {
     for (let i = 0; i < twindatap.length; i++) {
       twindatap[i].classList.remove("data-paragraph-dark");
     }
+
+    //HEADER_LIGHT
+    navbar.classList.remove("navbar-dark");
+    btnTrade.classList.remove("navbar-btn-trade-dark");
+    btnEarn.classList.remove("navbar-btn-earn-dark");
+    btnWin.classList.remove("navbar-btn-win-dark");
+    btnNFT.classList.remove("navbar-btn-NFT-dark");
+    btn3Dots.classList.remove("navbar-btn-3-ponints-menu-dark");
+    drpDwnCnt.forEach((drpcnt) => {
+      drpcnt.classList.remove("navbar-dropdown-content-dark")
+    })
+    drpDwns.forEach((drpdwns) => {
+      drpdwns.classList.remove("navbar-dropdowns-dark")
+    })
+    btnLng.classList.remove("navbar-btn-change-language-dark");
+    lng.classList.remove("navbar-language-dark");
+    btnOpt.classList.remove("navbar-btn-option-dark");
+    opt.classList.remove("navbar-option-dark");
+    drpCrypto.classList.remove("navbar-change-crypto-dark");
+    crypto.classList.remove("navbar-dropdown-crypto-dark");
+    logoHome.src = "../DesignSystem/images/Logo/color-black.svg";
+    priceSpan.classList.remove("navbar-price-dark");
   }
 }
 
