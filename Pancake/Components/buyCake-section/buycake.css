@@ -73,9 +73,11 @@
   grid-gap: 40px;
   width: 50%;
   position: relative;
+
   /* left: -100px; */
   bottom: 100px;
   /* top: -100px; */
+
 }
 .buyCake-big-data {
   font-size: 20px;
@@ -212,8 +214,10 @@
 
   .buyCake-data {
     grid-template-columns: repeat(2, 1fr);
+
     grid-gap: 28px;
     margin-top: 20px;
+
   }
   .buyCake-paragraph,
   .buyCake-big-data {
@@ -269,3 +273,4 @@
     margin-top: 100px;
   }
 }
+
