@@ -70,11 +70,12 @@
 .buyCake-data {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 12px;
+  grid-gap: 40px;
   width: 50%;
   position: relative;
-  left: -100px;
-  top: -100px;
+  /* left: -100px; */
+  bottom: 100px;
+  /* top: -100px; */
 }
 .buyCake-big-data {
   font-size: 20px;
@@ -211,7 +212,8 @@
 
   .buyCake-data {
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 70px;
+    grid-gap: 28px;
+    margin-top: 20px;
   }
   .buyCake-paragraph,
   .buyCake-big-data {
@@ -255,5 +257,15 @@
   .buyCake-btn {
     position: relative;
     top: 25px;
+  }
+
+  .purple-btn {
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 1500px){
+  .buyCake-data{
+    margin-top: 100px;
   }
 }
