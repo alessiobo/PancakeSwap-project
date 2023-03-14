@@ -23,11 +23,14 @@ function darkMode(input) {
   const OrangeSection = document.querySelector(".orange-section");
   const OrangeSectionDark = document.querySelector(".orange-section-dark");
 
-  //BUYCAKE_SECTION_DARK
-  const buyCake = document.querySelector(".buyCake-section");
-  const buyCakeDiv1 = document.querySelector(".buyCake-div1");
-  const buyCakeMini = document.querySelector(".buyCake-mini");
-  const bigData = document.querySelectorAll(".buyCake-big-data");
+
+   //BUYCAKE_SECTION_DARK
+   const buyCake = document.querySelector(".buyCake-section");
+   const buyCakeDiv1= document.querySelector(".buyCake-div1");
+   const buyCakeMini= document.querySelector(".buyCake-mini");
+   const bigData= document.querySelectorAll(".buyCake-big-data");
+
+
 
   //CARD_SECTION_DARK-----------------------------------
 
@@ -167,6 +170,7 @@ function darkMode(input) {
     for (let i = 0; i < bigData.length; i++) {
       bigData[i].classList.remove("buyCake-big-data-dark");
     }
+
 
     //ORANGE_SECTION_LIGHT
     OrangeSectionDark.classList.remove("orange-section-dark");
