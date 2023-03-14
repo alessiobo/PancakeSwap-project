@@ -6,7 +6,7 @@
   justify-content: center;
 }
 
-.section3-wrapper-dark{
+.section3-wrapper-dark {
   background: linear-gradient(#161616, #232424);
 }
 
@@ -170,7 +170,7 @@
 }
 
 .section4-dark {
-  background: linear-gradient(166.77deg,#3b4155,#3a3045);
+  background: linear-gradient(166.77deg, #3b4155, #3a3045);
 }
 
 .arrow {
@@ -294,13 +294,12 @@
 }
 
 .click-btn-dark {
-  fill: #7a6eaa
+  fill: #7a6eaa;
 }
-
 
 @media (min-width: 850px) {
   .farms-data {
-    grid-gap: 60px
+    grid-gap: 60px;
   }
 }
 
@@ -401,20 +400,25 @@
   }
 }
 
-
-
 @media screen and (max-width: 570px) {
   .tab-container {
     grid-template-rows: auto auto;
     grid-gap: 10px;
     margin-top: 0;
     padding-bottom: 50px;
+    padding-left: 20px;
   }
 
   .farms-data,
   .syrup-data {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 30px;
+  }
+  .data-item2,
+  .data-item3,
+  .data-item4,
+  .data-item5 {
+    border-left: none;
   }
 
   .data-item1,
@@ -425,7 +429,6 @@
     padding: 10px;
   }
 }
-
 
 @media screen and (max-width: 450px) {
   .svg-divider {
