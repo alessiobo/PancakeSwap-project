@@ -82,7 +82,7 @@
   position: absolute;
   background-color: white;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
+  z-index: 2;
   width: 280px;
   height: fit-content;
 }
@@ -175,6 +175,8 @@
 .navbar-price {
   padding-left: 5px;
   padding-right: 5px;
+  font-weight: 900;
+  color: #7a6eaa !important;
 }
 
 .navbar-container-details-from-navbar {
@@ -241,6 +243,7 @@
   color: #280d5f;
   border-radius: 10px;
   box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2);
+  gap: 5px;
 }
 
 .navbar-img-change-crypto {
@@ -295,7 +298,167 @@
 }
 
 @media screen and (max-width: 540px) {
-    .navbar-change-crypto {
-        display: none;
-    }
+  .navbar-change-crypto {
+    display: none;
+  }
+  .navbar-change-crypto-dark {
+    display: none;
+  }
+}
+
+.navbar-dark {
+  background-color: #27262c;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 15px;
+  border: 1px solid black;
+}
+
+.navbar-btn-trade-dark {
+  background-color: transparent;
+  color: #7a6eaa;
+  width: 71.5px;
+  height: 48px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+}
+
+.navbar-btn-earn-dark {
+  background-color: transparent;
+  color: #7a6eaa;
+  width: 64.22px;
+  height: 48px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+}
+
+.navbar-btn-win-dark {
+  background-color: transparent;
+  color: #7a6eaa;
+  width: 59px;
+  height: 48px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+}
+
+.navbar-btn-NFT-dark {
+  background-color: transparent;
+  color: #7a6eaa;
+  width: 60.15px;
+  height: 48px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+}
+
+.navbar-btn-3-points-menu-dark {
+  background-color: transparent;
+  width: 58px;
+  height: 48px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+}
+
+.navbar-dropdown-content-dark a {
+  color: #7a6eaa;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.navbar-dropdowns-dark:hover .navbar-dropdown-content-dark {
+  display: block;
+  border-radius: 8px;
+}
+
+.navbar-dropdowns-dark:hover .navbar-btn-trade-dark {
+  background-color: #3c3742;
+  display: block;
+}
+
+.navbar-dropdown-content-dark {
+  display: none;
+  position: absolute;
+  background-color: #27262c;
+  z-index: 2;
+  width: 280px;
+  height: fit-content;
+}
+
+.navbar-dropdown-content-dark a:hover {
+  background-color: #3c3742;
+  border-radius: 8px;
+}
+
+.navbar-dropdowns-dark:hover .navbar-btn-earn-dark {
+  background-color: #3c3742;
+}
+
+.navbar-dropdowns-dark:hover .navbar-btn-win-dark {
+  background-color: #3c3742;
+}
+
+.navbar-dropdowns-dark:hover .navbar-btn-NFT-dark {
+  background-color: #3c3742;
+}
+
+.navbar-dropdowns-dark:hover .navbar-btn-3-points-menu-dark {
+  background-color: #3c3742;
+}
+
+.navbar-btn-change-language-dark {
+  background-color: #27262c;
+  border: none;
+  cursor: pointer;
+  padding: 0px 8px;
+}
+
+.navbar-language-dark:hover .navbar-btn-change-language-dark {
+  opacity: 0.5;
+  transition: 200ms;
+}
+
+.navbar-btn-option-dark {
+  background-color: #27262c;
+  border: none;
+  cursor: pointer;
+  padding-right: 10px;
+  padding-left: 5px;
+}
+
+.navbar-option-dark:hover .navbar-btn-option-dark {
+  opacity: 0.5;
+  transition: 200ms;
+}
+
+.navbar-change-crypto-dark {
+  border: none;
+  background-color: #3c3742;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  color: #280d5f;
+  border-radius: 10px;
+  color: white;
+  gap: 5px;
+}
+
+.navbar-dropdown-crypto-dark:hover .navbar-dropdown-content-dark {
+  display: block;
+  border-radius: 8px;
+}
+
+.navbar-dropdown-crypto-dark:hover .navbar-change-crypto-dark {
+  background-color: #3c3742;
+}
+
+.navbar-price-dark {
+  color: #7a6eaa !important;
+  font-weight: 900;
+  padding-left: 5px;
+  padding-right: 5px;
 }
