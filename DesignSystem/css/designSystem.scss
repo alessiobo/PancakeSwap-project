@@ -1,0 +1,315 @@
+@use "GlobalVariables/variables.scss" as var;
+
+//VARIABLES OF Design System page-----------------------------------------------------------------------------
+
+$first-color: #f3f6fc;
+$sec-color: #387dec;
+$border-rad: 25px;
+$url-svg-h2: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='149' height='149' viewBox='0 0 200 200'%3E%3Cdefs%3E%3ClinearGradient id='a' gradientUnits='userSpaceOnUse' x1='100' y1='33' x2='100' y2='-3'%3E%3Cstop offset='0' stop-color='%23000' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23000' stop-opacity='1'/%3E%3C/linearGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='100' y1='135' x2='100' y2='97'%3E%3Cstop offset='0' stop-color='%23000' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23000' stop-opacity='1'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cg fill='%230069d5' fill-opacity='0.43'%3E%3Crect x='100' width='100' height='100'/%3E%3Crect y='100' width='100' height='100'/%3E%3C/g%3E%3Cg fill-opacity='0.43'%3E%3Cpolygon fill='url(%23a)' points='100 30 0 0 200 0'/%3E%3Cpolygon fill='url(%23b)' points='100 100 0 130 0 100 200 100 200 130'/%3E%3C/g%3E%3C/svg%3E";
+
+@mixin flexbox($dis: flex, $al-it: center, $js-ct: center) {
+  display: $dis;
+  align-items: $al-it;
+  justify-content: $js-ct;
+}
+
+@mixin square-color($b-color: #000000) {
+  height: 100px;
+  width: 250px;
+  background-color: $b-color;
+  color: #fff;
+}
+
+.cont-img-text {
+  @include flexbox($js-ct: space-around);
+  margin: 35px 0;
+}
+
+.code {
+  color: orange;
+  font-weight: 800;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  display: flex;
+}
+
+//|| NAVBAR-----------------------------------------------------------START
+
+nav {
+  background-color: $first-color;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 200px;
+
+  h1 {
+    padding: 30px 0px;
+    text-align: center;
+  }
+
+  ul {
+    @include flexbox($js-ct: space-around);
+    flex-direction: column;
+
+    li {
+      text-align: center;
+      padding: 50px 50px;
+
+      list-style: none;
+
+      a {
+        text-decoration: none;
+        padding: 25px;
+
+        width: 100%;
+
+        border-radius: $border-rad;
+
+        &:hover {
+          background-color: $sec-color;
+          border-radius: $border-rad;
+          color: $first-color;
+        }
+      }
+    }
+  }
+
+  img {
+    position: absolute;
+    top: 117px;
+    left: 85px;
+    width: 31px;
+
+    z-index: -1;
+  }
+}
+//|| NAVBAR-----------------------------------------------------------END
+
+main {
+  background-color: #fff;
+  padding: 30px 2%;
+  margin-left: 200px;
+
+  header {
+    @include flexbox();
+    flex-direction: column;
+    img {
+      margin-bottom: 60px;
+    }
+  }
+
+  //TEMPLATE SECTION---------------------------------START
+  section {
+    margin: 70px 0;
+    width: 100%;
+
+    img {
+      background-color: #fff;
+      border-radius: $border-rad;
+      padding: 2%;
+      margin: 2%;
+
+      -webkit-box-shadow: inset 4px 4px 15px 0px #000000,
+        inset 0px 0px 0px 7px rgba(0, 0, 0, 0.01);
+      box-shadow: inset 4px 4px 15px 0px #000000,
+        inset 0px 0px 0px 7px rgba(0, 0, 0, 0.01);
+    }
+
+    & > div:first-child {
+      @include flexbox();
+      height: 230px;
+      width: 100%;
+      border-radius: $border-rad;
+      background-color: $sec-color;
+      background-image: url($url-svg-h2);
+      // background: url("../images/icon-nav/head.webp");
+
+      & > h2 {
+        font-size: 3rem;
+        color: #fff;
+      }
+    }
+    & > div:nth-child(2) {
+      padding: 3%;
+      margin: 25px 0;
+      border-radius: $border-rad;
+      background-color: $first-color;
+
+      h3 {
+        font-size: 2rem;
+        margin-bottom: 20px;
+        border-bottom: 2px solid black;
+      }
+
+      p {
+        font-size: 2rem;
+      }
+    }
+  }
+}
+
+//TEMPLATE SECTION---------------------------------END
+
+//LOGO SECTION---------------------------------------------------------------------
+
+.logo-section {
+  .logos-presentation > div {
+    @extend .cont-img-text;
+  }
+
+  .logos-presentation {
+    div:nth-child(1) {
+      img {
+        width: 40%;
+      }
+    }
+    div:nth-child(2) {
+      img {
+        width: 15%;
+      }
+
+      img:nth-child(3) {
+        background-color: black;
+      }
+    }
+  }
+}
+
+//COLOR SECTION---------------------------------------------------------------------
+
+.colors-section {
+  .colors-presentation {
+    & > div {
+      margin: 80px 0;
+    }
+
+    div:nth-child(1) {
+      @include flexbox($js-ct: space-around);
+
+      div:nth-child(1) {
+        @include flexbox();
+        @include square-color($b-color: var.$prim-color);
+      }
+      div:nth-child(2) {
+        @include flexbox();
+        @include square-color($b-color: var.$prim-color-dark);
+      }
+      div:nth-child(3) {
+        @include flexbox();
+        @include square-color($b-color: var.$prim-color-light);
+      }
+    }
+
+    div:nth-child(2) {
+      @include flexbox($js-ct: space-around);
+      div:nth-child(1) {
+        @include flexbox();
+        @include square-color($b-color: var.$second-color);
+      }
+      div:nth-child(2) {
+        @include flexbox();
+        @include square-color($b-color: var.$second-color-dark);
+      }
+      div:nth-child(3) {
+        @include flexbox();
+        @include square-color($b-color: var.$second-color-light);
+      }
+    }
+
+    div:nth-child(3) {
+      @include flexbox($js-ct: space-around);
+      div:nth-child(1) {
+        @include flexbox();
+        @include square-color($b-color: var.$terti-color);
+      }
+      div:nth-child(2) {
+        @include flexbox();
+        @include square-color($b-color: var.$terti-color-dark);
+      }
+      div:nth-child(3) {
+        @include flexbox();
+        @include square-color($b-color: var.$terti-color-light);
+      }
+    }
+  }
+}
+
+//BUTTONS SECTION------------------------------------------------------------------
+.buttons-section {
+  .btn-cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0;
+  }
+
+  .htu-code-cont > h4 {
+    margin: 20px 0;
+    color: #ff1919;
+  }
+
+  .htu-code {
+    background-color: #f5f3fd;
+    border: 2px solid #3300ff;
+    padding: 20px 30px;
+    border-radius: 25px;
+    color: #0062ff;
+  }
+
+  .buttons-presentation {
+    @include flexbox($js-ct: space-around);
+
+    & > div {
+      @include flexbox();
+      flex-direction: column;
+
+      & > button {
+        margin: 80px;
+      }
+    }
+  }
+}
+//FONT SECTION---------------------------------------------------------------------
+.font-section {
+  .cont-font > div {
+    @extend .cont-img-text;
+  }
+
+  .cont-font {
+    div:nth-child(2) {
+      $sizes: (64, 32, 20, 16);
+
+      @each $size in $sizes {
+        .panck-size-#{$size}px {
+          font-size: $size + px;
+        }
+      }
+    }
+  }
+}
+
+//ICONS SECTION------------------------------------------------------
+
+.icons-presentation {
+  & > div {
+    flex-direction: column;
+    & > div:nth-child(2) {
+      & > img:nth-child(2) {
+        background-color: #000000;
+      }
+    }
+    & > div:last-child {
+      margin: 25px;
+      @include flexbox();
+      @include square-color($b-color: #b8add2);
+    }
+  }
+}

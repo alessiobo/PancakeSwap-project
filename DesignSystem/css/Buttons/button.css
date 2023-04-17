@@ -1,0 +1,200 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Kanit", sans-serif;
+}
+
+.btn-thin {
+  background-color: #1fc7d4;
+  display: inline-flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  height: 48px;
+  padding: 0px 24px;
+  border: 0px;
+  border-radius: 16px;
+  box-shadow: rgba(14, 14, 44, 0.4) 0px -1px 0px 0px inset;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  line-height: 1;
+  transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
+  color: #fff;
+  background-color: transparent;
+  border-width: 2px;
+  border-style: solid;
+  border-image: initial;
+  border-color: #1fc7d4;
+  box-shadow: none;
+  color: #1fc7d4;
+}
+.btn-thin a {
+  color: inherit;
+  text-decoration: none;
+}
+.btn-thin:hover {
+  opacity: 0.65;
+}
+.btn-thin:active {
+  opacity: 0.85;
+  transform: translateY(1px);
+  box-shadow: none;
+}
+
+.btn {
+  background-color: #1fc7d4;
+  display: inline-flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  height: 48px;
+  padding: 0px 24px;
+  border: 0px;
+  border-radius: 16px;
+  box-shadow: rgba(14, 14, 44, 0.4) 0px -1px 0px 0px inset;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  line-height: 1;
+  transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
+  color: #fff;
+}
+.btn a {
+  color: inherit;
+  text-decoration: none;
+}
+.btn:hover {
+  opacity: 0.65;
+}
+.btn:active {
+  opacity: 0.85;
+  transform: translateY(1px);
+  box-shadow: none;
+}
+
+.btn-dark {
+  background-color: #1fc7d4;
+  display: inline-flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  height: 48px;
+  padding: 0px 24px;
+  border: 0px;
+  border-radius: 16px;
+  box-shadow: rgba(14, 14, 44, 0.4) 0px -1px 0px 0px inset;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  line-height: 1;
+  transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
+}
+.btn-dark a {
+  color: inherit;
+  text-decoration: none;
+}
+.btn-dark:hover {
+  opacity: 0.65;
+}
+.btn-dark:active {
+  opacity: 0.85;
+  transform: translateY(1px);
+  box-shadow: none;
+}
+.btn-dark a {
+  color: #191326;
+}
+
+.btn-square {
+  background-color: #1fc7d4;
+  display: inline-flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  height: 48px;
+  padding: 0px 24px;
+  border: 0px;
+  border-radius: 16px;
+  box-shadow: rgba(14, 14, 44, 0.4) 0px -1px 0px 0px inset;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  line-height: 1;
+  transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
+  color: #fff;
+  width: 48px;
+}
+.btn-square a {
+  color: inherit;
+  text-decoration: none;
+}
+.btn-square:hover {
+  opacity: 0.65;
+}
+.btn-square:active {
+  opacity: 0.85;
+  transform: translateY(1px);
+  box-shadow: none;
+}
+.btn-square i {
+  position: absolute;
+}
+
+.btn-square-dark {
+  background-color: #1fc7d4;
+  display: inline-flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  height: 48px;
+  padding: 0px 24px;
+  border: 0px;
+  border-radius: 16px;
+  box-shadow: rgba(14, 14, 44, 0.4) 0px -1px 0px 0px inset;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  line-height: 1;
+  transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
+  width: 48px;
+}
+.btn-square-dark a {
+  color: inherit;
+  text-decoration: none;
+}
+.btn-square-dark:hover {
+  opacity: 0.65;
+}
+.btn-square-dark:active {
+  opacity: 0.85;
+  transform: translateY(1px);
+  box-shadow: none;
+}
+.btn-square-dark a {
+  color: #191326;
+}
+.btn-square-dark i {
+  position: absolute;
+}
+
+/*# sourceMappingURL=button.css.map */

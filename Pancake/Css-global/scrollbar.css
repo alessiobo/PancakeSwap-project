@@ -1,0 +1,16 @@
+/* Mostra una scrollbar personalizzata */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Modifica il colore del thumb della scrollbar */
+::-webkit-scrollbar-thumb {
+  background: #7a6eaa;
+  border-radius: 8px;
+}
+
+/* Modifica il colore del track della scrollbar */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #eeeaf4;
+  border-radius: 10px;
+}

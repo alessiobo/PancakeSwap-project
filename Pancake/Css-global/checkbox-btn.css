@@ -1,0 +1,121 @@
+.checkbox-btn {
+  position: relative;
+  height: 32px;
+  width: 52px;
+
+  border-radius: 25px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #bdc2c4;
+
+  cursor: pointer;
+}
+
+.checkbox-btn-input[type="checkbox"] {
+  display: none;
+  width: 100px;
+}
+
+/* Per le immagini */
+/* .checkbox-btn-icon {
+  position: relative;
+  height: 20px;
+  margin-top: 4px;
+  z-index: 1;
+  cursor: pointer;
+
+  margin-left: 3px;
+} */
+
+.checkbox-btn-point {
+  background-color: #fff;
+
+  cursor: pointer;
+  border-radius: 50%;
+
+  height: 26px;
+  left: 3px;
+  position: absolute;
+  top: 3px;
+  width: 26px;
+  transition: right 200ms ease-in 0s;
+}
+
+.checkbox-btn-point-dark {
+  background-color: #27262c;
+}
+
+/* modifiche */
+
+.checkbox-btn-container {
+  display: flex;
+  align-items: center;
+}
+
+.checkbox-btn-input[type="checkbox"] {
+  display: none;
+  width: 100px;
+}
+
+.checkbox-btn-label {
+  position: relative;
+  height: 32px;
+  width: 52px;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #bdc2c4;
+
+  cursor: pointer;
+}
+
+.checkbox-btn-icon {
+  background-color: #fff;
+
+  cursor: pointer;
+  border-radius: 50%;
+
+  position: absolute;
+}
+.checkbox-btn-icon-dark {
+  background-color: #27262c;
+}
+
+.checkbox-btn-icon-sun {
+  width: 26px;
+  height: 26px;
+  transform: translateX(12px);
+  transition: 0.3s;
+}
+
+.checkbox-btn-icon-moon {
+  width: 26px;
+  height: 26px;
+  transform: translateX(0px);
+  transition: 0.3s;
+  opacity: 0;
+}
+
+#switch-button:checked ~ label > .checkbox-btn-icon-sun {
+  opacity: 0;
+  transform: translateX(0px);
+}
+
+#switch-button:checked ~ label > .checkbox-btn-icon-moon {
+  opacity: 1;
+  transform: translateX(-12px);
+}
+#switch-button1:checked ~ label > .checkbox-btn-icon-sun {
+  opacity: 0;
+  transform: translateX(0px);
+}
+
+#switch-button1:checked ~ label > .checkbox-btn-icon-moon {
+  opacity: 1;
+  transform: translateX(-12px);
+}
